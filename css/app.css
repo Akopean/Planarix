@@ -9622,6 +9622,7 @@ h3 {
   font-weight: normal;
 }
 body {
+  overflow-x: hidden;
   font-family: "MontserratRegular", sans-serif;
   font-size: 16px;
   margin: 0 auto;
@@ -9717,12 +9718,25 @@ a:hover {
   border-radius: 2.25rem;
 }
 
-.l_header {
-  padding-top: 30px;
-  background: url(../images/ilustration.png), url(../images/bg_forms2.jpg);
+.bgg {
+  position: relative;
+}
+.bgg::before {
+  content: "";
+  width: 1960px;
+  height: 103%;
+  position: absolute;
+  background: url(../images/ilustration.png), url(../images/bg_forms.jpg);
   background-position-x: right;
-  background-position: 89% 107%, right bottom;
+  background-position: 19% 107%, right bottom;
   background-repeat: no-repeat, no-repeat;
+  top: -3%;
+  right: -80%;
+}
+
+.l_header {
+  margin-top: 30px;
+  position: relative;
 }
 .l_header .l_header--menu {
   font-family: "MontserratMedium", sans-serif;
