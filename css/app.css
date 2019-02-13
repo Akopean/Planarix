@@ -9651,16 +9651,36 @@ a:hover {
   margin-right: 6rem;
 }
 
+.w-26--after::after {
+  width: 26% !important;
+}
+
 .ch-100 {
   height: calc(1080px - 95px) !important;
 }
 
 .l_header--h1, .l_header--h2 {
   font-size: 36px;
+  display: inline-flex;
+  position: relative;
   font-family: "MontserratBold", sans-serif;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.8rem;
+}
+
+.l_ud {
+  z-index: 10;
+}
+.l_ud::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 52%;
+  height: 6px;
+  background-color: #E678AB;
+  z-index: -1;
 }
 
 .l_header--h2 {
@@ -9669,16 +9689,23 @@ a:hover {
   margin-bottom: 0;
 }
 
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
 .mt-200x {
   margin-top: 220px;
 }
 
 .btn-custom {
-  border-radius: 29px;
   background-image: linear-gradient(45deg, #dd87a3 0%, #6a11cb 100%);
-  box-shadow: 0 0 29.64px 8.36px rgba(116, 27, 200, 0.15);
-  width: 300px;
-  height: 57px;
+  border-radius: 2.25rem;
+  padding: 0.775rem 3rem;
+  color: #FFF;
+}
+.btn-custom:hover {
+  color: #FFF;
+  background-image: linear-gradient(45deg, #6a11cb 0%, #dd87a3 100%);
 }
 
 .btn-inline-custom {
@@ -10012,4 +10039,28 @@ a:hover {
 }
 .l_footer .l_icon--telegram {
   background: url(../images/sprite.png) no-repeat -36px 0;
+}
+.l_footer .widget-currency {
+  margin-top: 8px;
+}
+.l_footer .widget-currency .gl-list {
+  display: inline-flex;
+}
+.l_footer .widget-currency .gl-list li {
+  border: 2px solid #6C42CE;
+  border-right: none;
+}
+.l_footer .widget-currency .gl-list li:last-child {
+  border-right: 2px solid #6C42CE;
+}
+.l_footer .widget-currency .gl-list li a {
+  padding: 7px 12px;
+  color: #6C42CE;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+}
+.l_footer .widget-currency .gl-list li a:hover {
+  color: #FFF;
+  background-color: #6C42CE;
 }
