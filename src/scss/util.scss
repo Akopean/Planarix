@@ -1,0 +1,39 @@
+.ch-100 {
+  height: calc(1080px - 95px) !important;
+}
+
+@media (min-width: 992px) {
+  .mr-lg-5 {
+    margin-right: 5rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .mr-xl-7 {
+    margin-right: 7rem !important;
+  }
+}
+
+
+
+.w-26--after {
+  &::after {
+    width: 26% !important;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .mt-md-50p{
+    margin-top: 50% !important;
+  }
+}
+
+
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.mt-200x {
+  margin-top: 220px;
+}
