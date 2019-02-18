@@ -66,6 +66,9 @@ a {
   font-family: 'MontserratMedium', sans-serif;
   padding: 0 15%;
   margin-bottom: 0;
+  @media (max-width: 768px) {
+  padding: unset;
+  }
 }
 
 
@@ -116,9 +119,7 @@ a {
   }
   @media (max-width: 991px) {
     &::before {
-      background: url(../images/bg_forms.svg);
-      background-position: 0 0;
-      left: 50%;
+      content: none;
     }
   }
 }
@@ -128,18 +129,26 @@ a {
 .l_header {
   overflow-x: hidden;
   position: relative;
-
+  .container.bgg{
+    @media (max-width: 991px) {
+      max-width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
+  }
   .l_header--navbar {
     @media (max-width: 991px) {
-      width: 85vw;
-      top: 50px;
+      border-bottom: 1px solid #E5E9EF;
+      width: 100vw;
+      background-color: white;
+      padding: 1rem 1rem !important;
+      top: 0;
       z-index: 1030;
       position: fixed;
     }
-    @media (max-width: 568px) {
-      width: 95vw;
-    }
-
     .l_header--menu {
       font-family: 'MontserratMedium', sans-serif;
       @media (max-width: 991px) {
@@ -218,6 +227,8 @@ a {
           }
           @media (max-width: 991px) {
             height: 47px;
+            width: 50%;
+            margin: 0 auto;
           }
 
           &:hover {
@@ -238,7 +249,7 @@ a {
     position: relative;
     overflow: hidden;
     z-index: 2;
-    @media (min-width: 768px) {
+    @media (min-width: 993px) {
       height: 100%;
       min-height: 0;
       width: 40.5rem;
@@ -267,6 +278,9 @@ a {
         max-width: 400px;
         @media (max-width: 541px) {
           font-size: 16px;
+        }
+        @media (max-width: 991px) {
+          max-width: 100%;
         }
       }
     }

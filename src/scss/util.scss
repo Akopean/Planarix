@@ -1,5 +1,8 @@
 .ch-100 {
   height: calc(1080px - 95px) !important;
+  @media (max-width: 991px) {
+    height: unset !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -24,7 +27,7 @@
 
 @media (max-width: 991px) {
   .mt-md-50p{
-    margin-top: 50% !important;
+    //margin-top: 50% !important;
   }
 }
 
@@ -32,6 +35,8 @@
   margin-bottom: 4rem !important;
 }
 
-.mt-200x {
-  margin-top: 220px;
+.mt-md-200x {
+  @media (min-width: 992px) {
+    margin-top: 220px;
+  }
 }
