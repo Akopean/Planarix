@@ -9623,6 +9623,7 @@ h3 {
 }
 .btn-custom {
   background-image: linear-gradient(45deg, #dd87a3 0%, #6a11cb 100%);
+  box-shadow: 0px 0px 29.64px 8.36px rgba(116, 27, 200, 0.15);
   border-radius: 2.25rem;
   padding: 0.775rem 3rem;
   color: #FFF;
@@ -9707,7 +9708,7 @@ h3 {
 
 .btn-custom-lg {
   padding: 1rem 8rem;
-  font-size: 24px;
+  font-size: 23px;
   border-radius: 2.25rem;
 }
 @media (max-width: 541px) {
@@ -9948,6 +9949,7 @@ a:focus {
   background-color: #ff3c88;
   width: 165px;
   height: 47px;
+  text-transform: none;
 }
 @media (max-width: 1199px) {
   .l_header .l_header--navbar .l_header--menu .nav-item .l_auth__button {
@@ -10005,11 +10007,24 @@ a:focus {
 }
 
 .l_capability {
-  background-position-x: right;
   height: 100%;
-  background: #EDEFFF url(../images/element.png) no-repeat 97% bottom;
   padding-top: 40px;
-  background-size: 279px;
+  background-color: #EDEFFF;
+  position: relative;
+  overflow: hidden;
+}
+.l_capability .container {
+  position: relative;
+}
+.l_capability .container::after {
+  content: "";
+  position: absolute;
+  bottom: -17%;
+  left: 98%;
+  width: 358px;
+  z-index: 5;
+  height: 770px;
+  background: url(../images/element.png) no-repeat;
 }
 .l_capability .l_cap--card {
   font-family: "MontserratMedium", sans-serif;
@@ -10057,13 +10072,31 @@ a:focus {
 .l_tariff {
   background-color: #F8FBFC;
   padding-top: 55px;
+  z-index: 20;
+  position: relative;
 }
 .l_tariff .l_tariff--content {
   background-color: #FFF;
   margin-top: 20px;
 }
+@media (min-width: 993px) {
+  .l_tariff .l_tariff--content .l_card--free {
+    border-radius: 8px 0 0 8px !important;
+  }
+}
 .l_tariff .l_tariff--content .l_card--premium {
   background: #FFF url(../images/tariff_bg_element.svg) no-repeat 100% top;
+}
+@media (min-width: 992px) {
+  .l_tariff .l_tariff--content .l_card--premium {
+    border-radius: 0 8px 8px 0 !important;
+  }
+}
+.l_tariff .l_tariff--content .card {
+  border: none;
+  box-shadow: 0 13px 51px 0 rgba(68, 72, 230, 0.06);
+  border-right: 1px solid #F6EDFC;
+  border-radius: unset;
 }
 .l_tariff .l_tariff--content .card .card-body .card-title {
   color: #BD90E4;
@@ -10125,10 +10158,10 @@ a:focus {
 }
 .l_tariff .l_tariff--footer {
   position: relative;
-  margin-top: 140px;
+  margin-top: 145px;
   background-color: #612ADE;
   color: #FFF;
-  padding-top: 45px;
+  padding-top: 40px;
   padding-bottom: 45px;
 }
 .l_tariff .l_tariff--footer .l_tariff-footer--content {
@@ -10138,11 +10171,14 @@ a:focus {
 .l_tariff .l_tariff--footer .l_tariff-footer--content .l_tariff--msg {
   font-size: 23px;
   word-spacing: 6px;
+  margin: 4px 0;
+  font-family: "MontserratRegular", sans-serif;
 }
 .l_tariff .l_tariff--footer .l_tariff-footer--content .l_tariff-callback--msg {
   font-size: 23px;
   word-spacing: 6px;
   font-family: MontserratBold, sans-serif;
+  margin-bottom: 30px;
 }
 .l_tariff .l_tariff--footer::after {
   content: "";
@@ -10152,6 +10188,11 @@ a:focus {
   position: absolute;
   right: 9%;
   bottom: -100px;
+}
+@media (max-width: 1200px) {
+  .l_tariff .l_tariff--footer::after {
+    content: none;
+  }
 }
 
 .l_feedback {
@@ -10172,9 +10213,11 @@ a:focus {
 }
 .l_feedback .l_header--h1 {
   font-family: MontserratMedium, sans-serif;
+  margin-bottom: 15px;
 }
 .l_feedback .l_header--h2 {
   font-family: RubikBold, sans-serif;
+  margin-bottom: 10px;
 }
 .l_feedback .l_feedback--msg {
   margin-top: 55px;
