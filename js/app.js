@@ -17359,6 +17359,10 @@ window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/d
 
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
+$(".l-navbar--toggler").on("click", function () {
+  $(".collapse.navbar-collapse").toggleClass('show');
+});
+
 /***/ }),
 
 /***/ "./src/scss/app.scss":
