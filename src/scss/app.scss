@@ -5,13 +5,13 @@
 // FontAwesome
 //@import "~@fortawesome/fontawesome-free/css/all";
 //Fonts 
-@import "fonts";
+//@import "fonts";
 @import "button";
 @import "util";
 @import "nav";
 
 body {
-  font-family: 'MontserratMedium', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   margin: 0 auto;
   position: relative;
@@ -51,7 +51,9 @@ button:focus {
   font-size: 36px;
   display: inline-flex;
   position: relative;
-  font-family: 'MontserratBold', sans-serif;
+  //font-family: 'Montserrat Bold', sans-serif;
+  font-family: Montserrat;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.8rem;
@@ -68,7 +70,9 @@ button:focus {
 }
 
 .l_header--h2 {
-  font-family: 'MontserratMedium', sans-serif;
+  //font-family: 'MontserratMedium', sans-serif;
+  font-family: Montserrat;
+  font-weight: 500;
   padding: 0 15%;
   margin-bottom: 0;
   @media (max-width: 768px) {
@@ -103,20 +107,44 @@ button:focus {
 
 .bgg {
   position: relative;
-
+  height: 100%;
+    @media (max-width: 991px) {
+      max-width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
   &::before {
     content: "";
     width: 1977px;
     height: 100%;
     position: absolute;
-    background: url(../images/ilustration.svg), url(../images/bg_forms.svg);
-    background-position-x: right;
-    background-position: calc(50% - 367px) 107%, 0 0;
-    background-repeat: no-repeat, no-repeat;
+    background: url(../images/bg_forms.svg);
+    background-position: 0 0;
+    background-repeat:  no-repeat;
     top: 0;
     left: calc(50% - 348px);
   }
 
+  .bgg2{
+       position: absolute;
+       min-height: 100vh;
+       min-width: 100vw;
+       background: url(../images/ilustration.svg);
+       background-position: 305px 115%;
+       background-repeat: no-repeat;
+       background-size: calc(100vh + 200px);
+       top: 0;
+       left: 0;
+    @media (max-width: 991px) {
+        background: unset;
+      }
+    @media (max-height: 760px) {
+      background-position: 340px 115%;
+    }
+  }
   @media (max-width: 1199px) {
     &::before {
       left: calc(50% - 260px);
@@ -132,18 +160,9 @@ button:focus {
 
 // HEADER
 .l_header {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
-  .container.bgg{
-    @media (max-width: 991px) {
-      max-width: 100vw;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-items: center;
-      justify-content: center;
-    }
-  }
+  height: 100vh;
   .l_header--navbar {
     @media (max-width: 991px) {
       border-bottom: 1px solid #E5E9EF;
@@ -158,7 +177,9 @@ button:focus {
       z-index: 100;
     }
     .l_header--menu {
-      font-family: 'MontserratMedium', sans-serif;
+      //font-family: 'MontserratMedium', sans-serif;
+      font-family: Montserrat;
+      font-weight: 500;
 
       .l_lang {
         .nav-link {
@@ -204,6 +225,9 @@ button:focus {
           color: #FFF;
           font-size: 21px;
           text-transform: uppercase;
+          @media (max-width: 1400px) {
+            font-size: 19px;
+          }
           @media (max-width: 991px) {
             padding: 1rem 1rem;
           }
@@ -223,6 +247,10 @@ button:focus {
           width: 165px;
           height: 47px;
           text-transform: none;
+          @media (max-width: 1400px) {
+            width: 165px;
+            height: 44px;
+          }
           @media (max-width: 1199px) {
             width: 135px;
             height: 41px;
@@ -250,8 +278,11 @@ button:focus {
     position: relative;
     overflow: hidden;
     z-index: 2;
-    @media (min-width: 993px) {
-      height: 100%;
+    display: flex;
+    align-items: center;
+    height: 83%;
+    @media (min-width: 992px) {
+      //height: 100%;
       min-height: 0;
       width: 40.5rem;
       padding-bottom: 0;
@@ -261,16 +292,23 @@ button:focus {
       padding-top: 4rem;
       h1 {
         font-size: 57px;
-        font-family: 'RubikRegular', sans-serif;
-        @media (max-width: 1199px) {
-          //font-size: 50px;
+        //font-family: 'RubikRegular', sans-serif;
+        font-family: Rubik;
+        font-weight: 400;
+        @media (max-height: 900px) {
+          font-size: 50px;
+        }
+        @media (max-height: 768px) {
+          font-size: 47px;
         }
         @media (max-width: 541px) {
           font-size: 40px;
         }
 
         .bold {
-          font-family: 'RubikMedium', sans-serif;
+          //font-family: 'RubikMedium', sans-serif;
+          font-family: Rubik;
+          font-weight: 500;
         }
       }
 
@@ -310,13 +348,21 @@ button:focus {
   }
 
   .l_cap--card {
-    font-family: 'MontserratMedium', sans-serif;
+    //font-family: 'MontserratMedium', sans-serif;
+    font-family: Montserrat;
+    font-weight: 500;
     text-align: center;
 
     .l_cap--number {
       font-size: 304px;
       color: #BD90E4;
       line-height: 1;
+      @media (max-height: 1079px) {
+        //font-size: 13rem;
+      }
+      @media (max-height: 900px) {
+        //font-size: 10rem;
+      }
       @media (max-width: 541px) {
         font-size: 150px;
       }
@@ -342,7 +388,9 @@ button:focus {
       a {
         position: relative;
         font-size: 24px;
-        font-family: RubikRegular, sans-serif;
+        //font-family: RubikRegular, sans-serif;
+        font-family: Rubik;
+        font-weight: 400;
         color: rgb(14, 26, 63);
         border-bottom: 2px solid;
         text-transform: uppercase;
@@ -431,7 +479,9 @@ button:focus {
         .l_tar-price {
           margin-top: 30px;
           text-align: center;
-          font-family: MontserratBold, sans-serif;
+          //font-family: MontserratBold, sans-serif;
+          font-family: Montserrat;
+          font-weight: 700;
           font-size: 46px;
 
           .l_tar-price--period {
@@ -476,13 +526,17 @@ button:focus {
         font-size: 23px;
         word-spacing: 6px;
         margin: 4px 0;
-        font-family: "MontserratRegular", sans-serif;
+        //font-family: "MontserratRegular", sans-serif;
+        font-family: Montserrat;
+        font-weight: 400;
       }
 
       .l_tariff-callback--msg {
         font-size: 23px;
         word-spacing: 6px;
-        font-family: MontserratBold, sans-serif;
+       //font-family: MontserratBold, sans-serif;
+        font-family: Montserrat;
+        font-weight: 700;
         margin-bottom: 30px;
       }
     }
@@ -517,12 +571,16 @@ button:focus {
   }
 
   .l_header--h1 {
-    font-family: MontserratMedium, sans-serif;
+    //font-family: MontserratMedium, sans-serif;
+    font-family: Montserrat;
+    font-weight: 500;
     margin-bottom: 15px;
   }
 
   .l_header--h2 {
-    font-family: RubikBold, sans-serif;
+    //font-family: RubikBold, sans-serif;
+    font-family: Montserrat;
+    font-weight: 700;
     margin-bottom: 10px;
   }
 
@@ -565,7 +623,9 @@ button:focus {
 
     &:hover {
       color: #6244c9;
-      font-family: MontserratMedium, sans-serif;
+      //font-family: MontserratMedium, sans-serif;
+      font-family: Montserrat;
+      font-weight: 500;
     }
   }
 
@@ -576,13 +636,17 @@ button:focus {
 
   .l_footer--logo {
     font-size: 36px;
-    font-family: RubikRegular, sans-serif;
+    //font-family: RubikRegular, sans-serif;
+    font-family: Rubik;
+    font-weight: 400;
     text-transform: uppercase;
   }
 
   .l_footer--title {
     font-size: 16px;
-    font-family: MontserratMedium, sans-serif;
+    //font-family: MontserratMedium, sans-serif;
+    font-family: Montserrat;
+    font-weight: 500;
   }
 
   .l_icon {

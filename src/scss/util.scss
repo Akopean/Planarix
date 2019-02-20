@@ -1,5 +1,6 @@
 .ch-100 {
-  height: calc(1080px - 95px) !important;
+  //height: calc(1080px - 95px) !important;
+  //height: 100vh;
   @media (max-width: 991px) {
     height: unset !important;
   }
@@ -37,7 +38,7 @@
 
 .mt-md-200x {
   @media (min-width: 992px) {
-    margin-top: 220px;
+  //  margin-top: 220px;
   }
 }
 
