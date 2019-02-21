@@ -10314,6 +10314,7 @@ button:focus {
 }
 
 .l_feedback {
+  overflow: hidden;
   background: url(../images/feedback_bg1.svg), url(../images/feedback_bg2.svg);
   background-position: left top, right bottom;
   background-repeat: no-repeat;
