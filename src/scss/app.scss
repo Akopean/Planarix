@@ -281,6 +281,9 @@ button:focus {
     display: flex;
     align-items: center;
     height: 83%;
+    @media (max-width: 576px) {
+      height: 100%;
+    }
     @media (min-width: 992px) {
       //height: 100%;
       min-height: 0;

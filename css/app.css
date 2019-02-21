@@ -10040,6 +10040,11 @@ button:focus {
   align-items: center;
   height: 83%;
 }
+@media (max-width: 576px) {
+  .l_header .masthead {
+    height: 100%;
+  }
+}
 @media (min-width: 992px) {
   .l_header .masthead {
     min-height: 0;
