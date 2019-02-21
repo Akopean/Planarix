@@ -9680,6 +9680,7 @@ h3 {
 @media (max-width: 541px) {
   .btn-custom-lg {
     padding: 0.5rem 5rem;
+    font-size: 19px;
   }
 }
 
@@ -9813,9 +9814,14 @@ button:focus {
   margin-bottom: 1.8rem;
   letter-spacing: 1px;
 }
-@media (max-width: 541px) {
+@media (max-width: 1200px) {
   .l_header--h1, .l_header--h2 {
-    font-size: 21px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 991px) {
+  .l_header--h1, .l_header--h2 {
+    font-size: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -9823,9 +9829,9 @@ button:focus {
     font-size: 26px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 541px) {
   .l_header--h1, .l_header--h2 {
-    font-size: 30px;
+    font-size: 21px;
   }
 }
 
@@ -10172,7 +10178,12 @@ button:focus {
   background-color: #FFF;
   margin-top: 20px;
 }
-@media (min-width: 993px) {
+@media (max-width: 991px) {
+  .l_tariff .l_tariff--content {
+    background-color: unset;
+  }
+}
+@media (min-width: 992px) {
   .l_tariff .l_tariff--content .l_card--free {
     border-radius: 8px 0 0 8px !important;
   }
@@ -10190,6 +10201,11 @@ button:focus {
   box-shadow: 0 13px 51px 0 rgba(68, 72, 230, 0.06);
   border-right: 1px solid #F6EDFC;
   border-radius: unset;
+}
+@media (max-width: 991px) {
+  .l_tariff .l_tariff--content .card {
+    margin-top: 5px;
+  }
 }
 .l_tariff .l_tariff--content .card .card-body .card-title {
   color: #BD90E4;
@@ -10258,6 +10274,12 @@ button:focus {
   padding-top: 40px;
   padding-bottom: 45px;
 }
+@media (max-width: 576px) {
+  .l_tariff .l_tariff--footer {
+    width: calc(100% + 30px);
+    left: -15px;
+  }
+}
 .l_tariff .l_tariff--footer .l_tariff-footer--content {
   position: relative;
   z-index: 23;
@@ -10292,12 +10314,14 @@ button:focus {
 }
 
 .l_feedback {
-  background: url(../images/feedback_Illustration.svg), url(../images/feedback_bg1.svg), url(../images/feedback_bg2.svg);
-  background-position: 59% 120%, left top, right bottom;
+  background: url(../images/feedback_bg1.svg), url(../images/feedback_bg2.svg);
+  background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-color: #EDEFFF;
   padding-top: 75px;
+  background-size: 14vh, 49vh;
   z-index: 20;
+  height: 100vh;
   padding-bottom: 670px;
   position: relative;
 }
@@ -10305,6 +10329,44 @@ button:focus {
   .l_feedback {
     background: #EDEFFF;
     padding-bottom: 0;
+  }
+}
+.l_feedback .l_feedback--bgg {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url(../images/feedback_Illustration.svg);
+  background-position: 59% 122%;
+  background-repeat: no-repeat;
+  background-size: calc(83vh);
+  bottom: 0;
+  left: 0;
+}
+@media (max-height: 900px) {
+  .l_feedback .l_feedback--bgg {
+    background-position: 59% 112%;
+    background-size: calc(70vh);
+  }
+}
+@media (max-width: 991px) {
+  .l_feedback .l_feedback--bgg {
+    background-position: 0 112%;
+  }
+}
+@media (max-width: 440px) {
+  .l_feedback .l_feedback--bgg {
+    background-position: 0 110%;
+    background-size: calc(58vh);
+  }
+}
+@media (max-height: 700px) and (max-width: 400px) {
+  .l_feedback .l_feedback--bgg {
+    background: none;
+  }
+}
+@media (min-height: 1200px) and (min-width: 1010px) and (max-width: 1300px) {
+  .l_feedback .l_feedback--bgg {
+    background-position: 0 110%;
   }
 }
 .l_feedback .l_header--h1 {
