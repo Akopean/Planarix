@@ -32,8 +32,10 @@
   }
 }
 
-.mb-6 {
-  margin-bottom: 4rem !important;
+.mb-sm-6 {
+  @media (min-width: 576px) {
+    margin-bottom: 6rem !important;
+  }
 }
 
 .mt-md-200x {

@@ -9703,8 +9703,10 @@ h3 {
   width: 26% !important;
 }
 
-.mb-6 {
-  margin-bottom: 4rem !important;
+@media (min-width: 576px) {
+  .mb-sm-6 {
+    margin-bottom: 6rem !important;
+  }
 }
 
 .pt-6 {
