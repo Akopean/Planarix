@@ -476,6 +476,7 @@ button:focus {
 
           li.inactive {
             text-decoration: line-through;
+            color: #7f7f7f;
           }
         }
 
@@ -600,7 +601,7 @@ button:focus {
       background-position: 59% 112%;
       background-size: calc(70vh);
     }
-    @media (max-width: 991px) {
+    @media (max-width: 768px) {
       background-position: 0 112%;
     }
     @media (max-width: 440px) {
@@ -611,7 +612,7 @@ button:focus {
       background: none;
     }
     @media (min-height: 1200px) and (min-width: 1010px) and (max-width: 1300px) {
-      background-position: 0 110%;
+      background-position: calc(50vw - 520px) 110%;
     }
   }
   .l_header--h1 {
