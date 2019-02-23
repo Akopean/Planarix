@@ -9915,6 +9915,16 @@ button:focus {
     background-position: 340px 115%;
   }
 }
+@media (min-width: 1921px) {
+  .bgg::before {
+    background-size: 75%;
+  }
+}
+@media (min-width: 2250px) {
+  .bgg::before {
+    background-size: 100%;
+  }
+}
 @media (max-width: 1199px) {
   .bgg::before {
     left: calc(50% - 260px);
@@ -10199,7 +10209,9 @@ button:focus {
   }
 }
 .l_tariff .l_tariff--content .l_card--premium {
-  background: #FFF url(../images/tariff_bg_element.svg) no-repeat 100% top;
+  background: #FFF url(../images/tariff_bg_element.png) no-repeat 100% top;
+  background-size: 43%;
+  background-position: 126% -6%;
 }
 @media (min-width: 992px) {
   .l_tariff .l_tariff--content .l_card--premium {
