@@ -9920,6 +9920,11 @@ button:focus {
     left: calc(50% - 260px);
   }
 }
+@media (max-width: 991px) {
+  .bgg::before {
+    background-position: 0 13%;
+  }
+}
 @media (max-width: 576px) {
   .bgg::before {
     content: none;

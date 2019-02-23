@@ -153,6 +153,11 @@ button:focus {
       left: calc(50% - 260px);
     }
   }
+  @media (max-width: 991px) {
+    &::before {
+      background-position: 0 13%;
+    }
+  }
   @media (max-width: 576px) {
     &::before {
       content: none;
