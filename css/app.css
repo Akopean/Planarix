@@ -9920,7 +9920,7 @@ button:focus {
     left: calc(50% - 260px);
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 576px) {
   .bgg::before {
     content: none;
   }
@@ -10046,6 +10046,7 @@ button:focus {
   display: flex;
   align-items: center;
   height: 83%;
+  width: 100%;
 }
 @media (max-width: 576px) {
   .l_header .masthead {
@@ -10061,6 +10062,11 @@ button:focus {
 }
 .l_header .masthead .masthead-content {
   padding-top: 4rem;
+}
+@media (max-width: 576px) {
+  .l_header .masthead .masthead-content {
+    padding-top: 2rem;
+  }
 }
 .l_header .masthead .masthead-content h1 {
   font-size: 57px;
@@ -10096,7 +10102,7 @@ button:focus {
     font-size: 16px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 576px) {
   .l_header .masthead .masthead-content .sub_text {
     max-width: 100%;
   }
