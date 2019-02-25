@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   margin: 0 auto;
   position: relative;
   transition: transform .1s ease-in-out;
@@ -48,7 +48,7 @@ button:focus {
 }
 
 .l_header--h1, .l_header--h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   display: inline-flex;
   position: relative;
   //font-family: 'Montserrat Bold', sans-serif;
@@ -59,16 +59,16 @@ button:focus {
   margin-bottom: 1.8rem;
   letter-spacing: 1px;
   @media (max-width: 1200px) {
-    font-size: 32px;
+    font-size: 2rem;
   }
   @media (max-width: 991px) {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   @media (max-width: 768px) {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   @media (max-width: 541px) {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 }
 
@@ -204,8 +204,8 @@ button:focus {
         .nav-link {
           display: inline-flex;
           background-color: #FFF;
-          padding-right: 15px !important;
-          padding-left: 15px !important;
+          padding-right: 0.9375rem !important;
+          padding-left: 0.9375rem !important;
 
         }
 
@@ -238,14 +238,15 @@ button:focus {
 
       .nav-item {
         .nav-link {
-          padding-right: 33px;
-          padding-left: 33px;
+          padding-right: 2.0625rem;
+          padding-left: 2.0625rem;
           letter-spacing: 3px;
           color: #FFF;
-          font-size: 21px;
+          font-size: 1.32rem;
+
           text-transform: uppercase;
           @media (max-width: 1400px) {
-            font-size: 19px;
+            font-size: 1rem;
           }
           @media (max-width: 991px) {
             padding: 1rem 1rem;
@@ -255,9 +256,8 @@ button:focus {
           }
 
           @media (min-width: 992px) and (max-width: 1200px) {
-            padding-right: 20px;
-            padding-left: 20px;
-            font-size: 17px;
+            padding-right: 1.25rem;
+            padding-left: 1.25rem;
           }
         }
 
@@ -317,18 +317,18 @@ button:focus {
         padding-top: 2rem;
       }
       h1 {
-        font-size: 57px;
+        font-size: 3.55rem;
         //font-family: 'RubikRegular', sans-serif;
         font-family: Rubik;
         font-weight: 400;
         @media (max-height: 900px) {
-          font-size: 50px;
+          font-size: 3.125rem;
         }
         @media (max-height: 768px) {
-          font-size: 47px;
+          font-size: 2.9375rem;
         }
         @media (max-width: 541px) {
-          font-size: 40px;
+          font-size: 2.5rem;
         }
 
         .bold {
@@ -340,10 +340,10 @@ button:focus {
 
       .sub_text {
         color: #c3c1c1;
-        font-size: 18px;
+        font-size: 1.12rem;
         max-width: 400px;
         @media (max-width: 541px) {
-          font-size: 16px;
+          font-size: 1rem;
         }
         @media (max-width: 576px) {
           max-width: 100%;
@@ -355,7 +355,7 @@ button:focus {
 
 .l_capability {
   height: 100%;
-  padding-top: 40px;
+  padding-top: 2.5rem;
   background-color: #EDEFFF;
   position: relative;
   overflow: hidden;
@@ -379,7 +379,7 @@ button:focus {
     font-weight: 500;
     text-align: center;
     .l_cap--number {
-      font-size: 304px;
+      font-size: 19rem;
       color: #BD90E4;
       line-height: 1;
       @media (max-height: 1079px) {
@@ -389,31 +389,31 @@ button:focus {
         //font-size: 10rem;
       }
       @media (max-width: 541px) {
-        font-size: 150px;
+        font-size: 9.375rem;
       }
       @media (max-width: 768px) {
-        font-size: 200px;
+        font-size: 12.5rem;
       }
       @media (max-width: 991px) {
-        font-size: 250px;
+        font-size: 15.625rem;
 
       }
     }
 
     .l_cap--desc {
-      font-size: 18px;
+      font-size: 1.13rem;
       text-align: center;
     }
   }
 
   .l_capability--footer {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
 
     .l_cap--other {
       a {
         position: relative;
-        font-size: 24px;
+        font-size: 1.5rem;
         //font-family: RubikRegular, sans-serif;
         font-family: Rubik;
         font-weight: 400;
@@ -429,13 +429,13 @@ button:focus {
 
 .l_tariff {
   background-color: #F8FBFC;
-  padding-top: 55px;
+  padding-top: 3.4375rem;
   z-index: 20;
   position: relative;
 
   .l_tariff--content {
     background-color: #FFF;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     @media (max-width: 991px) {
       background-color: unset;
     }
@@ -458,17 +458,17 @@ button:focus {
       border-right: 1px solid #F6EDFC;
       border-radius: unset;
       @media (max-width: 991px) {
-        margin-top: 5px;
+        margin-top: 0.3125rem;
       }
       .card-body {
         .card-title {
           color: #BD90E4;
-          margin-top: 25px;
+          margin-top: 1.5625rem;
           text-align: center;
           border-bottom: 1px solid #F6EDFC;
-          padding-bottom: 33px;
+          padding-bottom: 2.0625rem;
           font-weight: bold;
-          font-size: 24px;
+          font-size: 1.5rem;
           text-transform: uppercase;
         }
 
@@ -478,8 +478,8 @@ button:focus {
 
         .card-list {
           list-style: none;
-          padding-left: 15px;
-          font-size: 13px;
+          padding-left: 0.9375rem;
+          font-size: 0.8125rem;
           line-height: 1.5rem;
 
           li {
@@ -490,7 +490,7 @@ button:focus {
               position: absolute;
               left: 17px;
               width: 10px;
-              margin-top: 5px;
+              margin-top: 0.3125rem;
               height: 11px;
               z-index: 125;
             }
@@ -511,22 +511,22 @@ button:focus {
         }
 
         .l_tar-price {
-          margin-top: 30px;
+          margin-top: 1.875rem;
           text-align: center;
           //font-family: MontserratBold, sans-serif;
           font-family: Montserrat;
           font-weight: 700;
-          font-size: 46px;
+          font-size: 2.9rem;
 
           .l_tar-price--period {
-            font-size: 14px;
+            font-size: 0.875rem;
             color: #adadad;
           }
         }
       }
 
       .l_tar-footer {
-        margin-top: 20px;
+        margin-top: 1.25rem;
       }
 
       .l_tar-footer--free {
@@ -546,38 +546,38 @@ button:focus {
 
   .l_tariff--footer {
     position: relative;
-    margin-top: 145px;
+    margin-top: 9.0625rem;
     background-color: #612ADE;
     color: #FFF;
-    padding-top: 40px;
-    padding-bottom: 45px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.8125rem;
     @media (max-width: 576px) {
       width: calc(100% + 30px);
       left: -15px;
     }
     @media (max-width: 1200px) {
-      margin-top: 60px;
+      margin-top: 3.75rem;
     } 
     .l_tariff-footer--content {
       position: relative;
       z-index: 23;
 
       .l_tariff--msg {
-        font-size: 23px;
+         font-size: 1.45rem;
         word-spacing: 6px;
-        margin: 4px 0;
+        margin: 0.25rem 0;
         //font-family: "MontserratRegular", sans-serif;
         font-family: Montserrat;
         font-weight: 400;
       }
 
       .l_tariff-callback--msg {
-        font-size: 23px;
+        font-size: 1.43rem;
         word-spacing: 6px;
        //font-family: MontserratBold, sans-serif;
         font-family: Montserrat;
         font-weight: 700;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
       }
     }
 
@@ -602,7 +602,7 @@ button:focus {
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-color: #EDEFFF;
-  padding-top: 75px;
+  padding-top: 4.6875rem;
   background-size: 14vh, 49vh;
   z-index: 20;
   height: 100vh;
@@ -641,31 +641,29 @@ button:focus {
     }
   }
   .l_header--h1 {
-    //font-family: MontserratMedium, sans-serif;
     font-family: Montserrat;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   .l_header--h2 {
-    //font-family: RubikBold, sans-serif;
     font-family: Montserrat;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   .l_feedback--msg {
-    margin-top: 55px;
+    margin-top: 3.4375rem;
     display: inline-flex;
-    font-size: 24px;
+    font-size: 1.5rem;
     position: relative;
     @media (min-width: 542px) and (max-width: 768px) {
-      font-size: 18px;
-      margin-top: 80px;
+      font-size: 1.125rem;
+      margin-top: 5rem;
     }
     @media (max-width: 541px) {
-      font-size: 15px;
-      margin-top: 80px;
+      font-size: 0.9375rem;
+      margin-top: 5rem;
     }
 
     &::before {
@@ -685,7 +683,7 @@ button:focus {
 }
 
 .l_footer {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   line-height: 2rem;
 
   a {
@@ -693,7 +691,6 @@ button:focus {
 
     &:hover {
       color: #6244c9;
-      //font-family: MontserratMedium, sans-serif;
       font-family: Montserrat;
       font-weight: 500;
     }
@@ -705,16 +702,14 @@ button:focus {
   }
 
   .l_footer--logo {
-    font-size: 36px;
-    //font-family: RubikRegular, sans-serif;
+     font-size: 2.25rem;
     font-family: Rubik;
     font-weight: 400;
     text-transform: uppercase;
   }
 
   .l_footer--title {
-    font-size: 16px;
-    //font-family: MontserratMedium, sans-serif;
+    font-size: 1rem;
     font-family: Montserrat;
     font-weight: 500;
   }
@@ -724,7 +719,7 @@ button:focus {
     height: 25px;
     position: relative;
     display: inline-flex;
-    margin: 0 5px;
+    margin: 0 0.3125rem;
 
     &:hover {
       border: 0.5px solid transparent;
@@ -741,7 +736,7 @@ button:focus {
   }
 
   .widget-currency {
-    margin-top: 8px;
+    margin-top: 0.5rem;
 
     .gl-list {
       display: inline-flex;
@@ -755,7 +750,7 @@ button:focus {
         }
 
         a {
-          padding: 7px 10px;
+          padding: 0.4375rem 0.625rem;
           color: #6C42CE;
           width: 100%;
           height: 100%;
