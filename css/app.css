@@ -10648,12 +10648,18 @@ button:focus {
 .l_footer .widget-currency .gl-list li {
   border: 2px solid #6C42CE;
   border-right: none;
+  padding: 5px 9px;
 }
 .l_footer .widget-currency .gl-list li:last-child {
   border-right: 2px solid #6C42CE;
 }
+.l_footer .widget-currency .gl-list li:hover {
+  background-color: #6C42CE;
+}
+.l_footer .widget-currency .gl-list li:hover a {
+  color: #fff;
+}
 .l_footer .widget-currency .gl-list li a {
-  padding: 0.4375rem 0.625rem;
   color: #6C42CE;
   width: 100%;
   height: 100%;
