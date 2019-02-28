@@ -1,5 +1,6 @@
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap';
+//@import '~bootstrap/scss/bootstrap';
 @import '~perfect-scrollbar/css/perfect-scrollbar.css';
 //@import '~fullcalendar/dist/fullcalendar.min.css';
 //SLICK slider
@@ -19,22 +20,20 @@ body {
   position: relative;
   transition: transform .1s ease-in-out;
   background-color: #fff;
-  color: #1f2022;
+  color: $main_black;
 }
 
 a {
   text-decoration: none;
-  //color: #1f2022;
-  //color: #FF3C88;
-  color: #2c2d2e;
+  color: $a;
 
   &:hover {
-    color: #cd2868;
+    color: $a_hover;
     text-decoration: none;
   }
 
   &:focus {
-    color: #b01e56;
+    color: $a_focus;
     text-decoration: none;
   }
 }
@@ -133,9 +132,9 @@ button:focus {
 .l_site-main {
   .sidenav {
     border-width: 1px;
-    border-color: #F3EDFB;
+    border-color: $aside_bc;
     border-style: solid;
-    background-color: #FFFDFD;
+    background-color: $aside_bgc;
     border-top: none;
     @media (max-width: 1200px) {
       //position: relative;
@@ -178,13 +177,77 @@ button:focus {
           font-size: 24px;
           font-weight: 500;
         }
-        .l_user-name{
+
+        .l_user-name {
           font-size: 18px;
           font-weight: 500;
         }
-        .l_user-edit{
+
+        .l_user-edit {
           font-weight: 500;
           font-size: 14px;
+        }
+      }
+
+      .l_user-soc_info {
+        .l_user-soc_info--title {
+          color: $aside_tc;
+        }
+
+        .l_user-soc_info--desc {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #999;
+          font-weight: 500;
+        }
+      }
+
+      .l_other_account {
+        max-height: 410px;
+        position: relative;
+        .l_other_account-info {
+          color: $aside_tc;
+          font-weight: 500;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          .l_other_account-photo {
+            max-width: 79px;
+            border-radius: 50%;
+          }
+
+          .l_other_account-login {
+            display: inline-flex;
+          }
+
+          .l_other_account-btn--edit {
+            margin-left: auto;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            display: flex;
+            height: 30px;
+            line-height: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .l_account-add {
+        text-align: center;
+
+        .l_total-account{
+          font-size: 14px;
+          font-weight: 500;
+          color: #999999;
+          margin-right: 15px;
+        }
+        .l_account-btn--add{
+          padding: 0.55rem 3rem;
+
         }
       }
     }
@@ -229,7 +292,7 @@ button:focus {
     .fc-button {
       color: #282A2C;
       font-weight: 500;
-      background-color: #E3C7FF;
+      background-color: $calendar_c1;
       padding: 0.25rem 1em;
       border-radius: 0;
       border: 1px solid #CB9CFF;
@@ -237,11 +300,37 @@ button:focus {
     }
   }
 
+  .fc-content, .fc-divider,
+  .fc-list-heading td, .fc-list-view,
+  .fc-popover, .fc-row, tbody,
+  td, th, thead {
+    border-color: $calendar_c1;
+  }
+
+  .fc-divider,
+  .fc-list-heading td,
+  .fc-popover .fc-header {
+    background: $calendar_c1;
+  }
+
   .fc-row {
     table th {
       font-weight: 500;
+      font-size: 18px;
+      padding: 6px 0;
     }
   }
+
+  .fc-popover.fc-more-popover {
+    .fc-header.fc-widget-header {
+      padding: 4px 4px;
+
+      .fc-title {
+        font-size: 12px;
+      }
+    }
+  }
+
   .fc-content {
     display: flex;
     align-items: center;
@@ -264,7 +353,7 @@ button:focus {
   box-shadow: 0px 0px 5.95px 1.05px rgba(69, 65, 78, 0.08);
 
   a {
-    color: #1f2022;
+    color: $main_black;
 
     &:hover {
       color: #6244c9;
@@ -321,26 +410,26 @@ button:focus {
 
       li {
         .lang-ru {
-          color: #FFF !important;
-          background-color: #E475AC;
+          color: $lang_c2 !important;
+          background-color: $lang_c1;
           @media (max-width: 991px) {
             color: #000;
           }
 
           &:hover {
-            color: darken(#FFF, 20%) !important;
+            color: darken($lang_c2, 20%) !important;
             @media (max-width: 991px) {
-              color: darken(#FFF, 20%) !important;
+              color: darken($lang_c2, 20%) !important;
             }
           }
         }
 
         .lang-en {
-          color: #E475AC !important;
+          color: $lang_c1 !important;
           background-color: #EBEBEB;
 
           &:hover {
-            color: darken(#E475AC, 20%) !important;
+            color: darken($lang_c1, 20%) !important;
           }
         }
 
@@ -360,16 +449,16 @@ button:focus {
       display: inline-flex;
 
       li {
-        border: 2px solid #6C42CE;
+        border: 2px solid $footer_tc;
         border-right: none;
         padding: 0 9px;
 
         &:last-child {
-          border-right: 2px solid #6C42CE;
+          border-right: 2px solid $footer_tc;
         }
 
         &:hover {
-          background-color: #6C42CE;
+          background-color: $footer_tc;
 
           a {
             color: #fff;
@@ -377,7 +466,7 @@ button:focus {
         }
 
         a {
-          color: #6C42CE;
+          color: $footer_tc;
           width: 100%;
           height: 100%;
           font-weight: 500;
@@ -386,7 +475,7 @@ button:focus {
           &:hover {
             color: #FFF;
             font-weight: 500;
-            background-color: #6C42CE;
+            background-color: $footer_tc;
           }
         }
       }

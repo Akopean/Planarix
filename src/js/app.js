@@ -10,7 +10,7 @@ require('bootstrap');
 
 import PerfectScrollbar from 'perfect-scrollbar';
 
-const ps = new PerfectScrollbar('.sidenav', {
+const ps = new PerfectScrollbar('.perfect-scrollbar', {
     wheelSpeed: 2,
     wheelPropagation: true,
     minScrollbarLength: 20

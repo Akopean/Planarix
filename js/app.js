@@ -18879,7 +18879,7 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 
 
-var ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"]('.sidenav', {
+var ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"]('.perfect-scrollbar', {
   wheelSpeed: 2,
   wheelPropagation: true,
   minScrollbarLength: 20

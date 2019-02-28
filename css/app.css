@@ -9904,8 +9904,10 @@ h3 {
   border: solid 1px #6244c9;
   border-radius: 10px;
   background-color: #6244c9;
-  padding: 0.55rem 2rem;
+  padding: 0.55rem 1.45rem;
   font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 .btn-inline-custom3:hover {
   color: #FFF;
@@ -9918,8 +9920,8 @@ h3 {
   background-color: #3b287e;
 }
 .btn-inline-custom3 svg {
-  width: 15px;
-  margin-right: 5px;
+  width: 11px;
+  margin-right: 3px;
 }
 
 .btn-outline-custom, .btn-outline-custom2 {
@@ -10005,6 +10007,10 @@ h3 {
 
 .bb-1s {
   border-bottom: 1px solid #f3edfb;
+}
+
+.bg-f9 {
+  background-color: #F9F9F9;
 }
 
 .navbar-collapse {
@@ -10238,6 +10244,57 @@ button:focus {
   font-weight: 500;
   font-size: 14px;
 }
+.l_site-main .sidenav .l_site-sidebar .l_user-soc_info .l_user-soc_info--title {
+  color: #2c2d2e;
+}
+.l_site-main .sidenav .l_site-sidebar .l_user-soc_info .l_user-soc_info--desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999;
+  font-weight: 500;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account {
+  max-height: 410px;
+  position: relative;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info {
+  color: #2c2d2e;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-photo {
+  max-width: 79px;
+  border-radius: 50%;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-login {
+  display: inline-flex;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-btn--edit {
+  margin-left: auto;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: flex;
+  height: 30px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.l_site-main .sidenav .l_site-sidebar .l_account-add {
+  text-align: center;
+}
+.l_site-main .sidenav .l_site-sidebar .l_account-add .l_total-account {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+  margin-right: 15px;
+}
+.l_site-main .sidenav .l_site-sidebar .l_account-add .l_account-btn--add {
+  padding: 0.55rem 3rem;
+}
 .l_site-main .l_template-desc a {
   font-weight: 500;
   text-decoration: underline;
@@ -10272,8 +10329,27 @@ button:focus {
   border: 1px solid #CB9CFF;
   background-image: none;
 }
+.fc .fc-content, .fc .fc-divider,
+.fc .fc-list-heading td, .fc .fc-list-view,
+.fc .fc-popover, .fc .fc-row, .fc tbody,
+.fc td, .fc th, .fc thead {
+  border-color: #E3C7FF;
+}
+.fc .fc-divider,
+.fc .fc-list-heading td,
+.fc .fc-popover .fc-header {
+  background: #E3C7FF;
+}
 .fc .fc-row table th {
   font-weight: 500;
+  font-size: 18px;
+  padding: 6px 0;
+}
+.fc .fc-popover.fc-more-popover .fc-header.fc-widget-header {
+  padding: 4px 4px;
+}
+.fc .fc-popover.fc-more-popover .fc-header.fc-widget-header .fc-title {
+  font-size: 12px;
 }
 .fc .fc-content {
   display: flex;

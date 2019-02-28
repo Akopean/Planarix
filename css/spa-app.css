@@ -9788,8 +9788,10 @@ h3 {
   border: solid 1px #6244c9;
   border-radius: 10px;
   background-color: #6244c9;
-  padding: 0.55rem 2rem;
+  padding: 0.55rem 1.45rem;
   font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 .btn-inline-custom3:hover {
   color: #FFF;
@@ -9802,8 +9804,8 @@ h3 {
   background-color: #3b287e;
 }
 .btn-inline-custom3 svg {
-  width: 15px;
-  margin-right: 5px;
+  width: 11px;
+  margin-right: 3px;
 }
 
 .btn-outline-custom, .btn-outline-custom2 {
@@ -9889,6 +9891,10 @@ h3 {
 
 .bb-1s {
   border-bottom: 1px solid #f3edfb;
+}
+
+.bg-f9 {
+  background-color: #F9F9F9;
 }
 
 .navbar-collapse {
