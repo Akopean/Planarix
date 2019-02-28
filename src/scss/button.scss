@@ -57,6 +57,31 @@
   }
 }
 
+.btn-inline-custom3 {
+  @extend .btn-inline-custom;
+  border: solid 1px #6244c9;
+  border-radius: 10px;
+  background-color: #6244c9;
+  padding: 0.55rem 2rem;
+  font-size: 0.875rem;
+  &:hover {
+    color: #FFF;
+    border-color: #4f34ab;
+    background-color: #4f34ab;
+  }
+  &:focus {
+    color: #FFF;
+    border-color: #3b287e;
+    background-color: #3b287e;
+  }
+  & svg{
+    width: 15px;
+    margin-right: 5px;
+  }
+}
+
+
+
 .btn-outline-custom {
   color: #FF3C88;
   font-size: 1rem;
@@ -95,6 +120,11 @@
   }
 }
 
+
+.btn-br-default{
+  border: 1px solid #f3edfb;
+  border-radius: 10px;
+}
 
 .btn-custom-lg {
   padding: 1rem 8rem;

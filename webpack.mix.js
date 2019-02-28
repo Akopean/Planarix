@@ -17,5 +17,6 @@ mix.options({
 
   
 mix.js('src/js/app.js', './js')
-   .sass('src/scss/app.scss', './css')
+   .sass('src/scss/spa-app.scss', './css')
+    .sass('src/scss/app.scss', './css')
     .copy('src/images', './images');
