@@ -10067,6 +10067,12 @@ h3 {
   }
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  color: #212529;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
@@ -10177,10 +10183,9 @@ button:focus {
   font-weight: 500;
 }
 .l_header .l_tariff-button {
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 500;
-  width: 106px;
-  height: 36px;
+  padding: 5px 29px;
   background-color: #ff3c88;
   text-align: center;
   color: #fff;
@@ -10256,6 +10261,7 @@ button:focus {
 }
 .l_site-main .sidenav .l_site-sidebar .l_other_account {
   max-height: 410px;
+  min-height: 200px;
   position: relative;
 }
 .l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info {
@@ -10272,6 +10278,11 @@ button:focus {
 }
 .l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-login {
   display: inline-flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 205px;
+  cursor: pointer;
 }
 .l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-btn--edit {
   margin-left: auto;
@@ -10282,6 +10293,31 @@ button:focus {
   height: 30px;
   line-height: 20px;
   cursor: pointer;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-btn--edit::after {
+  content: none !important;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .dropdown-menu {
+  background-color: #EEECEC;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .dropdown-menu .dropdown-item {
+  color: #2c2d2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .dropdown-menu .dropdown-item.active, .l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .dropdown-menu .dropdown-item:active {
+  background-color: #fff;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-btn--edit.dropdown + .dropdown-menu.show {
+  -webkit-transform: translate3d(0, 60px, 0px) !important;
+          transform: translate3d(0, 60px, 0px) !important;
+  right: 0;
+  left: unset !important;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-btn--edit.dropdown + .dropdown-menu.show.last {
+  -webkit-transform: translate3d(0, -120px, 0px) !important;
+          transform: translate3d(0, -120px, 0px) !important;
 }
 .l_site-main .sidenav .l_site-sidebar .l_account-add {
   text-align: center;
@@ -10311,6 +10347,21 @@ button:focus {
   font-weight: 600;
   color: #999999;
   margin-right: 15px;
+}
+.l_site-main .l_icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 1em;
+  position: relative;
+}
+.l_site-main .l_icon--del {
+  background: url(../images/sprite_btn.png) no-repeat 0 0;
+}
+.l_site-main .l_icon--tick {
+  background: url(../images/sprite_btn.png) no-repeat -18px 0;
+}
+.l_site-main .l_icon--edit {
+  background: url(../images/sprite_btn.png) no-repeat -35px 0;
 }
 
 .fc {

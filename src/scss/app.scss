@@ -119,10 +119,9 @@ button:focus {
   }
 
   .l_tariff-button {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 500;
-    width: 106px;
-    height: 36px;
+    padding: 5px 29px;
     background-color: rgb(255, 60, 136);
     text-align: center;
     color: #fff;
@@ -205,7 +204,9 @@ button:focus {
 
       .l_other_account {
         max-height: 410px;
+        min-height: 200px;
         position: relative;
+
         .l_other_account-info {
           color: $aside_tc;
           font-weight: 500;
@@ -221,6 +222,11 @@ button:focus {
 
           .l_other_account-login {
             display: inline-flex;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 205px;
+            cursor: pointer;
           }
 
           .l_other_account-btn--edit {
@@ -232,6 +238,36 @@ button:focus {
             height: 30px;
             line-height: 20px;
             cursor: pointer;
+
+            &::after {
+              content: none !important;
+            }
+          }
+
+          .dropdown-menu {
+            background-color: #EEECEC;
+
+            .dropdown-item {
+              color: $a;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+
+            .dropdown-item.active, .dropdown-item:active {
+              background-color: #fff;
+            }
+          }
+
+          .l_other_account-btn--edit.dropdown + .dropdown-menu.show {
+            transform: translate3d(0, 60px, 0px) !important;
+            right: 0;
+            left: unset !important;
+
+          }
+
+          .l_other_account-btn--edit.dropdown + .dropdown-menu.show.last {
+            transform: translate3d(0, -120px, 0px) !important;
           }
         }
       }
@@ -239,13 +275,14 @@ button:focus {
       .l_account-add {
         text-align: center;
 
-        .l_total-account{
+        .l_total-account {
           font-size: 14px;
           font-weight: 500;
           color: #999999;
           margin-right: 15px;
         }
-        .l_account-btn--add{
+
+        .l_account-btn--add {
           padding: 0.55rem 3rem;
 
         }
@@ -274,6 +311,25 @@ button:focus {
       color: #999999;
       margin-right: 15px;
     }
+  }
+
+  .l_icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 1em;
+    position: relative;
+  }
+
+  .l_icon--del {
+    background: url(../images/sprite_btn.png) no-repeat 0 0;
+  }
+
+  .l_icon--tick {
+    background: url(../images/sprite_btn.png) no-repeat -18px 0;
+  }
+
+  .l_icon--edit {
+    background: url(../images/sprite_btn.png) no-repeat -35px 0;
   }
 }
 

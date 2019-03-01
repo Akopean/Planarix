@@ -9951,6 +9951,12 @@ h3 {
   }
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  color: #212529;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;

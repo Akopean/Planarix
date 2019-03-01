@@ -18887,6 +18887,9 @@ var ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"]('.perfect
 $(".l-navbar--toggler").on("click", function () {
   $(".collapse.navbar-collapse").toggleClass('show');
 });
+$(".l_other_account-login").tooltip({
+  placement: "top"
+});
 
 /***/ }),
 
