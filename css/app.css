@@ -10085,6 +10085,12 @@ body {
   color: #1f2022;
 }
 
+@media (max-width: 991px) {
+  .navbar .nav-item {
+    padding: 1rem 1rem;
+  }
+}
+
 a {
   text-decoration: none;
   color: #2c2d2e;
@@ -10258,7 +10264,7 @@ button:focus {
     width: 23px;
     height: 18px;
     top: 10px;
-    border: none;
+    border: 0 solid transparent;
   }
   .l_site-main .sidenav.show .l_site-sidebar .l_user-menu--toggle::before {
     content: "";
@@ -10425,6 +10431,11 @@ button:focus {
   padding-top: 30px;
   margin-bottom: 30px;
 }
+@media (max-width: 576px) {
+  .l_site-main .l_site-content {
+    margin-bottom: 15px;
+  }
+}
 .l_site-main .l_site-content .l_create-pub {
   margin-bottom: 5px;
 }
@@ -10456,6 +10467,27 @@ button:focus {
 .fc .fc-header-toolbar .fc-left h2 {
   font-size: 1.5rem;
   font-weight: 600;
+}
+@media (max-width: 576px) {
+  .fc .fc-header-toolbar .fc-left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    float: none;
+  }
+}
+@media (max-width: 576px) {
+  .fc .fc-header-toolbar .fc-right {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    float: none;
+  }
+}
+@media (max-width: 576px) {
+  .fc .fc-header-toolbar .fc-center {
+    display: none;
+  }
 }
 .fc .fc-header-toolbar .fc-button {
   color: #282A2C;

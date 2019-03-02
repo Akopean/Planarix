@@ -10,12 +10,13 @@ require('bootstrap');
 
 import PerfectScrollbar from 'perfect-scrollbar';
 
-const ps = new PerfectScrollbar('.perfect-scrollbar', {
-    wheelSpeed: 2,
-    wheelPropagation: true,
-    minScrollbarLength: 20
-});
-
+if($('.perfect-scrollbar').length) {
+    const ps = new PerfectScrollbar('.perfect-scrollbar', {
+        wheelSpeed: 2,
+        wheelPropagation: true,
+        minScrollbarLength: 20
+    });
+}
 $( ".l-navbar--toggler" ).on( "click", function() {
     $( ".collapse.navbar-collapse").toggleClass('show');
 });

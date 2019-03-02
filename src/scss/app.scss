@@ -23,6 +23,12 @@ body {
   color: $main_black;
 }
 
+.navbar .nav-item {
+  @media (max-width: 991px) {
+    padding: 1rem 1rem;
+  }
+}
+
 a {
   text-decoration: none;
   color: $a;
@@ -181,7 +187,7 @@ button:focus {
             width: 23px;
             height: 18px;
             top: 10px;
-            border: none;
+            border: 0 solid transparent;
             &::before{
               content: "";
               width: 23px;
@@ -376,7 +382,9 @@ button:focus {
   .l_site-content {
     padding-top: 30px;
     margin-bottom: 30px;
-
+    @media (max-width: 576px) {
+      margin-bottom: 15px;
+    }
     .l_create-pub {
       margin-bottom: 5px;
     }
@@ -413,12 +421,30 @@ button:focus {
   margin-bottom: 40px;
 
   .fc-header-toolbar {
-    .fc-left h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
+    .fc-left {
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      @media (max-width: 576px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        float: none;
+      }
     }
-
-    .fc-button-group {
+    .fc-right {
+      @media (max-width: 576px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        float: none;
+      }
+   }
+    .fc-center{
+      @media (max-width: 576px) {
+        display: none;
+      }
     }
 
     .fc-button {
