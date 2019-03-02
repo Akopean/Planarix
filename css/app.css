@@ -10164,9 +10164,13 @@ button:focus {
 .l_header {
   position: relative;
   z-index: 100;
-  padding: 22px 0;
   background-color: #fffdfd;
   box-shadow: 0px 0px 5.95px 1.05px rgba(69, 65, 78, 0.08);
+}
+@media (min-width: 1200px) {
+  .l_header {
+    padding: 22px 0;
+  }
 }
 .l_header .l_header--navbar {
   font-weight: 500;
@@ -10198,23 +10202,26 @@ button:focus {
   background-color: #FFFDFD;
   border-top: none;
 }
+@media (min-width: 1201px) {
+  .l_site-main .sidenav {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+}
 @media (max-width: 1200px) {
   .l_site-main .sidenav {
-    overflow: auto;
+    padding-top: 56px !important;
+    z-index: 99;
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
     width: 390px;
     /* Set the width of the sidebar */
-    position: fixed;
+    position: absolute;
     /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1;
-    /* Stay on top */
     top: 0;
     /* Stay at the top */
-    left: 0;
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 120px;
+    left: -390px;
+    transition: all 1s ease-in-out;
   }
   .l_site-main .sidenav aside {
     height: auto;
@@ -10230,8 +10237,87 @@ button:focus {
     color: #f1f1f1;
   }
 }
+@media (max-width: 390px) {
+  .l_site-main .sidenav {
+    width: 100vw;
+    left: -100vw;
+  }
+}
+.l_site-main .sidenav.show {
+  -webkit-transform: translateX(390px);
+          transform: translateX(390px);
+}
+@media (max-width: 390px) {
+  .l_site-main .sidenav.show {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  .l_site-main .sidenav.show .l_site-sidebar .l_user-menu--toggle {
+    position: absolute;
+    right: 20px;
+    width: 23px;
+    height: 18px;
+    top: 10px;
+    border: none;
+  }
+  .l_site-main .sidenav.show .l_site-sidebar .l_user-menu--toggle::before {
+    content: "";
+    width: 23px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background-color: #38393B;
+    -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
+  }
+  .l_site-main .sidenav.show .l_site-sidebar .l_user-menu--toggle::after {
+    content: "";
+    width: 23px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background-color: #38393B;
+    -webkit-transform: rotate(130deg);
+            transform: rotate(130deg);
+  }
+}
 .l_site-main .sidenav .l_site-sidebar {
+  position: relative;
   padding-top: 30px;
+}
+.l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle {
+  position: absolute;
+  right: -30px;
+  top: 10px;
+  width: 23px;
+  height: 18px;
+  transition: all 1s ease-in-out;
+  border-top: 2px solid #38393B;
+}
+.l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle::before {
+  content: "";
+  width: 23px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  background-color: #38393B;
+}
+.l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle::after {
+  content: "";
+  width: 23px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background-color: #38393B;
+}
+@media (min-width: 1201px) {
+  .l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle {
+    visibility: hidden;
+  }
 }
 .l_site-main .sidenav .l_site-sidebar .l_user-info .l_user-photo {
   max-width: 150px;

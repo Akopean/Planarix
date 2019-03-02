@@ -20,6 +20,11 @@ $( ".l-navbar--toggler" ).on( "click", function() {
     $( ".collapse.navbar-collapse").toggleClass('show');
 });
 
+$( ".l_user-menu--toggle" ).on( "click", function() {
+    $( ".sidenav").toggleClass('show');
+});
+
 $(".l_other_account-login").tooltip({
     placement: "top"
 });
+
