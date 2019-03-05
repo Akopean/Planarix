@@ -17,6 +17,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   margin: 0 auto;
+  touch-action: none;
   position: relative;
   transition: transform .1s ease-in-out;
   background-color: #fff;
@@ -180,7 +181,7 @@ button:focus {
       left: -100vw;
     }
 
-    &.show {
+    .r-menu_show &{
       transform: translateX(390px);
       @media (max-width: 390px) {
         transform: translateX(100vw);
