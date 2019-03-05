@@ -56,3 +56,14 @@
 .bg-f9{
   background-color: #F9F9F9;
 }
+
+
+.fixed-md-top{
+  @media (max-width: 991px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}

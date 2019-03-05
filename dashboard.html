@@ -18,7 +18,7 @@
 
 <header class="l_header">
     <div class="container p-sm-0">
-        <nav class="navbar navbar-expand-lg l_header--navbar ">
+        <nav class="navbar navbar-expand-lg l_header--navbar fixed-md-top">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" alt="">
             </a>
@@ -420,7 +420,7 @@
         defaultDate: '2018-11-16',
         navLinks: true,
         eventLimit: true,
-        contentHeight: 700,
+        contentHeight: window.innerWidth > 780 ? 700 : 450,
         editable: false,
         titleFormat: 'MMMM YYYY',
         timeFormat: 'H(:mm)',

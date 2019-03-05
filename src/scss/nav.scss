@@ -61,3 +61,13 @@
   text-decoration: none;
   background-color: #f8f9fa;
 }
+
+.navbar-nav .dropdown-menu{
+  @media (max-width: 991px) {
+    position: absolute;
+    background-color: transparent;
+    .dropdown-item{
+      color: #fff;
+    }
+  }
+}

@@ -109,7 +109,7 @@ button:focus {
   background-color: rgb(255, 253, 253);
   box-shadow: 0px 0px 5.95px 1.05px rgba(69, 65, 78, 0.08);
   @media (min-width: 1200px) {
-    padding: 22px 0;
+    padding: 1.375rem 0;
   }
 
   .l_header--navbar {
@@ -121,15 +121,15 @@ button:focus {
   }
 
   .l_tariff-range {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: rgb(44, 45, 46);
     font-weight: 500;
   }
 
   .l_tariff-button {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    padding: 5px 29px;
+    padding: 0.3125rem 1.8125rem;
     background-color: rgb(255, 60, 136);
     text-align: center;
     color: #fff;
@@ -137,6 +137,10 @@ button:focus {
 }
 
 .l_site-main {
+  @media (max-width: 991px) {
+    margin-top: 3.5rem;
+  }
+
   .sidenav {
     border-width: 1px;
     border-color: $aside_bc;
@@ -152,7 +156,7 @@ button:focus {
       aside {
         height: auto;
       }
-      padding-top: 56px !important;
+      padding-top: 3.5rem !important;
       z-index: 99;
       height: 100%; /* Full-height: remove this if you want "auto" height */
       width: 390px; /* Set the width of the sidebar */
@@ -161,12 +165,11 @@ button:focus {
       left: -390px;
       transition: all 1s ease-in-out;
       a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-
+       // padding: 6px 8px 6px 16px;
+       // text-decoration: none;
+        //font-size: 25px;
+        //color: #818181;
+       // display: block;
         &:hover {
           color: #f1f1f1;
         }
@@ -176,6 +179,7 @@ button:focus {
       width: 100vw;
       left: -100vw;
     }
+
     &.show {
       transform: translateX(390px);
       @media (max-width: 390px) {
@@ -188,7 +192,8 @@ button:focus {
             height: 18px;
             top: 10px;
             border: 0 solid transparent;
-            &::before{
+
+            &::before {
               content: "";
               width: 23px;
               height: 2px;
@@ -198,7 +203,8 @@ button:focus {
               background-color: #38393B;
               transform: rotate(50deg);
             }
-            &::after{
+
+            &::after {
               content: "";
               width: 23px;
               height: 2px;
@@ -215,7 +221,7 @@ button:focus {
 
     .l_site-sidebar {
       position: relative;
-      padding-top: 30px;
+      padding-top: 1.875rem;
 
       .l_user-menu--toggle {
         position: absolute;
@@ -225,7 +231,8 @@ button:focus {
         height: 18px;
         transition: all 1s ease-in-out;
         border-top: 2px solid #38393B;
-        &::before{
+
+        &::before {
           content: "";
           width: 23px;
           height: 2px;
@@ -234,7 +241,8 @@ button:focus {
           top: 14px;
           background-color: #38393B;
         }
-        &::after{
+
+        &::after {
           content: "";
           width: 23px;
           height: 2px;
@@ -243,6 +251,7 @@ button:focus {
           top: 6px;
           background-color: #38393B;
         }
+
         @media (min-width: 1201px) {
           visibility: hidden;
         }
@@ -250,23 +259,23 @@ button:focus {
 
       .l_user-info {
         .l_user-photo {
-          max-width: 150px;
+          max-width: 9.375rem;
           border-radius: 50%;
         }
 
         .l_user-login {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 500;
         }
 
         .l_user-name {
-          font-size: 18px;
+          font-size: 1.125rem;
           font-weight: 500;
         }
 
         .l_user-edit {
           font-weight: 500;
-          font-size: 14px;
+          font-size: 0.875rem;
         }
       }
 
@@ -292,7 +301,7 @@ button:focus {
         .l_other_account-info {
           color: $aside_tc;
           font-weight: 500;
-          font-size: 18px;
+          font-size: 1.125rem;
           display: flex;
           align-items: center;
           flex-wrap: wrap;
@@ -313,12 +322,12 @@ button:focus {
 
           .l_other_account-btn--edit {
             margin-left: auto;
-            font-size: 25px;
+            font-size: 1.5625rem;
             font-weight: 700;
             letter-spacing: 2px;
             display: flex;
             height: 30px;
-            line-height: 20px;
+            line-height: 1.25rem;
             cursor: pointer;
 
             &::after {
@@ -358,10 +367,10 @@ button:focus {
         text-align: center;
 
         .l_total-account {
-          font-size: 14px;
+          font-size: 0.875rem;
           font-weight: 500;
           color: #999999;
-          margin-right: 15px;
+          margin-right: 0.9375rem;
         }
 
         .l_account-btn--add {
@@ -380,20 +389,21 @@ button:focus {
   }
 
   .l_site-content {
-    padding-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 1.875rem;
+    margin-bottom: 1.875rem;
     @media (max-width: 576px) {
-      margin-bottom: 15px;
+      margin-bottom: 0.9375rem;
     }
+
     .l_create-pub {
-      margin-bottom: 5px;
+      margin-bottom: 0.3125rem;
     }
 
     .l_total-public {
       font-size: 0.75rem;
       font-weight: 600;
       color: #999999;
-      margin-right: 15px;
+      margin-right: 0.9375rem;
     }
   }
 
@@ -418,7 +428,7 @@ button:focus {
 }
 
 .fc {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 
   .fc-header-toolbar {
     .fc-left {
@@ -426,6 +436,7 @@ button:focus {
         font-size: 1.5rem;
         font-weight: 600;
       }
+
       @media (max-width: 576px) {
         display: flex;
         justify-content: center;
@@ -433,6 +444,7 @@ button:focus {
         float: none;
       }
     }
+
     .fc-right {
       @media (max-width: 576px) {
         display: flex;
@@ -440,8 +452,9 @@ button:focus {
         margin-bottom: 1rem;
         float: none;
       }
-   }
-    .fc-center{
+    }
+
+    .fc-center {
       @media (max-width: 576px) {
         display: none;
       }
@@ -474,17 +487,17 @@ button:focus {
   .fc-row {
     table th {
       font-weight: 500;
-      font-size: 18px;
-      padding: 6px 0;
+      font-size: 1.125rem;
+      padding: 0.375rem 0;
     }
   }
 
   .fc-popover.fc-more-popover {
     .fc-header.fc-widget-header {
-      padding: 4px 4px;
+      padding: 0.25rem;
 
       .fc-title {
-        font-size: 12px;
+        font-size: 0.75rem;
       }
     }
   }
@@ -547,7 +560,7 @@ button:focus {
 
     &:hover {
       border: 0.5px solid transparent;
-      border-radius: 25px;
+      border-radius: 1.5625rem;
     }
   }
 
@@ -609,7 +622,7 @@ button:focus {
       li {
         border: 2px solid $footer_tc;
         border-right: none;
-        padding: 0 9px;
+        padding: 0 0.5625rem;
 
         &:last-child {
           border-right: 2px solid $footer_tc;
