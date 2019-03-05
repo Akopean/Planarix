@@ -413,16 +413,21 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
 
+    //Touch Right  Menu
     $(function(){
-        // Bind the swipeleftHandler callback function to the swipe event on div.box
-        $( "body" ).on( "swiperight", swipeleftHandler );
+        $.mobile.loading('hide');
+        $( "body" ).on( "swiperight", swiperightHandler );
+        $( ".sidenav" ).on( "swipeleft", swipeleftHandler );
 
-        // Callback function references the event target and adds the 'swipeleft' class to it
-        function swipeleftHandler( event ){
+        function swiperightHandler( event ){
             $( "body" ).addClass( "r-menu_show" );
+        }
+        function swipeleftHandler( event ){
+            $( "body" ).removeClass( "r-menu_show" );
         }
     });
 
+    //Full Calendar Init
     $('#calendar').fullCalendar({
         header: {
             left: 'title',

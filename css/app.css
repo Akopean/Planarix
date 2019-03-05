@@ -10033,6 +10033,10 @@ h3 {
   }
 }
 
+.ui-loader {
+  display: none !important;
+}
+
 .navbar-collapse {
   transition: all 1s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);
@@ -10107,7 +10111,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   margin: 0 auto;
-  touch-action: none;
+  touch-action: pan-y;
   position: relative;
   transition: -webkit-transform 0.1s ease-in-out;
   transition: transform 0.1s ease-in-out;

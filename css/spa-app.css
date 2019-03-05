@@ -9917,6 +9917,10 @@ h3 {
   }
 }
 
+.ui-loader {
+  display: none !important;
+}
+
 .navbar-collapse {
   transition: all 1s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);
