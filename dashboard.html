@@ -39,10 +39,10 @@
                         <a class="nav-link" href="#">Faq</a>
                     </li>
                     <li class="nav-item">
-                        <span class="l_tariff-range mr-3">Осталось: 100 дней</span>
+                        <span class="l_tariff-range mr-lg-3">Осталось: 100 дней</span>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="l_tariff-button mr-3">Basic</a>
+                        <a href="#" class="l_tariff-button mr-lg-3">Basic</a>
                     </li>
                     <li class="nav-item">
                         <ul class="navbar-nav">
@@ -312,6 +312,7 @@
             </div>
         </div>
     </div>
+    <div class="cal_img-thumb"></div>
 </main>
 <!-- /main -->
 <footer class="l_footer text-center text-lg-left">
@@ -436,7 +437,7 @@
         defaultDate: '2018-11-16',
         navLinks: true,
         eventLimit: true,
-        contentHeight: window.innerWidth > 780 ? 700 : 450,
+        contentHeight: window.innerWidth > 780 ? 700 : 'auto',
         editable: false,
         titleFormat: 'MMMM YYYY',
         timeFormat: 'H(:mm)',
@@ -458,7 +459,7 @@
          },*/
         eventRender: function (event, element, view) {
             if (event.image_url) {
-                element.find("div.fc-content").prepend("<img src='" + event.image_url + "' width='27' height='27'>");
+                element.find("div.fc-content").prepend("<img data-src='" + event.image_url + "' src='" + event.image_url + "' width='27' height='27'>");
             }
             /*if (view.name == 'listDay') {
                 element.find(".fc-list-item-time").append("<span class='closeon'>X</span>");
@@ -467,67 +468,77 @@
             /*}*/
             element.find(".closeon").on('click', function () {
                 $('#calendar').fullCalendar('removeEvents', event._id);
-                console.log('delete');
+                //console.log('delete');
+            });
+            //Show thumb image
+            element.find(".fc-content img").on('click', function () {
+                $('.cal_img-thumb').css({top: $(this).offset().top - 115, left: $(this).offset().left,width: '110px', height: '110px', visibility: 'visible', opacity: 1, position:'absolute',backgroundImage: "url("+$(this).data('src')+")"});
             });
         },
         events: [
             {
                 title: '16.00',
                 start: '2019-02-27',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb.jpg',
                 end: '2019-02-28'
             },
             {
                 title: '16.00',
                 start: '2018-11-20',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb2.jpg',
                 allDay: true
             },
             {
                 title: '16.00',
                 start: '2018-11-20',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb2.jpg',
                 allDay: true
             },
             {
                 title: '16.00',
                 start: '2018-11-14 09:00:00',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb.jpg',
                 end: '2018-11-14 11:00:00'
             },
             {
                 title: '16.00',
+                start: '2018-11-13 09:00:00',
+                image_url: './images/small_thumb.jpg',
+                end: '2018-11-13 11:00:00'
+            },
+            {
+                title: '16.00',
                 start: '2018-11-21 19:00:00',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb.jpg',
                 end: '2018-11-21 22:00:00'
             },
             {
                 title: '15.00',
                 start: '2018-11-21 19:00:00',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb.jpg',
                 end: '2018-11-21 22:00:00'
             },
             {
                 title: '16.00',
                 start: '2018-11-21 19:00:00',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb2.jpg',
                 end: '2018-11-21 22:00:00'
             },
             {
                 title: '16.00',
                 start: '2018-11-21 19:00:00',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb.jpg',
                 end: '2018-11-21 22:00:00'
             },
             {
                 title: '16.00',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb.jpg',
                 start: '2018-11-21 19:00:00',
                 end: '2018-11-21 22:00:00'
             },
             {
                 title: '16.00',
-                image_url: './images/calendar_thumb.png',
+                image_url: './images/small_thumb.jpg',
                 start: '2018-11-21 19:00:00',
                 end: '2018-11-21 22:00:00'
             },

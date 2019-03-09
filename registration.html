@@ -3,10 +3,12 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Rubik:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Rubik:400,500,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/app.css">
 
@@ -14,327 +16,302 @@
 </head>
 <body>
 
-<header class="l_header d-lg-flex align-items-lg-center">
-    <div class="container p-sm-0 bgg">
-        <div class="bgg2"></div>
-        <nav class="navbar navbar-expand-lg p-sm-0 pt-sm-5 l_header--navbar">
-            <a class="navbar-brand mr-xl-7 mr-lg-5" href="#">
+<header class="l_header">
+    <div class="container p-sm-0">
+        <nav class="navbar navbar-expand-lg l_header--navbar fixed-md-top">
+            <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" alt="">
             </a>
             <button class="l-navbar--toggler" type="button"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30"
+                         focusable="false">
                         <title>Menu</title>
-                        <path stroke="#666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
+                        <path stroke="#666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                              d="M4 7h22M4 15h22M4 23h22"></path>
                     </svg>
                 </span>
             </button>
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto l_header--menu text-center">
-                    <li class="nav-item l_lang">
-                        <a class="nav-link l_current_lang--ru" href="#">РУС</a><a class="nav-link l_current_lang--en"
-                                                                                  href="#">ENG</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Тарифы</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О Проекте</a>
-                    </li>
+                <ul class="navbar-nav l_header--menu text-center ml-auto mr-lg-2 d-flex align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Faq</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link l_auth__button btn" href="#">Войти</a>
+                        <span class="l_tariff-range mr-lg-3">Осталось: 100 дней</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="l_tariff-button mr-lg-3">Basic</a>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    darkdrim@ukr.net
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="masthead">
-            <div class="container ch-100">
-                <div class="row ch-100">
-                    <div class="col-12 mt-md-200x p-lg-0">
-                        <div class="masthead-content text-center text-sm-left pt-md-0  ml-3">
-                            <h1 class="mb-4">Ваш <span class="bold">Instagram<br/>
-                                работает</span><br/>
-                                пока вы отдыхаете</h1>
-                            <p class="mb-4 mb-sm-5 mb-ll-6 sub_text">Удобное и эфективное планирование для вашего Instagram аккаунта</p>
-                            <div>
-                                <a href="#" class="btn btn-custom btn-header--try">Попробовать бесплатно
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </header>
 <!-- /header -->
-<main>
-    <section class="l_capability">
-        <div class="container p-sm-0">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="l_header--h1 l_ud">Planarix</h1>
-                    <h2 class="l_header--h2">Все чего не хватало твоему аккаунту</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="l_cap--card">
-                        <span class="l_cap--number">1</span>
-
-                        <p class="l_cap--desc">Все чего не хватало твоему аккаунту</p>
+<main class="l_site-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 sidenav d-flex justify-content-center p-0">
+                <aside class="l_site-sidebar w-100">
+                    <div class="l_user-menu--toggle">
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="l_cap--card">
-                        <span class="l_cap--number">2</span>
-                        <p class="l_cap--desc">Все чего не хватало твоему аккаунту</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="l_cap--card">
-                        <span class="l_cap--number">3</span>
-                        <p class="l_cap--desc">удобная панель управления
-                            несколькими Instagram аккаунтами</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="l_cap--card">
-                        <span class="l_cap--number">4</span>
-                        <p class="l_cap--desc">Все чего не хватало твоему аккаунту</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="l_cap--card">
-                        <span class="l_cap--number">5</span>
-                        <p class="l_cap--desc">Все чего не хватало твоему аккаунту
-                            Все чего не хватало твоему аккаунту
-                            Все чего не хватало твоему аккаунту</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="l_cap--card">
-                        <span class="l_cap--number">6</span>
-                        <p class="l_cap--desc">удобная панель управления
-                            несколькими Instagram аккаунтами</p>
-                    </div>
-                </div>
-            </div>
-            <footer class="l_capability--footer">
-                <div class="row">
-                    <div class="l_cap--other text-center w-100">
-                        <a href="#">Другие Возможности ></a>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </section>
-    <section class="l_tariff">
-        <div class="container p-sm-0">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="l_header--h1">Наши Тарифы</h1>
-                </div>
-            </div>
-            <div class="l_tariff--content m-3">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-3 p-0">
-                        <div class="card l_card--free">
-                            <div class="card-body">
-                                <h3 class="card-title l_tar-title--free">Free</h3>
-                                <ul class="card-list l_tar-list--free">
-                                    <li>
-                                        Отложенный постинг фото
-                                    </li>
-                                    <li class="inactive">
-                                        Отложенный постинг альбомов и видео
-                                    </li>
-                                    <li>
-                                        Количество аккаунтов: 1
-                                    </li>
-                                    <li>
-                                        Количество отложенных постов: 5
-                                    </li>
-                                    <li>
-                                        Расписание публикаций
-                                    </li>
-                                    <li>
-                                        Шаблоны описаний
-                                    </li>
-                                    <li class="inactive">
-                                        Spintax
-                                    </li>
-                                    <li>
-                                        Прокси
-                                    </li>
-                                    <li class="inactive">
-                                        Приоритетная поддержка
-                                    </li>
-                                </ul>
-                                <p class="l_tar-price">₽ 290 <span class="l_tar-price--period">/мес</span></p>
-                                <footer class="w-100 text-center l_tar-footer l_tar-footer--free">
-                                    <a href="#" class="btn btn-outline-custom">Выбрать</a>
-                                </footer>
-
+                    <div class="row w-100 m-0 bb-1s pb-5 mb-4">
+                        <div class="col-12">
+                            <div class="l_user-info text-center">
+                                <img src="./images/user_photo.jpg" alt="" class="l_user-photo img-fluid mb-2">
+                                <p class="l_user-login mb-1">dark_dream</p>
+                                <p class="l_user-name">Denis</p>
+                                <a class="btn btn-br-default l_user-edit" href="#">Редактировать профиль</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 p-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Free</h3>
-                                <ul class="card-list">
-                                    <li>
-                                        Отложенный постинг фото
-                                    </li>
-                                    <li class="inactive">
-                                        Отложенный постинг альбомов  и видео
-                                    </li>
-                                    <li>
-                                        Количество аккаунтов: 1
-                                    </li>
-                                    <li>
-                                        Количество отложенных постов: 5
-                                    </li>
-                                    <li>
-                                        Расписание публикаций
-                                    </li>
-                                    <li>
-                                        Шаблоны описаний
-                                    </li>
-                                    <li class="inactive">
-                                        Spintax
-                                    </li>
-                                    <li>
-                                        Прокси
-                                    </li>
-                                    <li class="inactive">
-                                        Приоритетная поддержка
-                                    </li>
-                                </ul>
-                                <p class="l_tar-price">₽ 290 <span class="l_tar-price--period">/мес</span></p>
-                                <footer class="w-100 text-center l_tar-footer">
-                                    <a href="#" class="btn btn-outline-custom">Выбрать</a>
-                                </footer>
-
+                    <div class="row w-100 m-0 pb-4 l_user-soc_info">
+                        <div class="col-4">
+                            <div class="l_user-pub d-flex justify-content-center flex-wrap">
+                                <h4 class="l_user-pub--count l_user-soc_info--title">
+                                    75
+                                </h4>
+                                <p class="l_user-pub--desc l_user-soc_info--desc">
+                                    публикации
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="l_user-sub d-flex justify-content-center flex-wrap">
+                                <h4 class="l_user-sub--count l_user-soc_info--title">
+                                    75
+                                </h4>
+                                <p class="l_user-sub--desc l_user-soc_info--desc">
+                                    подписчики
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="l_user-pub d-flex justify-content-center flex-wrap">
+                                <h4 class="l_user-own_sub--count l_user-soc_info--title">
+                                    75
+                                </h4>
+                                <p class="l_user-own_sub--desc l_user-soc_info--desc">
+                                    подписки
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 p-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Free</h3>
-                                <ul class="card-list">
-                                    <li>
-                                        Отложенный постинг фото
-                                    </li>
-                                    <li class="inactive">
-                                        Отложенный постинг альбомов и видео
-                                    </li>
-                                    <li>
-                                        Количество аккаунтов: 1
-                                    </li>
-                                    <li>
-                                        Количество отложенных постов: 5
-                                    </li>
-                                    <li>
-                                        Расписание публикаций
-                                    </li>
-                                    <li>
-                                        Шаблоны описаний
-                                    </li>
-                                    <li class="inactive">
-                                        Spintax
-                                    </li>
-                                    <li>
-                                        Прокси
-                                    </li>
-                                    <li class="inactive">
-                                        Приоритетная поддержка
-                                    </li>
-                                </ul>
-                                <p class="l_tar-price">₽ 290 <span class="l_tar-price--period">/мес</span></p>
-                                <footer class="w-100 text-center l_tar-footer">
-                                    <a href="#" class="btn btn-outline-custom">Выбрать</a>
-                                </footer>
-
+                    <div class="row w-100 m-0 l_other_account mb-4 perfect-scrollbar">
+                        <div class="col-12 mb-2 bg-f9 py-1">
+                            <div class="l_other_account-info">
+                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
+                                <span class="l_other_account-login"  data-toggle="tooltip" title="dark_dream_text_max_length">dark_dream_text_max_length</span>
+                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2 bg-f9 py-1">
+                            <div class="l_other_account-info">
+                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
+                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
+                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2 bg-f9 py-1">
+                            <div class="l_other_account-info">
+                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
+                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
+                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2 bg-f9 py-1">
+                            <div class="l_other_account-info">
+                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
+                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
+                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2 bg-f9 py-1">
+                            <div class="l_other_account-info">
+                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
+                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
+                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2 bg-f9 py-1">
+                            <div class="l_other_account-info">
+                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
+                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
+                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2 bg-f9 py-1">
+                            <div class="l_other_account-info">
+                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
+                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream">dark_dream</span>
+                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
+                                <div class="dropdown-menu dropdown-menu-left last" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        Edit profile <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Edit account <i class="l_icon l_icon--edit"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Choose default <i class="l_icon l_icon--tick"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Delete account <i class="l_icon l_icon--del"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 p-0">
-                        <div class="card l_card--premium">
-                            <div class="card-body">
-                                <h3 class="card-title">Premium</h3>
-                                <ul class="card-list">
-                                    <li>
-                                        Отложенный постинг фото
-                                    </li>
-                                    <li>
-                                        Отложенный постинг альбомов и видео
-                                    </li>
-                                    <li>
-                                        Количество аккаунтов: 1
-                                    </li>
-                                    <li>
-                                        Количество отложенных постов: 5
-                                    </li>
-                                    <li>
-                                        Расписание публикаций
-                                    </li>
-                                    <li>
-                                        Шаблоны описаний
-                                    </li>
-                                    <li>
-                                        Spintax
-                                    </li>
-                                    <li>
-                                        Прокси
-                                    </li>
-                                    <li>
-                                        Приоритетная поддержка
-                                    </li>
-                                </ul>
-                                <p class="l_tar-price">₽ 290 <span class="l_tar-price--period">/мес</span></p>
-                                <footer class="w-100 text-center l_tar-footer">
-                                    <a href="#" class="btn btn-outline-custom">Выбрать</a>
-                                </footer>
+                    <div class="row w-100 m-0 pb-5 mb-4">
+                        <div class="col-12">
+                            <div class="l_account-add">
+                                <a href="#" class="btn btn-inline-custom3 l_account-btn--add mb-2">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                         class="svg-inline--fa fa-plus fa-w-14 fa-2x">
+                                        <path fill="currentColor"
+                                              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                                        ></path>
+                                    </svg>
+                                    Добавить аккаунт
+                                </a>
+                                <p class="l_total-account">Осталось 1/6</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </aside>
             </div>
-            <footer class="l_tariff--footer text-center">
-                <div class="l_tariff-footer--content">
-                    <p class="l_tariff--msg">
-                        Не нравится ни один из тарифов?
-                    </p>
-                    <p class="l_tariff-callback--msg">
-                        Напиши нам!
-                    </p>
-                    <a href="#" class="btn btn-inline-custom btn-custom-lg">Связаться</a>
-                </div>
-            </footer>
-        </div>
-    </section>
-    <section class="l_feedback">
-        <div class="l_feedback--bgg"></div>
-        <div class="container p-sm-0">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="l_header--h1 l_ud w-26--after">Решай сам что ты хочешь видеть в проекте</h1>
-                    <h2 class="l_header--h2">Голосуй за новые фичи</h2>
-                    <a href="#" class="btn btn-inline-custom2 btn-custom-lg mt-5">Проголосовать</a>
-                    <div>
-                        <p class="l_feedback--msg">Сейчас в разработке: партнерская программа</p>
+            <div class="col-12 col-xl-8">
+                <div class="l_site-content">
+                    <div class="row align-items-baseline">
+                        <div class="col-12 col-sm-6 d-flex justify-content-center mb-4">
+                            <div class="l_template-desc">
+                                <a href="#">Шаблоны описаний</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex align-items-sm-end flex-column justify-content-center text-center">
+                            <div class="l_create-pub">
+                                <a href="#" class="btn btn-inline-custom3">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                         class="svg-inline--fa fa-plus fa-w-14 fa-2x">
+                                        <path fill="currentColor"
+                                              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                                              class=""></path>
+                                    </svg>
+                                    Создать публикацию
+                                </a>
+                            </div>
+                            <p class="l_total-public">Осталось публикаций 20/150</p>
+                        </div>
                     </div>
                 </div>
+                <div id="calendar"></div>
             </div>
         </div>
-    </section>
+    </div>
 </main>
 <!-- /main -->
 <footer class="l_footer text-center text-lg-left">
@@ -344,7 +321,23 @@
                 <h2 class="l_footer--logo">
                     Planarix
                 </h2>
-                <span>© 2018 Planarix</span>
+                <ul>
+                    <li>
+                        <span>© 2018 Planarix</span>
+                    </li>
+                    <li>
+                        <div class="widget-lang">
+                            <ul class="gl-list">
+                                <li>
+                                    <a class="lang-ru" href="#">рус</a>
+                                </li>
+                                <li>
+                                    <a class="lang-en" href="#">eng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                 <h3 class="l_footer--title">
@@ -362,11 +355,14 @@
                             <ul class="gl-list">
                                 <li>
                                     <a href="#">rub</a>
-                                </li><li>
+                                </li>
+                                <li>
                                     <a href="#">usd</a>
-                                </li><li>
+                                </li>
+                                <li>
                                     <a href="#">uah</a>
-                                </li><li>
+                                </li>
+                                <li>
                                     <a href="#">eur</a>
                                 </li>
                             </ul>
@@ -411,5 +407,6 @@
 <!-- /footer -->
 <!-- Main JavaScript -->
 <script src="./js/app.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

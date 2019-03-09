@@ -176,6 +176,10 @@ button:focus {
         }
       }
     }
+    @media (max-width: 576px) {
+      position: fixed;
+      overflow: auto;
+    }
     @media (max-width: 390px) {
       width: 100vw;
       left: -100vw;
@@ -185,6 +189,8 @@ button:focus {
       transform: translateX(390px);
       @media (max-width: 390px) {
         transform: translateX(100vw);
+      }
+      @media (max-width: 576px) {
         .l_site-sidebar {
           .l_user-menu--toggle {
             position: absolute;
@@ -298,7 +304,9 @@ button:focus {
         max-height: 410px;
         min-height: 200px;
         position: relative;
-
+        @media (max-width: 768px) {
+          overflow: auto;
+        }
         .l_other_account-info {
           color: $aside_tc;
           font-weight: 500;
@@ -426,6 +434,16 @@ button:focus {
   .l_icon--edit {
     background: url(../images/sprite_btn.png) no-repeat -35px 0;
   }
+}
+
+.cal_img-thumb {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
 }
 
 .fc {

@@ -18875,27 +18875,38 @@ __webpack_require__.r(__webpack_exports__);
 window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js").default;
 
-__webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js"); //require('fullcalendar');
+__webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
+ //Init Scrollbar
 
-
-
-if ($('.perfect-scrollbar').length) {
+if ($('.perfect-scrollbar').length && window.innerWidth > 768) {
   var ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"]('.perfect-scrollbar', {
     wheelSpeed: 2,
     wheelPropagation: true,
     minScrollbarLength: 20
   });
-}
+} //Toggle Mobile Menu
+
 
 $(".l-navbar--toggler").on("click", function () {
   $(".collapse.navbar-collapse").toggleClass('show');
-});
+}); //Toggle Dashbord right menu
+
 $(".l_user-menu--toggle").on("click", function () {
   $("body").toggleClass('r-menu_show');
-});
+}); //Add tooltip
+
 $(".l_other_account-login").tooltip({
   placement: "top"
+}); //Add tooltip
+
+$('.cal_img-thumb').on("click", function () {
+  $(this).css({
+    backgroundImage: 'none',
+    visibility: 'hidden',
+    width: 0,
+    height: 0
+  });
 });
 
 /***/ }),

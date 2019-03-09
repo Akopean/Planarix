@@ -10276,6 +10276,12 @@ button:focus {
     color: #f1f1f1;
   }
 }
+@media (max-width: 576px) {
+  .l_site-main .sidenav {
+    position: fixed;
+    overflow: auto;
+  }
+}
 @media (max-width: 390px) {
   .l_site-main .sidenav {
     width: 100vw;
@@ -10291,6 +10297,8 @@ button:focus {
     -webkit-transform: translateX(100vw);
             transform: translateX(100vw);
   }
+}
+@media (max-width: 576px) {
   .r-menu_show .l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle {
     position: absolute;
     right: 20px;
@@ -10388,6 +10396,11 @@ button:focus {
   max-height: 410px;
   min-height: 200px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .l_site-main .sidenav .l_site-sidebar .l_other_account {
+    overflow: auto;
+  }
 }
 .l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info {
   color: #2c2d2e;
@@ -10492,6 +10505,16 @@ button:focus {
 }
 .l_site-main .l_icon--edit {
   background: url(../images/sprite_btn.png) no-repeat -35px 0;
+}
+
+.cal_img-thumb {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
 }
 
 .fc {
