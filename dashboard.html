@@ -432,7 +432,7 @@
     $('#calendar').fullCalendar({
         header: {
             left: 'title',
-            right: 'prev,next today',
+            right: 'prev,next today,month',
         },
         defaultDate: '2018-11-16',
         navLinks: true,
@@ -442,8 +442,8 @@
         titleFormat: 'MMMM YYYY',
         timeFormat: 'H(:mm)',
         displayEventTime: false,
-        /* dayClick: function(date, jsEvent, view) {
-             console.log('Clicked on: ' + date.format());
+         dayClick: function(date, jsEvent, view) {
+            /* console.log('Clicked on: ' + date.format());
              console.log('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
              console.log('Current view: ' + view.name);
              var hoy = moment();
@@ -455,8 +455,8 @@
                      title: "Cita no disponible",
                      text: "La fecha u hora seleccionada ya ha pasado."
                  });
-             }
-         },*/
+             }*/
+         },
         eventRender: function (event, element, view) {
             if (event.image_url) {
                 element.find("div.fc-content").prepend("<img data-src='" + event.image_url + "' src='" + event.image_url + "' width='27' height='27'>");
