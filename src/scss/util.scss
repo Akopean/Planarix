@@ -71,3 +71,38 @@
 .ui-loader {
   display:none !important;
 }
+
+
+.text-small{
+  font-size: .5rem !important;
+}
+
+.text-normal {
+  font-size: 1rem !important;
+}
+
+.text-medium {
+  font-size: 1.3rem !important;
+}
+
+.text-large{
+  font-size: 2rem !important;
+}
+
+
+.rounded-medium {
+  border-radius: 0.65rem !important;
+}
+
+.rounded-large {
+  border-radius: 1rem !important;
+}
+
+.custom-field{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1.5rem;
+  color: #777777;
+  padding: 2.1875rem 1.5625rem;
+}

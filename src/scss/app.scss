@@ -13,12 +13,17 @@
 @import "util";
 @import "nav";
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   margin: 0 auto;
   touch-action: pan-y;
-  position: relative;
+  //position: relative;
   transition: transform .1s ease-in-out;
   background-color: #fff;
   color: $main_black;
@@ -141,6 +146,9 @@ button:focus {
   @media (max-width: 991px) {
     margin-top: 3.5rem;
   }
+  @media (min-width: 1200px) {
+    margin-bottom: 210px;
+  }
 
   .sidenav {
     border-width: 1px;
@@ -166,11 +174,11 @@ button:focus {
       left: -390px;
       transition: all 1s ease-in-out;
       a {
-       // padding: 6px 8px 6px 16px;
-       // text-decoration: none;
+        // padding: 6px 8px 6px 16px;
+        // text-decoration: none;
         //font-size: 25px;
         //color: #818181;
-       // display: block;
+        // display: block;
         &:hover {
           color: #f1f1f1;
         }
@@ -185,7 +193,7 @@ button:focus {
       left: -100vw;
     }
 
-    .r-menu_show &{
+    .r-menu_show & {
       transform: translateX(390px);
       @media (max-width: 390px) {
         transform: translateX(100vw);
@@ -307,6 +315,7 @@ button:focus {
         @media (max-width: 768px) {
           overflow: auto;
         }
+
         .l_other_account-info {
           color: $aside_tc;
           font-weight: 500;
@@ -434,11 +443,41 @@ button:focus {
   .l_icon--edit {
     background: url(../images/sprite_btn.png) no-repeat -35px 0;
   }
+
+  .l_reg-title {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Rubik';
+  }
+
+  .l_registration {
+    .l_reg-container {
+      width: 630px;
+      padding: 53px 30px;
+      background-color: #F9F9F9;
+      border-radius: 10px;
+
+      .l_reg-user-accept {
+        color: #777777;
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      .l_reg-user-quest {
+        color: #777777;
+        a {
+          color: #6244c9;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 .cal_img-thumb {
-  width: 110px;
-  height: 110px;
+  width: 0;
+  height: 0;
   position: absolute;
   z-index: 99;
   opacity: 0;
@@ -540,7 +579,12 @@ button:focus {
   padding-top: 2.5rem;
   line-height: 2rem;
   background-color: rgb(255, 253, 253);
-  box-shadow: 0px 0px 5.95px 1.05px rgba(69, 65, 78, 0.08);
+  box-shadow: 0 0 5.95px 1.05px rgba(69, 65, 78, 0.08);
+  @media (min-width: 1200px) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 
   a {
     color: $main_black;

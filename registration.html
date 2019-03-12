@@ -15,300 +15,33 @@
     <title>Hello, world!</title>
 </head>
 <body>
-
-<header class="l_header">
-    <div class="container p-sm-0">
-        <nav class="navbar navbar-expand-lg l_header--navbar fixed-md-top">
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo.png" alt="">
-            </a>
-            <button class="l-navbar--toggler" type="button"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30"
-                         focusable="false">
-                        <title>Menu</title>
-                        <path stroke="#666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-                              d="M4 7h22M4 15h22M4 23h22"></path>
-                    </svg>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav l_header--menu text-center ml-auto mr-lg-2 d-flex align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Faq</a>
-                    </li>
-                    <li class="nav-item">
-                        <span class="l_tariff-range mr-lg-3">Осталось: 100 дней</span>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="l_tariff-button mr-lg-3">Basic</a>
-                    </li>
-                    <li class="nav-item">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    darkdrim@ukr.net
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</header>
-<!-- /header -->
 <main class="l_site-main">
     <div class="container">
         <div class="row">
-            <div class="col-xl-4 sidenav d-flex justify-content-center p-0">
-                <aside class="l_site-sidebar w-100">
-                    <div class="l_user-menu--toggle">
-                    </div>
-                    <div class="row w-100 m-0 bb-1s pb-5 mb-4">
-                        <div class="col-12">
-                            <div class="l_user-info text-center">
-                                <img src="./images/user_photo.jpg" alt="" class="l_user-photo img-fluid mb-2">
-                                <p class="l_user-login mb-1">dark_dream</p>
-                                <p class="l_user-name">Denis</p>
-                                <a class="btn btn-br-default l_user-edit" href="#">Редактировать профиль</a>
+            <div class="col-12 mt-5 mb-5">
+                <h1 class="text-center mb-4 l_reg-title">Регистрация</h1>
+                <div class="l_registration d-flex justify-content-center">
+                    <div class="l_reg-container">
+                        <form>
+                            <div class="form-group mb-4">
+                                <input type="email" class="form-control custom-field"
+                                       placeholder="Email">
                             </div>
-                        </div>
-                    </div>
-                    <div class="row w-100 m-0 pb-4 l_user-soc_info">
-                        <div class="col-4">
-                            <div class="l_user-pub d-flex justify-content-center flex-wrap">
-                                <h4 class="l_user-pub--count l_user-soc_info--title">
-                                    75
-                                </h4>
-                                <p class="l_user-pub--desc l_user-soc_info--desc">
-                                    публикации
+                            <div class="form-group mb-4">
+                                <input type="password" class="form-control custom-field"
+                                       placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-inline-custom text-medium w-100 p-3 rounded-medium mb-3">Зарегистрироваться</button>
+                            <div class="form-group text-center">
+                                <p class="l_reg-user-accept">Регистрируясь, пользователь принимает <a href="#"> Пользовательское
+                                    соглашение</a>
+                                </p>
+                                <p class="l_reg-user-quest">Уже зарегистрированы? <a href="#">Войти</a>
                                 </p>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="l_user-sub d-flex justify-content-center flex-wrap">
-                                <h4 class="l_user-sub--count l_user-soc_info--title">
-                                    75
-                                </h4>
-                                <p class="l_user-sub--desc l_user-soc_info--desc">
-                                    подписчики
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="l_user-pub d-flex justify-content-center flex-wrap">
-                                <h4 class="l_user-own_sub--count l_user-soc_info--title">
-                                    75
-                                </h4>
-                                <p class="l_user-own_sub--desc l_user-soc_info--desc">
-                                    подписки
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row w-100 m-0 l_other_account mb-4 perfect-scrollbar">
-                        <div class="col-12 mb-2 bg-f9 py-1">
-                            <div class="l_other_account-info">
-                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
-                                <span class="l_other_account-login"  data-toggle="tooltip" title="dark_dream_text_max_length">dark_dream_text_max_length</span>
-                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-2 bg-f9 py-1">
-                            <div class="l_other_account-info">
-                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
-                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
-                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-2 bg-f9 py-1">
-                            <div class="l_other_account-info">
-                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
-                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
-                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-2 bg-f9 py-1">
-                            <div class="l_other_account-info">
-                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
-                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
-                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-2 bg-f9 py-1">
-                            <div class="l_other_account-info">
-                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
-                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
-                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-2 bg-f9 py-1">
-                            <div class="l_other_account-info">
-                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
-                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream_dark">dark_dream_dark</span>
-                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать профиль <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Редактировать аккаунт <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Выбрать по умолчанию <i class="l_icon l_icon--tick"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Удалить аккаунт <i class="l_icon l_icon--del"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-2 bg-f9 py-1">
-                            <div class="l_other_account-info">
-                                <img src="./images/user_photo.jpg" alt="" class="l_other_account-photo img-fluid mr-3">
-                                <span class="l_other_account-login" data-toggle="tooltip" title="dark_dream">dark_dream</span>
-                                <span class="l_other_account-btn--edit dropdown dropdown-toggle" data-toggle="dropdown">...</span>
-                                <div class="dropdown-menu dropdown-menu-left last" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">
-                                        Edit profile <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Edit account <i class="l_icon l_icon--edit"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Choose default <i class="l_icon l_icon--tick"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Delete account <i class="l_icon l_icon--del"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row w-100 m-0 pb-5 mb-4">
-                        <div class="col-12">
-                            <div class="l_account-add">
-                                <a href="#" class="btn btn-inline-custom3 l_account-btn--add mb-2">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
-                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                         class="svg-inline--fa fa-plus fa-w-14 fa-2x">
-                                        <path fill="currentColor"
-                                              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                                        ></path>
-                                    </svg>
-                                    Добавить аккаунт
-                                </a>
-                                <p class="l_total-account">Осталось 1/6</p>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-            <div class="col-12 col-xl-8">
-                <div class="l_site-content">
-                    <div class="row align-items-baseline">
-                        <div class="col-12 col-sm-6 d-flex justify-content-center mb-4">
-                            <div class="l_template-desc">
-                                <a href="#">Шаблоны описаний</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 d-flex align-items-sm-end flex-column justify-content-center text-center">
-                            <div class="l_create-pub">
-                                <a href="#" class="btn btn-inline-custom3">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
-                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                         class="svg-inline--fa fa-plus fa-w-14 fa-2x">
-                                        <path fill="currentColor"
-                                              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                                              class=""></path>
-                                    </svg>
-                                    Создать публикацию
-                                </a>
-                            </div>
-                            <p class="l_total-public">Осталось публикаций 20/150</p>
-                        </div>
+                        </form>
                     </div>
                 </div>
-                <div id="calendar"></div>
             </div>
         </div>
     </div>
