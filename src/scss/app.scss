@@ -225,9 +225,15 @@ button:focus {
         }
       }
     }
+
+    .r-menu_show & {
+      @media (max-width: 576px) {
+        overflow: auto;
+      }
+    }
+
     @media (max-width: 576px) {
       position: fixed;
-      overflow: auto;
     }
     @media (max-width: 390px) {
       width: 100vw;
@@ -244,32 +250,11 @@ button:focus {
           .l_user-menu--toggle {
             position: absolute;
             right: 20px;
-            width: 23px;
-            height: 18px;
+            width: 15px;
+            height: 15px;
             top: 10px;
-            border: 0 solid transparent;
-
-            &::before {
-              content: "";
-              width: 23px;
-              height: 2px;
-              position: absolute;
-              left: 0;
-              top: 10px;
-              background-color: #38393B;
-              transform: rotate(50deg);
-            }
-
-            &::after {
-              content: "";
-              width: 23px;
-              height: 2px;
-              position: absolute;
-              left: 0;
-              top: 10px;
-              background-color: #38393B;
-              transform: rotate(130deg);
-            }
+            background-image: url(../images/sprite_btn.png);
+            box-shadow: none;
           }
         }
       }
@@ -281,35 +266,20 @@ button:focus {
 
       .l_user-menu--toggle {
         position: absolute;
-        right: -30px;
+        right: -40px;
         top: 10px;
-        width: 23px;
-        height: 18px;
-        transition: all 1s ease-in-out;
-        border-top: 2px solid #38393B;
-
-        &::before {
-          content: "";
-          width: 23px;
-          height: 2px;
-          position: absolute;
-          left: 0;
-          top: 14px;
-          background-color: #38393B;
-        }
-
-        &::after {
-          content: "";
-          width: 23px;
-          height: 2px;
-          position: absolute;
-          left: 0;
-          top: 6px;
-          background-color: #38393B;
-        }
-
+        width: 40px;
+        height: 130px;
+        border-right: 5px;
+        background-image: url(../images/sidebar.png);
+        box-shadow: 2px 0 4px 0 #dadada8a;
+        background-position: 0 0;
         @media (min-width: 1201px) {
           visibility: hidden;
+        }
+
+        .icon_sidebar {
+
         }
       }
 
@@ -380,6 +350,7 @@ button:focus {
           align-items: center;
           flex-wrap: wrap;
           position: relative;
+
           .auth-message_container {
             font-size: 14px;
             display: flex;
@@ -392,18 +363,22 @@ button:focus {
             color: #fff;
             height: 100%;
             z-index: 99;
-            a{
+
+            a {
               color: #fff;
               font-weight: bold;
               text-decoration: underline;
             }
-            .auth-message{
+
+            .auth-message {
               width: 60%;
             }
-            .auth-message_info{
+
+            .auth-message_info {
               color: #fff;
             }
           }
+
           .l_other_account-photo_container {
             position: relative;
             display: inline-block;

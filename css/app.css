@@ -10356,9 +10356,13 @@ button:focus {
   }
 }
 @media (max-width: 576px) {
+  .r-menu_show .l_site-main .sidenav {
+    overflow: auto;
+  }
+}
+@media (max-width: 576px) {
   .l_site-main .sidenav {
     position: fixed;
-    overflow: auto;
   }
 }
 @media (max-width: 390px) {
@@ -10381,32 +10385,11 @@ button:focus {
   .r-menu_show .l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle {
     position: absolute;
     right: 20px;
-    width: 23px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     top: 10px;
-    border: 0 solid transparent;
-  }
-  .r-menu_show .l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle::before {
-    content: "";
-    width: 23px;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: 10px;
-    background-color: #38393B;
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
-  }
-  .r-menu_show .l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle::after {
-    content: "";
-    width: 23px;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: 10px;
-    background-color: #38393B;
-    -webkit-transform: rotate(130deg);
-            transform: rotate(130deg);
+    background-image: url(../images/sprite_btn.png);
+    box-shadow: none;
   }
 }
 .l_site-main .sidenav .l_site-sidebar {
@@ -10415,30 +10398,14 @@ button:focus {
 }
 .l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle {
   position: absolute;
-  right: -30px;
+  right: -40px;
   top: 10px;
-  width: 23px;
-  height: 18px;
-  transition: all 1s ease-in-out;
-  border-top: 2px solid #38393B;
-}
-.l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle::before {
-  content: "";
-  width: 23px;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  top: 14px;
-  background-color: #38393B;
-}
-.l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle::after {
-  content: "";
-  width: 23px;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  top: 6px;
-  background-color: #38393B;
+  width: 40px;
+  height: 130px;
+  border-right: 5px;
+  background-image: url(../images/sidebar.png);
+  box-shadow: 2px 0 4px 0 #dadada8a;
+  background-position: 0 0;
 }
 @media (min-width: 1201px) {
   .l_site-main .sidenav .l_site-sidebar .l_user-menu--toggle {
