@@ -10138,11 +10138,15 @@ h3 {
   .navbar-nav .dropdown-menu .dropdown-item {
     color: #fff;
   }
+  .navbar-nav .dropdown-menu .dropdown-item:hover, .navbar-nav .dropdown-menu .dropdown-item:focus {
+    color: #16181b;
+    background-color: #f8f9fa;
+  }
 }
 
 html {
   position: relative;
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -10155,11 +10159,49 @@ body {
   transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
   background-color: #fff;
   color: #1f2022;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    display: table;
+  }
+}
+
+.footer-container {
+  display: table-footer-group;
+  vertical-align: top;
+  width: 100%;
+}
+
+.l_header--menu > .nav-item > .nav-link {
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
 }
 
 @media (max-width: 991px) {
+  .navbar .nav-item .navbar-nav .nav-item {
+    padding: 0;
+  }
+}
+@media (max-width: 991px) {
   .navbar .nav-item {
     padding: 1rem 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .nav-item .nav-link {
+    color: #feffff;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .nav-item .l_tariff-range {
+    color: #feffff;
   }
 }
 
@@ -10276,11 +10318,6 @@ button:focus {
 @media (max-width: 991px) {
   .l_site-main {
     margin-top: 3.5rem;
-  }
-}
-@media (min-width: 1200px) {
-  .l_site-main {
-    margin-bottom: 210px;
   }
 }
 .l_site-main .sidenav {
@@ -10408,7 +10445,20 @@ button:focus {
     visibility: hidden;
   }
 }
-.l_site-main .sidenav .l_site-sidebar .l_user-info .l_user-photo {
+.l_site-main .sidenav .l_site-sidebar .l_user-info .l_user-photo_container {
+  position: relative;
+  display: inline-block;
+}
+.l_site-main .sidenav .l_site-sidebar .l_user-info .l_user-photo_container::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 6px;
+  top: 6px;
+  background: url(../images/locked.png) no-repeat 0 0;
+}
+.l_site-main .sidenav .l_site-sidebar .l_user-info .l_user-photo_container .l_user-photo {
   max-width: 9.375rem;
   border-radius: 50%;
 }
@@ -10451,8 +10501,46 @@ button:focus {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
-.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-photo {
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .auth-message_container {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  background-color: rgba(67, 67, 67, 0.85);
+  width: 100%;
+  color: #fff;
+  height: 100%;
+  z-index: 99;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .auth-message_container a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .auth-message_container .auth-message {
+  width: 60%;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .auth-message_container .auth-message_info {
+  color: #fff;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-photo_container {
+  position: relative;
+  display: inline-block;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-photo_container.active::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 0;
+  top: 0;
+  background: url(../images/locked.png) no-repeat 0 0;
+}
+.l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .l_other_account-photo_container .l_other_account-photo {
   max-width: 79px;
   border-radius: 50%;
 }
@@ -10499,16 +10587,16 @@ button:focus {
   -webkit-transform: translate3d(0, -120px, 0px) !important;
           transform: translate3d(0, -120px, 0px) !important;
 }
-.l_site-main .sidenav .l_site-sidebar .l_account-add {
+.l_site-main .sidenav .l_site-sidebar .l_account-footer .l_account-add {
   text-align: center;
 }
-.l_site-main .sidenav .l_site-sidebar .l_account-add .l_total-account {
+.l_site-main .sidenav .l_site-sidebar .l_account-footer .l_account-add .l_total-account {
   font-size: 0.875rem;
   font-weight: 500;
   color: #999999;
   margin-right: 0.9375rem;
 }
-.l_site-main .sidenav .l_site-sidebar .l_account-add .l_account-btn--add {
+.l_site-main .sidenav .l_site-sidebar .l_account-footer .l_account-add .l_account-btn--add {
   padding: 0.55rem 3rem;
 }
 .l_site-main .l_template-desc a {
@@ -10531,7 +10619,11 @@ button:focus {
   font-size: 0.75rem;
   font-weight: 600;
   color: #999999;
-  margin-right: 0.9375rem;
+}
+@media (min-width: 576px) {
+  .l_site-main .l_site-content .l_total-public {
+    margin-right: 0.9375rem;
+  }
 }
 .l_site-main .l_icon {
   width: 15px;
@@ -10551,7 +10643,12 @@ button:focus {
 .l_site-main .l_reg-title {
   font-size: 3rem;
   font-weight: 500;
-  font-family: "Rubik";
+  font-family: Rubik;
+}
+@media (max-width: 576px) {
+  .l_site-main .l_reg-title {
+    font-size: 2.8rem;
+  }
 }
 .l_site-main .l_registration .l_reg-container {
   width: 630px;
@@ -10580,7 +10677,8 @@ button:focus {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  transition: all 1s ease-in-out;
+  border-radius: 10px;
+  border: 2px solid #e3c7ff;
 }
 
 .fc {
@@ -10655,17 +10753,9 @@ button:focus {
 }
 
 .l_footer {
-  padding-top: 2.5rem;
   line-height: 2rem;
   background-color: #fffdfd;
   box-shadow: 0 0 5.95px 1.05px rgba(69, 65, 78, 0.08);
-}
-@media (min-width: 1200px) {
-  .l_footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
 }
 .l_footer a {
   color: #1f2022;

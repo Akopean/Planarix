@@ -10022,6 +10022,10 @@ h3 {
   .navbar-nav .dropdown-menu .dropdown-item {
     color: #fff;
   }
+  .navbar-nav .dropdown-menu .dropdown-item:hover, .navbar-nav .dropdown-menu .dropdown-item:focus {
+    color: #16181b;
+    background-color: #f8f9fa;
+  }
 }
 
 body {

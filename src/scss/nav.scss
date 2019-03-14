@@ -69,5 +69,9 @@
     .dropdown-item{
       color: #fff;
     }
+    .dropdown-item:hover, .dropdown-item:focus {
+      color: #16181b;
+      background-color: #f8f9fa;
+    }
   }
 }
