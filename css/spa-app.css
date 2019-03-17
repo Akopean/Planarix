@@ -9954,6 +9954,10 @@ h3 {
   padding: 2.1875rem 1.5625rem;
 }
 
+.ui-page {
+  height: 100%;
+}
+
 .navbar-collapse {
   transition: all 1s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);

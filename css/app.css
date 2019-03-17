@@ -10070,6 +10070,10 @@ h3 {
   padding: 2.1875rem 1.5625rem;
 }
 
+.ui-page {
+  height: 100%;
+}
+
 .navbar-collapse {
   transition: all 1s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);
@@ -10174,9 +10178,13 @@ body {
 }
 
 .footer-container {
-  display: table-footer-group;
   vertical-align: top;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .footer-container {
+    display: table-footer-group;
+  }
 }
 
 .l_header--menu > .nav-item > .nav-link {
@@ -10245,7 +10253,7 @@ button:focus {
   font-size: 2.25rem;
   display: inline-flex;
   position: relative;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -10274,7 +10282,7 @@ button:focus {
 }
 
 .l_header--h2 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   padding: 0 15%;
   margin-bottom: 0;
@@ -10293,7 +10301,7 @@ button:focus {
   position: relative;
   z-index: 100;
   background-color: #fffdfd;
-  box-shadow: 0px 0px 5.95px 1.05px rgba(69, 65, 78, 0.08);
+  box-shadow: 0 0 5.95px 1.05px rgba(69, 65, 78, 0.08);
 }
 @media (min-width: 1200px) {
   .l_header {
@@ -10307,6 +10315,11 @@ button:focus {
   .l_header .l_header--navbar {
     background-color: white;
     padding: 0.5rem 1rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .dashboard .l_header .l_header--navbar .navbar-brand {
+    margin-left: 5rem;
   }
 }
 .l_header .l_tariff-range {
@@ -10646,12 +10659,11 @@ button:focus {
 }
 
 .cal_img-thumb {
-  width: 0;
-  height: 0;
+  width: 115px;
+  height: 115px;
   position: absolute;
   z-index: 99;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
   border-radius: 10px;
   border: 2px solid #e3c7ff;
 }
