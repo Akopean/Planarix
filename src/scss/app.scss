@@ -203,7 +203,23 @@ button:focus {
   @media (min-width: 1200px) {
     //margin-bottom: 210px;
   }
-
+  .registration &{
+    background-image: url(../images/element.png);
+    background-repeat: no-repeat;
+    background-position: 62vw calc(100% + 115px);
+    height: 100%;
+    background-size: contain;
+    @media (max-width: 1300px) {
+      background-position: 70vw calc(100% + 115px);
+    }
+    @media (max-width: 576px) {
+      height: initial;
+      background-position: 45vw calc(100% + 115px);
+    }
+    @media (min-width: 2000px) {
+      padding-top: 20vh;
+    }
+  }
   .sidenav {
     border-width: 1px;
     border-color: $aside_bc;
@@ -536,8 +552,9 @@ button:focus {
   .l_reg-title {
     font-size: 3rem;
     font-weight: 500;
-    font-family: Rubik;
-    @media (max-width: 576px) {
+    margin-bottom: 1.5rem;
+    font-family: Rubik, sans-serif;
+    @media (max-width: 1600px) {
       font-size: 2.8rem;
     }
   }
@@ -548,21 +565,38 @@ button:focus {
       padding: 53px 30px;
       background-color: #F9F9F9;
       border-radius: 10px;
-
+      @media (max-width: 1600px) {
+        padding: 25px 25px;
+      }
       .l_reg-user-accept {
         color: #777777;
 
         a {
           text-decoration: underline;
+          &:hover{
+            color: $a_hover;
+            text-decoration: none;
+          }
+          &:focus {
+            color: $a_focus;
+            text-decoration: none;
+          }
         }
       }
 
       .l_reg-user-quest {
         color: #777777;
-
         a {
-          color: #6244c9;
+          color: $a_inline3;
           text-decoration: underline;
+          &:hover{
+            color: $a_hover3;
+            text-decoration: none;
+          }
+          &:focus {
+            color: $a_focus3;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -673,6 +707,11 @@ button:focus {
   line-height: 2rem;
   background-color: rgb(255, 253, 253);
   box-shadow: 0 0 5.95px 1.05px rgba(69, 65, 78, 0.08);
+  .registration &::before{
+    background-image: url(../images/element.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
   @media (min-width: 1200px) {
     // position: absolute;
     // bottom: 0;

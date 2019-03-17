@@ -9885,6 +9885,12 @@ h3 {
     margin-right: 7rem !important;
   }
 }
+@media (max-width: 1200px) {
+  .mb-lx-5 {
+    margin-bottom: 3rem !important;
+  }
+}
+
 .w-26--after::after {
   width: 26% !important;
 }
@@ -9953,9 +9959,30 @@ h3 {
   color: #777777;
   padding: 2.1875rem 1.5625rem;
 }
+@media (max-width: 1600px) {
+  .custom-field {
+    padding: 1.8rem 1.5625rem;
+  }
+}
 
 .ui-page {
   height: 100%;
+}
+
+.p-07 {
+  padding: 0.7rem;
+}
+
+@media (min-width: 1600px) {
+  .p-xxl-3 {
+    padding: 1rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mt-xxl-5 {
+    margin-top: 3rem !important;
+  }
 }
 
 .navbar-collapse {

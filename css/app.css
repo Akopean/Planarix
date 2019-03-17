@@ -10001,6 +10001,12 @@ h3 {
     margin-right: 7rem !important;
   }
 }
+@media (max-width: 1200px) {
+  .mb-lx-5 {
+    margin-bottom: 3rem !important;
+  }
+}
+
 .w-26--after::after {
   width: 26% !important;
 }
@@ -10069,9 +10075,30 @@ h3 {
   color: #777777;
   padding: 2.1875rem 1.5625rem;
 }
+@media (max-width: 1600px) {
+  .custom-field {
+    padding: 1.8rem 1.5625rem;
+  }
+}
 
 .ui-page {
   height: 100%;
+}
+
+.p-07 {
+  padding: 0.7rem;
+}
+
+@media (min-width: 1600px) {
+  .p-xxl-3 {
+    padding: 1rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mt-xxl-5 {
+    margin-top: 3rem !important;
+  }
 }
 
 .navbar-collapse {
@@ -10339,6 +10366,29 @@ button:focus {
 @media (max-width: 991px) {
   .l_site-main {
     margin-top: 3.5rem;
+  }
+}
+.registration .l_site-main {
+  background-image: url(../images/element.png);
+  background-repeat: no-repeat;
+  background-position: 62vw calc(100% + 115px);
+  height: 100%;
+  background-size: contain;
+}
+@media (max-width: 1300px) {
+  .registration .l_site-main {
+    background-position: 70vw calc(100% + 115px);
+  }
+}
+@media (max-width: 576px) {
+  .registration .l_site-main {
+    height: initial;
+    background-position: 45vw calc(100% + 115px);
+  }
+}
+@media (min-width: 2000px) {
+  .registration .l_site-main {
+    padding-top: 20vh;
   }
 }
 .l_site-main .sidenav {
@@ -10631,9 +10681,10 @@ button:focus {
 .l_site-main .l_reg-title {
   font-size: 3rem;
   font-weight: 500;
-  font-family: Rubik;
+  margin-bottom: 1.5rem;
+  font-family: Rubik, sans-serif;
 }
-@media (max-width: 576px) {
+@media (max-width: 1600px) {
   .l_site-main .l_reg-title {
     font-size: 2.8rem;
   }
@@ -10644,11 +10695,24 @@ button:focus {
   background-color: #F9F9F9;
   border-radius: 10px;
 }
+@media (max-width: 1600px) {
+  .l_site-main .l_registration .l_reg-container {
+    padding: 25px 25px;
+  }
+}
 .l_site-main .l_registration .l_reg-container .l_reg-user-accept {
   color: #777777;
 }
 .l_site-main .l_registration .l_reg-container .l_reg-user-accept a {
   text-decoration: underline;
+}
+.l_site-main .l_registration .l_reg-container .l_reg-user-accept a:hover {
+  color: #cd2868;
+  text-decoration: none;
+}
+.l_site-main .l_registration .l_reg-container .l_reg-user-accept a:focus {
+  color: #b01e56;
+  text-decoration: none;
 }
 .l_site-main .l_registration .l_reg-container .l_reg-user-quest {
   color: #777777;
@@ -10656,6 +10720,14 @@ button:focus {
 .l_site-main .l_registration .l_reg-container .l_reg-user-quest a {
   color: #6244c9;
   text-decoration: underline;
+}
+.l_site-main .l_registration .l_reg-container .l_reg-user-quest a:hover {
+  color: #4f34ab;
+  text-decoration: none;
+}
+.l_site-main .l_registration .l_reg-container .l_reg-user-quest a:focus {
+  color: #3b287e;
+  text-decoration: none;
 }
 
 .cal_img-thumb {
@@ -10743,6 +10815,11 @@ button:focus {
   line-height: 2rem;
   background-color: #fffdfd;
   box-shadow: 0 0 5.95px 1.05px rgba(69, 65, 78, 0.08);
+}
+.registration .l_footer::before {
+  background-image: url(../images/element.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .l_footer a {
   color: #1f2022;
