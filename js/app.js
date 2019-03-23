@@ -18885,6 +18885,15 @@ if ($('.perfect-scrollbar').length && window.innerWidth > 768) {
     wheelPropagation: true,
     minScrollbarLength: 20
   });
+} //Init Scrollbar
+
+
+if ($('.perfect-scrollbar2').length && window.innerWidth > 768) {
+  var _ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"]('.perfect-scrollbar2', {
+    wheelSpeed: 2,
+    wheelPropagation: true,
+    minScrollbarLength: 20
+  });
 } //Toggle Mobile Menu
 
 

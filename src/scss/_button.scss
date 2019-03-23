@@ -4,7 +4,7 @@
   background-position: -2px;
   background-size: 101%;
   background-image: linear-gradient(45deg, #dd87a3 0%, #6a11cb 100%);
-   border-radius: 2.25rem;
+  border-radius: 2.25rem;
   padding: 0.775rem 3rem;
   color: $white;
 
@@ -36,6 +36,7 @@
     border-color: $a_hover;
     background-color: $a_hover;
   }
+
   &:focus {
     color: $white;
     border-color: $a_focus;
@@ -47,11 +48,13 @@
   @extend .btn-inline-custom;
   background-color: $a_inline2;
   border: 2px solid $a_inline2;
+
   &:hover {
     color: $white;
     border-color: $a_hover2;
     background-color: $a_hover2;
   }
+
   &:focus {
     color: $white;
     border-color: $a_focus2;
@@ -68,23 +71,52 @@
   font-size: 0.875rem;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+
   &:hover {
     color: $white;
     border-color: $a_hover3;
     background-color: $a_hover3;
   }
+
   &:focus {
     color: $white;
     border-color: $a_focus3;
     background-color: $a_focus3;
   }
-  & svg{
+
+  & svg {
     width: 11px;
     margin-right: 3px;
   }
 }
 
+.btn-inline-custom4 {
+  @extend .btn-inline-custom;
+  border: solid 1px $a_inline3;
+  border-radius: 10px;
+  background-color: $a_inline3;
+  padding: 0.63rem 5.7rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 
+  &:hover {
+    color: $white;
+    border-color: $a_hover3;
+    background-color: $a_hover3;
+  }
+
+  &:focus {
+    color: $white;
+    border-color: $a_focus3;
+    background-color: $a_focus3;
+  }
+
+  & svg {
+    width: 11px;
+    margin-right: 3px;
+  }
+}
 
 .btn-outline-custom {
   color: $a_inline;
@@ -111,6 +143,7 @@
   @extend .btn-outline-custom;
   color: $a_inline2;
   border: 2px solid $a_inline2;
+
   &:hover {
     color: $white;
     background-color: $a_hover2;
@@ -125,9 +158,10 @@
 }
 
 
-.btn-br-default{
+.btn-br-default {
   border: 1px solid $aside_bc;
   border-radius: 10px;
+
   &:hover {
     color: $white;
     background-color: #dbc6ff;

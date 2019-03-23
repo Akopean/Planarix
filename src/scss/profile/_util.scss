@@ -1,0 +1,14 @@
+@import "../variables";
+
+%profile_container_br-b {
+  border-bottom: 1px solid #f3edfb;
+}
+%profile_title {
+  font-size: 1.125rem;
+  color: $a;
+  margin-bottom: 0.9375rem;
+}
+
+%profile-container{
+  padding: 2rem 0;
+}

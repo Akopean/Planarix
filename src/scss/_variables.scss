@@ -26,8 +26,10 @@ $a_focus3: #3b287e !default;
 
 $aside_bc: #F3EDFB !default;
 $aside_bgc:  #FFFDFD !default;
-$aside_tc: #2c2d2e !default;
+$aside_tc: $a !default;
 
+$field2_brc: $aside_bc !default;
+$field2_lc: $a !default;
 $calendar_c1: #E3C7FF !default;
 // Color system
 
@@ -39,6 +41,7 @@ $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
+$gray-777: #777777 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;

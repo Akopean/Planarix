@@ -3,12 +3,6 @@
 //@import '~bootstrap/scss/bootstrap';
 @import '~perfect-scrollbar/css/perfect-scrollbar.css';
 //@import '~fullcalendar/dist/fullcalendar.min.css';
-//SLICK slider
-//@import '~slick-carousel/slick/slick';
-// FontAwesome
-//@import "~@fortawesome/fontawesome-free/css/all";
-//Fonts 
-//@import "fonts";
 @import "button";
 @import "util";
 @import "nav";
@@ -52,14 +46,6 @@ body {
     text-transform: uppercase;
     padding: 0.5rem 1.5rem;
   }
-}
-
-.form-control:focus {
-   color: #495057;
-   background-color: #fff;
-   border-color: unset;
-   outline: 0;
-   box-shadow: none;
 }
 
 .navbar .nav-item {
@@ -197,6 +183,10 @@ button:focus {
 }
 
 .l_site-main {
+  @import "profile/change_email";
+  @import "profile/change_password";
+  @import "profile/current_tariff";
+  @import "profile/timeline_profile";
   @media (max-width: 991px) {
     margin-top: 3.5rem;
   }
@@ -381,7 +371,7 @@ button:focus {
           position: relative;
 
           .auth-message_container {
-            font-size: 14px;
+            font-size: 0.875rem;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -562,11 +552,11 @@ button:focus {
   .l_registration {
     .l_reg-container {
       width: 630px;
-      padding: 53px 30px;
+      padding: 3.3125rem 1.875rem;
       background-color: #F9F9F9;
       border-radius: 10px;
       @media (max-width: 1600px) {
-        padding: 25px 25px;
+        padding: 1.5625rem 1.5625rem;
       }
       .l_reg-user-accept {
         color: #777777;
@@ -723,7 +713,7 @@ button:focus {
 
     &:hover {
       color: #6244c9;
-      font-family: Montserrat;
+      font-family: Montserrat, sans-serif;
       font-weight: 500;
     }
   }
@@ -735,14 +725,14 @@ button:focus {
 
   .l_footer--logo {
     font-size: 2.25rem;
-    font-family: Rubik;
+    font-family: Rubik, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
   }
 
   .l_footer--title {
     font-size: 1rem;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
   }
 

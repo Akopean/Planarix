@@ -9865,7 +9865,7 @@ h3 {
   box-shadow: 0 0 29.64px 8.36px rgba(116, 27, 200, 0.15);
 }
 
-.btn-inline-custom, .btn-inline-custom3, .btn-inline-custom2 {
+.btn-inline-custom, .btn-inline-custom4, .btn-inline-custom3, .btn-inline-custom2 {
   color: #fff;
   background-color: #FF3C88;
   font-size: 1rem;
@@ -9874,12 +9874,12 @@ h3 {
   border: 2px solid #FF3C88;
   font-family: "RubikRegular", sans-serif;
 }
-.btn-inline-custom:hover, .btn-inline-custom3:hover, .btn-inline-custom2:hover {
+.btn-inline-custom:hover, .btn-inline-custom4:hover, .btn-inline-custom3:hover, .btn-inline-custom2:hover {
   color: #fff;
   border-color: #cd2868;
   background-color: #cd2868;
 }
-.btn-inline-custom:focus, .btn-inline-custom3:focus, .btn-inline-custom2:focus {
+.btn-inline-custom:focus, .btn-inline-custom4:focus, .btn-inline-custom3:focus, .btn-inline-custom2:focus {
   color: #fff;
   border-color: #b01e56;
   background-color: #b01e56;
@@ -9920,6 +9920,30 @@ h3 {
   background-color: #3b287e;
 }
 .btn-inline-custom3 svg {
+  width: 11px;
+  margin-right: 3px;
+}
+
+.btn-inline-custom4 {
+  border: solid 1px #6244c9;
+  border-radius: 10px;
+  background-color: #6244c9;
+  padding: 0.63rem 5.7rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-inline-custom4:hover {
+  color: #fff;
+  border-color: #4f34ab;
+  background-color: #4f34ab;
+}
+.btn-inline-custom4:focus {
+  color: #fff;
+  border-color: #3b287e;
+  background-color: #3b287e;
+}
+.btn-inline-custom4 svg {
   width: 11px;
   margin-right: 3px;
 }
@@ -10067,18 +10091,46 @@ h3 {
   border-radius: 1rem !important;
 }
 
-.custom-field {
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: unset;
+  outline: 0;
+  box-shadow: none;
+}
+
+.custom-field, .custom-field2 {
   border-radius: 10px;
-  background-color: white;
+  background-color: #fff;
   border: none;
   font-size: 1.5rem;
   color: #777777;
   padding: 2.1875rem 1.5625rem;
 }
 @media (max-width: 1600px) {
-  .custom-field {
+  .custom-field, .custom-field2 {
     padding: 1.8rem 1.5625rem;
   }
+}
+
+.custom-field2 {
+  background-color: #FFFDFD;
+  border: 1px solid #F3EDFB;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1.344rem 1.5625rem;
+}
+@media (max-width: 1600px) {
+  .custom-field2 {
+    padding: 0.9rem 1.5625rem;
+  }
+}
+.custom-field2:focus {
+  color: #777777;
+  background-color: #FFFDFD;
+  border: 1px solid #F3EDFB;
+  outline: 0;
+  box-shadow: none;
 }
 
 .ui-page {
@@ -10219,14 +10271,6 @@ body {
   padding: 0.5rem 1.5rem;
 }
 
-.form-control:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: unset;
-  outline: 0;
-  box-shadow: none;
-}
-
 @media (max-width: 991px) {
   .navbar .nav-item .navbar-nav .nav-item {
     padding: 0;
@@ -10363,6 +10407,147 @@ button:focus {
   color: #fff;
 }
 
+.l_site-main .l_site-current_tariff, .l_site-main .l_site-change_password, .l_site-main .l_site-change_email {
+  border-bottom: 1px solid #f3edfb;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-title, .l_site-main .l_site-change_password .change_password-title, .l_site-main .l_site-change_email .change_email-title {
+  font-size: 1.125rem;
+  color: #2c2d2e;
+  margin-bottom: 0.9375rem;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-container, .l_site-main .l_site-change_password .change_password-container, .l_site-main .l_site-change_email .change_email-container {
+  padding: 2rem 0;
+}
+.l_site-main .l_site-change_email .change_email-container .form-group:last-of-type {
+  margin-bottom: 2.0625rem;
+}
+.l_site-main .l_site-current_tariff, .l_site-main .l_site-change_password, .l_site-main .l_site-change_email {
+  border-bottom: 1px solid #f3edfb;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-title, .l_site-main .l_site-change_password .change_password-title, .l_site-main .l_site-change_email .change_email-title {
+  font-size: 1.125rem;
+  color: #2c2d2e;
+  margin-bottom: 0.9375rem;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-container, .l_site-main .l_site-change_password .change_password-container, .l_site-main .l_site-change_email .change_email-container {
+  padding: 2rem 0;
+}
+.l_site-main .l_site-change_password .change_password-container .form-group {
+  margin-bottom: 1.625rem;
+}
+.l_site-main .l_site-change_password .change_password-container .form-group:last-of-type {
+  margin-bottom: 2.0625rem;
+}
+.l_site-main .l_site-current_tariff, .l_site-main .l_site-change_email, .l_site-main .l_site-change_password {
+  border-bottom: 1px solid #f3edfb;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-title, .l_site-main .l_site-change_email .change_email-title, .l_site-main .l_site-change_password .change_password-title {
+  font-size: 1.125rem;
+  color: #2c2d2e;
+  margin-bottom: 0.9375rem;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-container, .l_site-main .l_site-change_email .change_email-container, .l_site-main .l_site-change_password .change_password-container {
+  padding: 2rem 0;
+}
+.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box {
+  max-width: 370px;
+  border-radius: 8px;
+  padding: 3.125rem;
+  box-shadow: 0 13px 36.34px 9.66px rgba(68, 72, 230, 0.06);
+}
+.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box .current_tariff-box__title {
+  color: #b08fe0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box .current_tariff-box__desc {
+  color: #2c2d2e;
+  font-size: 1.125rem;
+}
+.l_site-main .l_site-change_email, .l_site-main .l_site-change_password, .l_site-main .l_site-current_tariff {
+  border-bottom: 1px solid #f3edfb;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-change_email .change_email-title, .l_site-main .l_site-change_password .change_password-title, .l_site-main .l_site-current_tariff .current_tariff-title {
+  font-size: 1.125rem;
+  color: #2c2d2e;
+  margin-bottom: 0.9375rem;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-change_email .change_email-container, .l_site-main .l_site-change_password .change_password-container, .l_site-main .l_site-current_tariff .current_tariff-container {
+  padding: 2rem 0;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-title {
+  padding-bottom: 0;
+}
+.l_site-main .l_site-timeline_profile .perfect-scrollbar2 {
+  max-height: 410px;
+  min-height: 200px;
+  position: relative;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list {
+  overflow: hidden;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li {
+  color: #2c2d2e;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  padding: 1.3rem 1.25rem;
+  border: none !important;
+  margin-left: 60px;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li::before {
+  content: "";
+  left: -60px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url(../images/elipse.png);
+  width: 30px;
+  height: 30px;
+  z-index: 20;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li::after {
+  content: "";
+  left: -53px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  z-index: 20;
+  top: 1.75rem;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li:first-of-type::before {
+  background-color: #b08fe0;
+  background-image: unset;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li:first-of-type::after {
+  content: "";
+  left: -46px;
+  position: absolute;
+  background-color: #f3edfb;
+  width: 2px;
+  height: 15000px;
+  top: 30px;
+  z-index: -1;
+  border-radius: unset;
+}
+.l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li:last-of-type::after {
+  content: "";
+  position: absolute;
+  top: 84%;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #f3edfb;
+  border-right: 0 transparent;
+  border-bottom: 0 transparent;
+  background: transparent;
+  -webkit-transform: rotate(222deg);
+          transform: rotate(222deg);
+  left: -3.34rem;
+  border-radius: 0;
+}
 @media (max-width: 991px) {
   .l_site-main {
     margin-top: 3.5rem;
@@ -10542,7 +10727,7 @@ button:focus {
   position: relative;
 }
 .l_site-main .sidenav .l_site-sidebar .l_other_account .l_other_account-info .auth-message_container {
-  font-size: 14px;
+  font-size: 0.875rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -10691,13 +10876,13 @@ button:focus {
 }
 .l_site-main .l_registration .l_reg-container {
   width: 630px;
-  padding: 53px 30px;
+  padding: 3.3125rem 1.875rem;
   background-color: #F9F9F9;
   border-radius: 10px;
 }
 @media (max-width: 1600px) {
   .l_site-main .l_registration .l_reg-container {
-    padding: 25px 25px;
+    padding: 1.5625rem 1.5625rem;
   }
 }
 .l_site-main .l_registration .l_reg-container .l_reg-user-accept {
@@ -10826,7 +11011,7 @@ button:focus {
 }
 .l_footer a:hover {
   color: #6244c9;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
 }
 .l_footer ul {
@@ -10835,13 +11020,13 @@ button:focus {
 }
 .l_footer .l_footer--logo {
   font-size: 2.25rem;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 .l_footer .l_footer--title {
   font-size: 1rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
 }
 .l_footer .l_icon {

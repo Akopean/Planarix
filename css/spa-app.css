@@ -9749,7 +9749,7 @@ h3 {
   box-shadow: 0 0 29.64px 8.36px rgba(116, 27, 200, 0.15);
 }
 
-.btn-inline-custom, .btn-inline-custom3, .btn-inline-custom2 {
+.btn-inline-custom, .btn-inline-custom4, .btn-inline-custom3, .btn-inline-custom2 {
   color: #fff;
   background-color: #FF3C88;
   font-size: 1rem;
@@ -9758,12 +9758,12 @@ h3 {
   border: 2px solid #FF3C88;
   font-family: "RubikRegular", sans-serif;
 }
-.btn-inline-custom:hover, .btn-inline-custom3:hover, .btn-inline-custom2:hover {
+.btn-inline-custom:hover, .btn-inline-custom4:hover, .btn-inline-custom3:hover, .btn-inline-custom2:hover {
   color: #fff;
   border-color: #cd2868;
   background-color: #cd2868;
 }
-.btn-inline-custom:focus, .btn-inline-custom3:focus, .btn-inline-custom2:focus {
+.btn-inline-custom:focus, .btn-inline-custom4:focus, .btn-inline-custom3:focus, .btn-inline-custom2:focus {
   color: #fff;
   border-color: #b01e56;
   background-color: #b01e56;
@@ -9804,6 +9804,30 @@ h3 {
   background-color: #3b287e;
 }
 .btn-inline-custom3 svg {
+  width: 11px;
+  margin-right: 3px;
+}
+
+.btn-inline-custom4 {
+  border: solid 1px #6244c9;
+  border-radius: 10px;
+  background-color: #6244c9;
+  padding: 0.63rem 5.7rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-inline-custom4:hover {
+  color: #fff;
+  border-color: #4f34ab;
+  background-color: #4f34ab;
+}
+.btn-inline-custom4:focus {
+  color: #fff;
+  border-color: #3b287e;
+  background-color: #3b287e;
+}
+.btn-inline-custom4 svg {
   width: 11px;
   margin-right: 3px;
 }
@@ -9951,18 +9975,46 @@ h3 {
   border-radius: 1rem !important;
 }
 
-.custom-field {
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: unset;
+  outline: 0;
+  box-shadow: none;
+}
+
+.custom-field, .custom-field2 {
   border-radius: 10px;
-  background-color: white;
+  background-color: #fff;
   border: none;
   font-size: 1.5rem;
   color: #777777;
   padding: 2.1875rem 1.5625rem;
 }
 @media (max-width: 1600px) {
-  .custom-field {
+  .custom-field, .custom-field2 {
     padding: 1.8rem 1.5625rem;
   }
+}
+
+.custom-field2 {
+  background-color: #FFFDFD;
+  border: 1px solid #F3EDFB;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1.344rem 1.5625rem;
+}
+@media (max-width: 1600px) {
+  .custom-field2 {
+    padding: 0.9rem 1.5625rem;
+  }
+}
+.custom-field2:focus {
+  color: #777777;
+  background-color: #FFFDFD;
+  border: 1px solid #F3EDFB;
+  outline: 0;
+  box-shadow: none;
 }
 
 .ui-page {

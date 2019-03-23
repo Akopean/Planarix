@@ -1,6 +1,6 @@
+@import "variables";
+
 .ch-100 {
-  //height: calc(1080px - 95px) !important;
-  //height: 100vh;
   @media (max-width: 991px) {
     height: unset !important;
   }
@@ -102,17 +102,47 @@
   border-radius: 1rem !important;
 }
 
+
+.form-control:focus {
+  color: #495057;
+  background-color: $white;
+  border-color: unset;
+  outline: 0;
+  box-shadow: none;
+}
+
+
 .custom-field{
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
   border: none;
   font-size: 1.5rem;
-  color: #777777;
+  color: $gray-777;
   padding: 2.1875rem 1.5625rem;
   @media (max-width: 1600px) {
     padding: 1.8rem 1.5625rem;
   }
 }
+
+.custom-field2{
+  @extend .custom-field;
+  background-color: #FFFDFD;
+  border: 1px solid $field2_brc;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1.344rem 1.5625rem;
+  @media (max-width: 1600px) {
+    padding: .9rem 1.5625rem;
+  }
+  &:focus {
+    color: $gray-777;
+    background-color: #FFFDFD;
+    border: 1px solid $field2_brc;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
 
 .ui-page{
   height: 100%;

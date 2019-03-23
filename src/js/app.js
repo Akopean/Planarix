@@ -16,6 +16,14 @@ if($('.perfect-scrollbar').length && window.innerWidth > 768) {
         minScrollbarLength: 20
     });
 }
+//Init Scrollbar
+if($('.perfect-scrollbar2').length && window.innerWidth > 768) {
+    const ps = new PerfectScrollbar('.perfect-scrollbar2', {
+        wheelSpeed: 2,
+        wheelPropagation: true,
+        minScrollbarLength: 20
+    });
+}
 //Toggle Mobile Menu
 $( ".l-navbar--toggler" ).on( "click", function() {
     $( ".collapse.navbar-collapse").toggleClass('show');

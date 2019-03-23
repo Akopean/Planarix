@@ -1,0 +1,20 @@
+@import "../variables";
+@import "util";
+
+.l_site-change_email {
+  @extend %profile_container_br-b;
+  .change_email-title{
+    @extend %profile_title;
+  }
+  .change_email-container{
+    @extend %profile-container;
+    .form-group:last-of-type {
+      margin-bottom: 2.0625rem;
+    }
+  }
+}
+
+
+
+
+
