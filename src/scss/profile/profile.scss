@@ -1,0 +1,143 @@
+@import "../variables";
+@import "util";
+
+/* timeline_profile  */
+
+.l_site-timeline_profile {
+  .timeline_profile-title {
+    @extend %profile-container;
+    @extend %profile_title;
+    padding-bottom: 0;
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+
+  .timeline_profile-container {
+    .timeline_profile-box {
+      .timeline_profile-list {
+        overflow: hidden;
+
+        li {
+          color: $a;
+          font-size: 1rem;
+          font-weight: 500;
+          position: relative;
+          padding: 1.3rem 1.25rem;
+          border: none !important;
+          margin-left: 60px;
+
+          &::before {
+            content: "";
+            left: -60px;
+            position: absolute;
+            border-radius: 50%;
+            background-image: url(../images/elipse.png);
+            width: 30px;
+            height: 30px;
+            z-index: 20;
+          }
+
+          &::after {
+            content: "";
+            left: -46px;
+            position: absolute;
+            background-color: rgb(243, 237, 251);
+            width: 2px;
+            height: 100%;
+            top: 30px;
+            z-index: -1;
+            border-radius: unset;
+          }
+        }
+
+        li:first-of-type {
+          &::before {
+            background-color: rgb(176, 143, 224);
+            background-image: unset;
+          }
+        }
+
+        li:last-of-type {
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* change_email  */
+
+.l_site-change_email {
+  @extend %profile_container_br-b;
+  .change_email-title{
+    @extend %profile_title;
+  }
+  .change_email-container{
+    @extend %profile-container;
+    @media (max-width: 576px) {
+      padding-top: 0 !important;
+    }
+    .form-group:last-of-type {
+      margin-bottom: 2.0625rem;
+    }
+  }
+}
+
+/* change_password  */
+
+.l_site-change_password {
+  @extend %profile_container_br-b;
+  .change_password-title{
+    @extend %profile_title;
+  }
+  .change_password-container{
+    @extend %profile-container;
+    .form-group {
+      margin-bottom: 1.625rem;
+    }
+    .form-group:last-of-type {
+      margin-bottom: 2.0625rem;
+    }
+  }
+}
+
+/* current_tariff  */
+
+.l_site-current_tariff {
+  @extend %profile_container_br-b;
+  .current_tariff-title{
+    @extend %profile_title;
+  }
+  .current_tariff-container{
+    @extend %profile-container;
+    .current_tariff-box{
+      max-width: 370px;
+      border-radius: 8px;
+      padding: 3.125rem;
+      box-shadow: 0 13px 36.34px 9.66px rgba(68, 72, 230, 0.06);
+      @media (max-width: 1200px) {
+        margin: auto;
+      }
+      .current_tariff-box__title{
+        color: #b08fe0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+      .current_tariff-box__desc{
+        color: $a;
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+

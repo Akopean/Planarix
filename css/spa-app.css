@@ -10037,6 +10037,17 @@ h3 {
   }
 }
 
+.perfect-scrollbar2 {
+  max-height: 410px;
+  min-height: 200px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .perfect-scrollbar2 {
+    overflow: auto;
+  }
+}
+
 .navbar-collapse {
   transition: all 1s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);

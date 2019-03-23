@@ -163,3 +163,13 @@
     margin-top: 3rem !important;
   }
 }
+
+
+.perfect-scrollbar2 {
+  max-height: 410px;
+  min-height: 200px;
+  position: relative;
+  @media (max-width: 768px) {
+    overflow: auto;
+  }
+}

@@ -2,6 +2,20 @@
 
 %profile_container_br-b {
   border-bottom: 1px solid #f3edfb;
+  @media (max-width: 1200px) {
+    text-align: center;
+    ::-webkit-input-placeholder {
+      text-align: center;
+
+    }
+    :-moz-placeholder {
+      text-align: center;
+
+    }
+    input {
+      text-align: center;
+    }
+  }
 }
 %profile_title {
   font-size: 1.125rem;

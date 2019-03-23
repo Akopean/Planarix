@@ -10153,6 +10153,17 @@ h3 {
   }
 }
 
+.perfect-scrollbar2 {
+  max-height: 410px;
+  min-height: 200px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .perfect-scrollbar2 {
+    overflow: auto;
+  }
+}
+
 .navbar-collapse {
   transition: all 1s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);
@@ -10407,83 +10418,44 @@ button:focus {
   color: #fff;
 }
 
-.l_site-main .l_site-current_tariff, .l_site-main .l_site-change_password, .l_site-main .l_site-change_email {
-  border-bottom: 1px solid #f3edfb;
-}
-.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-title, .l_site-main .l_site-change_password .change_password-title, .l_site-main .l_site-change_email .change_email-title {
-  font-size: 1.125rem;
-  color: #2c2d2e;
-  margin-bottom: 0.9375rem;
-}
-.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-container, .l_site-main .l_site-change_password .change_password-container, .l_site-main .l_site-change_email .change_email-container {
-  padding: 2rem 0;
-}
-.l_site-main .l_site-change_email .change_email-container .form-group:last-of-type {
-  margin-bottom: 2.0625rem;
+.l_site-main {
+  /* timeline_profile  */
+  /* change_email  */
+  /* change_password  */
+  /* current_tariff  */
 }
 .l_site-main .l_site-current_tariff, .l_site-main .l_site-change_password, .l_site-main .l_site-change_email {
   border-bottom: 1px solid #f3edfb;
 }
-.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-title, .l_site-main .l_site-change_password .change_password-title, .l_site-main .l_site-change_email .change_email-title {
+@media (max-width: 1200px) {
+  .l_site-main .l_site-current_tariff, .l_site-main .l_site-change_password, .l_site-main .l_site-change_email {
+    text-align: center;
+  }
+  .l_site-main .l_site-current_tariff ::-webkit-input-placeholder, .l_site-main .l_site-change_password ::-webkit-input-placeholder, .l_site-main .l_site-change_email ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  .l_site-main .l_site-current_tariff :-moz-placeholder, .l_site-main .l_site-change_password :-moz-placeholder, .l_site-main .l_site-change_email :-moz-placeholder {
+    text-align: center;
+  }
+  .l_site-main .l_site-current_tariff input, .l_site-main .l_site-change_password input, .l_site-main .l_site-change_email input {
+    text-align: center;
+  }
+}
+.l_site-main .l_site-current_tariff .current_tariff-title, .l_site-main .l_site-change_password .change_password-title, .l_site-main .l_site-change_email .change_email-title, .l_site-main .l_site-timeline_profile .timeline_profile-title {
   font-size: 1.125rem;
   color: #2c2d2e;
   margin-bottom: 0.9375rem;
 }
-.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-container, .l_site-main .l_site-change_password .change_password-container, .l_site-main .l_site-change_email .change_email-container {
-  padding: 2rem 0;
-}
-.l_site-main .l_site-change_password .change_password-container .form-group {
-  margin-bottom: 1.625rem;
-}
-.l_site-main .l_site-change_password .change_password-container .form-group:last-of-type {
-  margin-bottom: 2.0625rem;
-}
-.l_site-main .l_site-current_tariff, .l_site-main .l_site-change_email, .l_site-main .l_site-change_password {
-  border-bottom: 1px solid #f3edfb;
-}
-.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-title, .l_site-main .l_site-change_email .change_email-title, .l_site-main .l_site-change_password .change_password-title {
-  font-size: 1.125rem;
-  color: #2c2d2e;
-  margin-bottom: 0.9375rem;
-}
-.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-current_tariff .current_tariff-container, .l_site-main .l_site-change_email .change_email-container, .l_site-main .l_site-change_password .change_password-container {
-  padding: 2rem 0;
-}
-.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box {
-  max-width: 370px;
-  border-radius: 8px;
-  padding: 3.125rem;
-  box-shadow: 0 13px 36.34px 9.66px rgba(68, 72, 230, 0.06);
-}
-.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box .current_tariff-box__title {
-  color: #b08fe0;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1.5;
-}
-.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box .current_tariff-box__desc {
-  color: #2c2d2e;
-  font-size: 1.125rem;
-}
-.l_site-main .l_site-change_email, .l_site-main .l_site-change_password, .l_site-main .l_site-current_tariff {
-  border-bottom: 1px solid #f3edfb;
-}
-.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-change_email .change_email-title, .l_site-main .l_site-change_password .change_password-title, .l_site-main .l_site-current_tariff .current_tariff-title {
-  font-size: 1.125rem;
-  color: #2c2d2e;
-  margin-bottom: 0.9375rem;
-}
-.l_site-main .l_site-timeline_profile .timeline_profile-title, .l_site-main .l_site-change_email .change_email-container, .l_site-main .l_site-change_password .change_password-container, .l_site-main .l_site-current_tariff .current_tariff-container {
+.l_site-main .l_site-current_tariff .current_tariff-container, .l_site-main .l_site-change_password .change_password-container, .l_site-main .l_site-change_email .change_email-container, .l_site-main .l_site-timeline_profile .timeline_profile-title {
   padding: 2rem 0;
 }
 .l_site-main .l_site-timeline_profile .timeline_profile-title {
   padding-bottom: 0;
 }
-.l_site-main .l_site-timeline_profile .perfect-scrollbar2 {
-  max-height: 410px;
-  min-height: 200px;
-  position: relative;
+@media (max-width: 1200px) {
+  .l_site-main .l_site-timeline_profile .timeline_profile-title {
+    text-align: center;
+  }
 }
 .l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list {
   overflow: hidden;
@@ -10509,44 +10481,57 @@ button:focus {
 }
 .l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li::after {
   content: "";
-  left: -53px;
+  left: -46px;
   position: absolute;
-  border-radius: 50%;
-  background-color: #fff;
-  width: 15px;
-  height: 15px;
-  z-index: 20;
-  top: 1.75rem;
+  background-color: #f3edfb;
+  width: 2px;
+  height: 100%;
+  top: 30px;
+  z-index: -1;
+  border-radius: unset;
 }
 .l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li:first-of-type::before {
   background-color: #b08fe0;
   background-image: unset;
 }
-.l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li:first-of-type::after {
-  content: "";
-  left: -46px;
-  position: absolute;
-  background-color: #f3edfb;
-  width: 2px;
-  height: 15000px;
-  top: 30px;
-  z-index: -1;
-  border-radius: unset;
-}
 .l_site-main .l_site-timeline_profile .timeline_profile-container .timeline_profile-box .timeline_profile-list li:last-of-type::after {
-  content: "";
-  position: absolute;
-  top: 84%;
-  width: 17px;
-  height: 17px;
-  border: 2px solid #f3edfb;
-  border-right: 0 transparent;
-  border-bottom: 0 transparent;
-  background: transparent;
-  -webkit-transform: rotate(222deg);
-          transform: rotate(222deg);
-  left: -3.34rem;
-  border-radius: 0;
+  content: none;
+}
+@media (max-width: 576px) {
+  .l_site-main .l_site-change_email .change_email-container {
+    padding-top: 0 !important;
+  }
+}
+.l_site-main .l_site-change_email .change_email-container .form-group:last-of-type {
+  margin-bottom: 2.0625rem;
+}
+.l_site-main .l_site-change_password .change_password-container .form-group {
+  margin-bottom: 1.625rem;
+}
+.l_site-main .l_site-change_password .change_password-container .form-group:last-of-type {
+  margin-bottom: 2.0625rem;
+}
+.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box {
+  max-width: 370px;
+  border-radius: 8px;
+  padding: 3.125rem;
+  box-shadow: 0 13px 36.34px 9.66px rgba(68, 72, 230, 0.06);
+}
+@media (max-width: 1200px) {
+  .l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box {
+    margin: auto;
+  }
+}
+.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box .current_tariff-box__title {
+  color: #b08fe0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.l_site-main .l_site-current_tariff .current_tariff-container .current_tariff-box .current_tariff-box__desc {
+  color: #2c2d2e;
+  font-size: 1.125rem;
 }
 @media (max-width: 991px) {
   .l_site-main {

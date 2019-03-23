@@ -183,10 +183,7 @@ button:focus {
 }
 
 .l_site-main {
-  @import "profile/change_email";
-  @import "profile/change_password";
-  @import "profile/current_tariff";
-  @import "profile/timeline_profile";
+  @import "profile/profile";
   @media (max-width: 991px) {
     margin-top: 3.5rem;
   }
