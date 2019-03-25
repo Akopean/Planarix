@@ -160,6 +160,10 @@
   }
 }
 
+.w-45 {
+  width: 45% !important;
+}
+
 
 .perfect-scrollbar2 {
   max-height: 410px;
@@ -168,4 +172,9 @@
   @media (max-width: 768px) {
     overflow: auto;
   }
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
 }

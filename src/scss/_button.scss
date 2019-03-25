@@ -82,6 +82,7 @@
     color: $white;
     border-color: $a_focus3;
     background-color: $a_focus3;
+    border-radius: 34px;
   }
 
   & svg {
@@ -110,6 +111,7 @@
     color: $white;
     border-color: $a_focus3;
     background-color: $a_focus3;
+    border-radius: 34px;
   }
 
   & svg {
@@ -117,6 +119,31 @@
     margin-right: 3px;
   }
 }
+
+.btn-inline-custom5 {
+  @extend .btn-inline-custom;
+  border: solid 1px $a_inline;
+  border-radius: 10px;
+  background-color: $a_inline;
+  padding: 0.63rem 5.7rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover {
+    color: $white;
+    border-color: $a_hover;
+    background-color: $a_hover;
+  }
+
+  &:focus {
+    color: $white;
+    border-color: $a_focus;
+    background-color: $a_focus;
+    border-radius: 34px;
+  }
+}
+
 
 .btn-outline-custom {
   color: $a_inline;
@@ -172,6 +199,7 @@
     color: $white;
     border-color: #cdb1fd;
     background-color: #cdb1fd;
+    border-radius: 34px;
   }
 }
 
@@ -182,5 +210,22 @@
   @media (max-width: 541px) {
     padding: 0.5rem 5rem;
     font-size: 19px;
+  }
+}
+
+
+.btn-cancel{
+    background-color: $col_99;
+    border-color: $col_99;
+  &:hover {
+    background-color: #838080;
+    border-color: #838080;
+  }
+
+  &:focus {
+    text-decoration: none;
+    border-radius: 34px;
+    background-color: #686666;
+    border-color: #686666;
   }
 }

@@ -33,7 +33,8 @@ $field2_lc: $a !default;
 $calendar_c1: #E3C7FF !default;
 // Color system
 
-$white:    #fff !default;
+$col_99:   #999999 !default;
+$white:    #fff    !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -44,7 +45,7 @@ $gray-700: #495057 !default;
 $gray-777: #777777 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #000    !default;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default

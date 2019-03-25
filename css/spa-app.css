@@ -9749,7 +9749,7 @@ h3 {
   box-shadow: 0 0 29.64px 8.36px rgba(116, 27, 200, 0.15);
 }
 
-.btn-inline-custom, .btn-inline-custom4, .btn-inline-custom3, .btn-inline-custom2 {
+.btn-inline-custom, .btn-inline-custom5, .btn-inline-custom4, .btn-inline-custom3, .btn-inline-custom2 {
   color: #fff;
   background-color: #FF3C88;
   font-size: 1rem;
@@ -9758,12 +9758,12 @@ h3 {
   border: 2px solid #FF3C88;
   font-family: "RubikRegular", sans-serif;
 }
-.btn-inline-custom:hover, .btn-inline-custom4:hover, .btn-inline-custom3:hover, .btn-inline-custom2:hover {
+.btn-inline-custom:hover, .btn-inline-custom5:hover, .btn-inline-custom4:hover, .btn-inline-custom3:hover, .btn-inline-custom2:hover {
   color: #fff;
   border-color: #cd2868;
   background-color: #cd2868;
 }
-.btn-inline-custom:focus, .btn-inline-custom4:focus, .btn-inline-custom3:focus, .btn-inline-custom2:focus {
+.btn-inline-custom:focus, .btn-inline-custom5:focus, .btn-inline-custom4:focus, .btn-inline-custom3:focus, .btn-inline-custom2:focus {
   color: #fff;
   border-color: #b01e56;
   background-color: #b01e56;
@@ -9802,6 +9802,7 @@ h3 {
   color: #fff;
   border-color: #3b287e;
   background-color: #3b287e;
+  border-radius: 34px;
 }
 .btn-inline-custom3 svg {
   width: 11px;
@@ -9826,10 +9827,32 @@ h3 {
   color: #fff;
   border-color: #3b287e;
   background-color: #3b287e;
+  border-radius: 34px;
 }
 .btn-inline-custom4 svg {
   width: 11px;
   margin-right: 3px;
+}
+
+.btn-inline-custom5 {
+  border: solid 1px #FF3C88;
+  border-radius: 10px;
+  background-color: #FF3C88;
+  padding: 0.63rem 5.7rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-inline-custom5:hover {
+  color: #fff;
+  border-color: #cd2868;
+  background-color: #cd2868;
+}
+.btn-inline-custom5:focus {
+  color: #fff;
+  border-color: #b01e56;
+  background-color: #b01e56;
+  border-radius: 34px;
 }
 
 .btn-outline-custom, .btn-outline-custom2 {
@@ -9879,6 +9902,7 @@ h3 {
   color: #fff;
   border-color: #cdb1fd;
   background-color: #cdb1fd;
+  border-radius: 34px;
 }
 
 .btn-custom-lg {
@@ -9891,6 +9915,21 @@ h3 {
     padding: 0.5rem 5rem;
     font-size: 19px;
   }
+}
+
+.btn-cancel {
+  background-color: #999999;
+  border-color: #999999;
+}
+.btn-cancel:hover {
+  background-color: #838080;
+  border-color: #838080;
+}
+.btn-cancel:focus {
+  text-decoration: none;
+  border-radius: 34px;
+  background-color: #686666;
+  border-color: #686666;
 }
 
 @media (max-width: 991px) {
@@ -10033,6 +10072,10 @@ h3 {
   }
 }
 
+.w-45 {
+  width: 45% !important;
+}
+
 .perfect-scrollbar2 {
   max-height: 410px;
   min-height: 200px;
@@ -10042,6 +10085,11 @@ h3 {
   .perfect-scrollbar2 {
     overflow: auto;
   }
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .navbar-collapse {

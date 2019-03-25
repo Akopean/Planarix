@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Rubik:400,500,700" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fine-uploader@5.16.2/jquery.fine-uploader/fine-uploader-gallery.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/fine-uploader@5.16.2/jquery.fine-uploader/fine-uploader-gallery.min.css">
     <link rel="stylesheet" href="./css/app.css">
     <title>Hello, world!</title>
 </head>
@@ -66,7 +67,7 @@
 </header>
 <!-- /header -->
 <div class="wrapper">
-    <main class="l_site-main">
+    <main id="l_site-main" class="l_site-main">
         <div class="container">
             <div class="row">
                 <div id="sidenav" class="col-xl-4 sidenav d-flex justify-content-center p-0">
@@ -332,23 +333,38 @@
                         <div class="l_site-new_post">
                             <div class="row">
                                 <div class="col-12 col-xl-10">
-                                    <form action="" method="post" enctype="multipart/form-data">
+                                    <form action="" method="post" id="create_post" enctype="multipart/form-data">
                                         <div class="account_select">
                                             <div class="form-group">
                                                 <label class="account_select-title" for="account_select">Select an
                                                     account to publish</label>
-                                                <select  class="form-control publish_account custom_select" name="account_select" id="account_select">
-                                                    <option value="calendar" data-image="./images/user_photo.jpg">Calendar</option>
-                                                    <option value="shopping_cart" data-image="./images/user_photo.jpg">Shopping Cart</option>
+                                                <select class="form-control publish_account custom_select"
+                                                        name="account_select" id="account_select">
+                                                    <option value="calendar" data-image="./images/user_photo.jpg">
+                                                        Calendar
+                                                    </option>
+                                                    <option value="shopping_cart" data-image="./images/user_photo.jpg">
+                                                        Shopping Cart
+                                                    </option>
                                                     <option value="cd" data-image="./images/user_photo.jpg">CD</option>
-                                                    <option value="email"  selected="selected" title="./images/user_photo.jpg">Email</option>
-                                                    <option value="faq" data-image="./images/user_photo.jpg">FAQ</option>
-                                                    <option value="games" data-image="./images/user_photo.jpg">Games</option>
-                                                    <option value="shopping_cart" data-image="./images/user_photo.jpg">Shopping Cart</option>
+                                                    <option value="email" selected="selected"
+                                                            title="./images/user_photo.jpg">Email
+                                                    </option>
+                                                    <option value="faq" data-image="./images/user_photo.jpg">FAQ
+                                                    </option>
+                                                    <option value="games" data-image="./images/user_photo.jpg">Games
+                                                    </option>
+                                                    <option value="shopping_cart" data-image="./images/user_photo.jpg">
+                                                        Shopping Cart
+                                                    </option>
                                                     <option value="cd" data-image="./images/user_photo.jpg">CD</option>
-                                                    <option value="email"  selected="selected" title="./images/user_photo.jpg">Email</option>
-                                                    <option value="faq" data-image="./images/user_photo.jpg">FAQ</option>
-                                                    <option value="games" data-image="./images/user_photo.jpg">Games</option>
+                                                    <option value="email" selected="selected"
+                                                            title="./images/user_photo.jpg">Email
+                                                    </option>
+                                                    <option value="faq" data-image="./images/user_photo.jpg">FAQ
+                                                    </option>
+                                                    <option value="games" data-image="./images/user_photo.jpg">Games
+                                                    </option>
                                                 </select>
                                             </div>
                                         </div>
@@ -359,16 +375,44 @@
                                         </div>
                                         <div class="template_select">
                                             <div class="form-group">
-                                                <label class="template_select-title" for="template_select">Select template</label>
-                                                <select  class="form-control custom_select" name="template_select" id="template_select">
-                                                    <option value="calendar" data-description="Шаблон 1">#sun #summer #girl #like</option>
-                                                    <option value="shopping_cart" data-description="Шаблон Test">#sun #summer #girl #like #sun #summer #girl #like #sun #summer #girl #like</option>
+                                                <label class="template_select-title" for="template_select">Select
+                                                    template</label>
+                                                <select class="form-control custom_select" name="template_select"
+                                                        id="template_select">
+                                                    <option value="calendar" data-description="Шаблон 1">#sun #summer
+                                                        #girl #like
+                                                    </option>
+                                                    <option value="shopping_cart" data-description="Шаблон Test">#sun
+                                                        #summer #girl #like #sun #summer #girl #like #sun #summer #girl
+                                                        #like
+                                                    </option>
                                                     <option value="cd" data-description="Шаблон 2">CD</option>
                                                     <option value="email" data-description="Шаблон 5">Email</option>
                                                     <option value="faq" data-description="Шаблон 31">FAQ</option>
                                                 </select>
                                             </div>
-                                            <button type="submit" class="btn btn-inline-custom4">Change</button>
+                                        </div>
+                                        <div class="post_description">
+                                            <div class="form-group">
+                                                <label class="post_description-label" for="post_description">Enter a description of post</label>
+                                                <div class="post_description-decorator">
+                                                <textarea class="form-control" id="post_description"
+                                                          rows="8" placeholder="Type here"></textarea>
+                                                    <div id="count_message">0/2000</div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                        <div class="post_comment">
+                                            <div class="form-group">
+                                                <label class="post_comment-label" for="post_comment">Enter the first comment</label>
+                                                <textarea class="form-control" id="post_comment"
+                                                          rows="9" placeholder="Type here"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="reset" class="btn btn-inline-custom4 w-45 btn-cancel px-0">Отмена</button>
+                                            <button type="button" class="btn btn-inline-custom4 w-45 float-right px-0">Что-то дабавить</button>
+                                            <button type="submit" class="btn btn-inline-custom5 w-100 mt-3">Опубликовать моментально</button>
                                         </div>
                                     </form>
                                 </div>
@@ -476,7 +520,8 @@
 <script type="text/template" id="qq-template">
     <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Drop files here">
         <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
-            <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+            <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                 class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
         </div>
         <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
             <span class="qq-upload-drop-area-text-selector"></span>
@@ -488,11 +533,13 @@
                 <span>Processing dropped files...</span>
                 <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
             </span>
-        <ul class="qq-upload-list-selector qq-upload-list" role="region" aria-live="polite" aria-relevant="additions removals">
+        <ul class="qq-upload-list-selector qq-upload-list" role="region" aria-live="polite"
+            aria-relevant="additions removals">
             <li>
                 <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
                 <div class="qq-progress-bar-container-selector qq-progress-bar-container">
-                    <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
+                    <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                         class="qq-progress-bar-selector qq-progress-bar"></div>
                 </div>
                 <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
                 <div class="qq-thumbnail-wrapper">
@@ -507,7 +554,8 @@
                 <div class="qq-file-info">
                     <div class="qq-file-name">
                         <span class="qq-upload-file-selector qq-upload-file"></span>
-                        <span class="qq-edit-filename-icon-selector qq-btn qq-edit-filename-icon" aria-label="Edit filename"></span>
+                        <span class="qq-edit-filename-icon-selector qq-btn qq-edit-filename-icon"
+                              aria-label="Edit filename"></span>
                     </div>
                     <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
                     <span class="qq-upload-size-selector qq-upload-size"></span>
@@ -553,20 +601,26 @@
 <script src="./js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fine-uploader@5.16.2/jquery.fine-uploader/jquery.fine-uploader.min.js"></script>
 <script>
-
+    $("#create_post").submit(function (event) {
+        event.preventDefault();
+        console.log($('form#create_post').serialize());
+    });
     // Some options to pass to the uploader are discussed on the next page
     var uploader = new qq.FineUploader({
         element: document.getElementById("uploader")
-    })
+    });
 
-        $(document).ready(function(e) {
-            // activate Custom Select
-            try {
-                $("body .custom_select").msDropDown();
-            } catch(e) {
-                alert(e.message);
-            }
+    $(document).ready(function (e) {
+        $('#post_description').keyup(function() {
+            $('#count_message').html($('#post_description').val().length + '/2000');
         });
+        // activate Custom Select
+        try {
+            $("body .custom_select").msDropDown();
+        } catch (e) {
+            alert(e.message);
+        }
+    });
 </script>
 </body>
 </html>

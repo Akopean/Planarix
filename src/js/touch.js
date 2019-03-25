@@ -13,16 +13,16 @@ $(function () {
         touch_right_delta_x: 0
     };
     /** body Touch  Right */
-    document.body.addEventListener('touchstart', function (e) {
+   /* document.getElementById('l_site-main').addEventListener('touchstart', function (e) {
         if (e.touches.length !== 1 || body_touch.touch_right_started) {
             return;
         }
         body_touch.touch_right_detecting = body_touch.touch_right_started = true;
         // Запоминаем текущее касание и его координаты
         body_touch.touch_right_delta_x = e.changedTouches[0].pageX;
-    }, false);
+    }, true);
 
-    document.body.addEventListener('touchmove', function (e) {
+    document.getElementById('l_site-main').addEventListener('touchmove', function (e) {
         if (!body_touch.touch_right_started && !body_touch.touch_right_detecting) {
             return;
         }
@@ -37,7 +37,7 @@ $(function () {
         }
     }, false);
 
-    document.body.addEventListener('touchend', function (e) {
+    document.getElementById('l_site-main').addEventListener('touchend', function (e) {
         if (e.touches.length >= 1 && !body_touch.touch_right_started) {
             return;
         }
@@ -45,10 +45,10 @@ $(function () {
 
         body_touch.touch_right_delta < 0 && swiperightHandler();
     }, false);
-
+*/
 
     /** Sidenav  Touch  Left */
-    document.getElementById('sidenav').addEventListener('touchstart', function (e) {
+ /*   document.getElementById('sidenav').addEventListener('touchstart', function (e) {
         if (e.touches.length !== 1 || sidenav.touch_right_started) {
             return;
         }
@@ -90,5 +90,5 @@ $(function () {
     function swipeleftHandler() {
         $("body").removeClass("r-menu_show");
     }
-
+*/
 });
