@@ -1,0 +1,29 @@
+@import "../variables";
+
+%profile_container_br-b {
+  @media (max-width: 1200px) {
+    text-align: center;
+    ::-webkit-input-placeholder {
+      text-align: center;
+
+    }
+    :-moz-placeholder {
+      text-align: center;
+
+    }
+    input {
+      text-align: center;
+    }
+  }
+}
+
+%title {
+  font-size: 1.125rem;
+  color: $a;
+  margin-bottom: 0.9375rem;
+  font-weight: 500;
+}
+
+%container{
+  padding-top: 2rem;
+}

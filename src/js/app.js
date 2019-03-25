@@ -8,6 +8,9 @@ require('bootstrap');
 
 import PerfectScrollbar from 'perfect-scrollbar';
 
+require('./touch.js');
+require('./jquery.dd.min.js');
+
 //Init Scrollbar
 if($('.perfect-scrollbar').length && window.innerWidth > 768) {
     const ps = new PerfectScrollbar('.perfect-scrollbar', {
