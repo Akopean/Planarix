@@ -521,21 +521,8 @@
 <!-- /wrapper -->
 <!-- Main JavaScript -->
 <script src="./js/app.js"></script>
-<script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 <script>
-    //Touch Right  Menu
     $(function () {
-        $.mobile.loading('hide');
-        $("body").on("swiperight", swiperightHandler);
-        $(".sidenav").on("swipeleft", swipeleftHandler);
-
-        function swiperightHandler(event) {
-            $("body").addClass("r-menu_show");
-        }
-
-        function swipeleftHandler(event) {
-            $("body").removeClass("r-menu_show");
-        }
     });
 </script>
 </body>

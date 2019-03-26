@@ -11,13 +11,10 @@
 .ddcommon .disabled img, .ddcommon .disabled span, .ddcommon.disabledAll{
     opacity: .5; /* standard: ff gt 1.5, opera, safari */
     -ms-filter:"alpha(opacity=50)"; /* ie 8 */
-    filter:alpha(opacity=50); /* ie lt 7 */
-    -khtml-opacity:.5; /* safari 1.x */
-    -moz-opacity:.5; /* ff lt 1.5, netscape */
     color:#999999;
 }
 
-.ddcommon{max-width: 100%; padding: 5px 0 0 30px;}
+.ddcommon{max-width: 100%; padding: 5px 0 5px 30px;}
 .ddcommon .clear{clear:both}
 .ddcommon .shadow{-moz-box-shadow:5px 5px 5px -5px #888888;-webkit-box-shadow:5px 5px 5px -5px #888888;box-shadow: 5px 5px 5px -5px #888888;}
 .ddcommon input.text{color:#7e7e7e;padding:0 0 0 0; position:absolute; background:#fff; display:block; width:98%; height:98%; left:2px; top:0; border:none;}

@@ -1,46 +1,29 @@
 @import "../variables";
 @import "util";
 
-/* timeline_profile  */
-
-.l_site-timeline_profile {
-  .timeline_profile-title {
-    @extend %container;
-    @extend %title;
-    padding-bottom: 0;
-    @media (max-width: 1200px) {
-      text-align: center;
-    }
-  }
-}
-
 .l_site-new_post {
 
 }
 
 .account_select {
   @extend %container;
-
-  .account_select-title {
+  .account_select-label {
     @extend %title;
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
   }
 }
 
 .template_select {
   margin-bottom: 1.5625rem;
-  .template_select-title {
+  .template_select-label {
     @extend %title;
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
   }
   .ddcommon .ddTitle .description, .dd .ddChild li .description {
-    display: inline-flex;
-    float: left;
-    font-size: 16px;
-    font-weight: 500;
-    color: #2c2d2e;
-    margin-right: 20px;
-  }
-
-  .ddcommon .ddTitle .ddTitleText .ddlabel, .dd .ddChild li .ddlabel {
     color: #999999;
     font-size: 16px;
     display: inline-flex;
@@ -49,6 +32,29 @@
     text-overflow: ellipsis;
     max-width: 300px;
     cursor: pointer;
+  }
+  .ddcommon .ddTitle .description {
+    @media (max-width: 578px) {
+      max-width: 200px;
+    }
+  }
+  .ddcommon .ddTitle .ddTitleText .ddlabel, .dd .ddChild li .ddlabel {
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c2d2e;
+    margin-right: 20px;
+    @media (max-width: 578px) {
+      display: block;
+    }
+  }
+  .ddcommon .ddTitle .description, .dd .ddChild li{
+    margin-left: 1.875rem;
+  }
+  .dd .ddChild li .description, .ddcommon .ddTitle .description {
+    @media (max-width: 578px) {
+       margin-left: 0;
+    }
   }
 }
 
@@ -74,7 +80,9 @@
     opacity: 0;
     height: 100%;
   }
-
+  .qq-gallery.qq-uploader:before{
+    content: "Drop files here";
+  }
   .qq-gallery .qq-upload-list li {
     margin: 0 25px 25px 1px;
   }
@@ -87,8 +95,11 @@
 
 .post_description{
   margin-bottom: 1.5625rem;
-  .post_description-label {
+  .post_description-title {
     @extend %title;
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
   }
   textarea{
     @extend %textarea;
@@ -120,8 +131,11 @@
 
 .post_comment{
   margin-bottom: 1.5625rem;
-  .post_comment-label {
+  .post_comment-title {
     @extend %title;
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
   }
   textarea{
     @extend %textarea;

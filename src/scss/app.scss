@@ -510,6 +510,9 @@ button:focus {
     }
 
     .l_site-content-title{
+      @media (max-width: 1024px) {
+        text-align: center;
+      }
       h3 {
         display: inline-flex;
         padding: 0.625rem 0;
