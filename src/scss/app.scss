@@ -234,6 +234,22 @@ button:focus {
     }
   }
 
+  .add_account & {
+    background-image: url(../images/element.png);
+    background-repeat: no-repeat;
+    background-position: 81vw calc(100% + 115px);
+    height: 100%;
+    background-size: 22%;
+    @media (max-width: 1300px) {
+      background-position: 78vw calc(100% + 130px);
+      background-size: 25%;
+    }
+    @media (max-width: 1024px) {
+      background: none;
+      height: auto;
+    }
+  }
+
   .sidenav {
     border-width: 1px;
     border-color: $aside_bc;

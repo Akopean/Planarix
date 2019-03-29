@@ -11191,6 +11191,25 @@ button:focus {
     padding-top: 15vh;
   }
 }
+.add_account .l_site-main {
+  background-image: url(../images/element.png);
+  background-repeat: no-repeat;
+  background-position: 81vw calc(100% + 115px);
+  height: 100%;
+  background-size: 22%;
+}
+@media (max-width: 1300px) {
+  .add_account .l_site-main {
+    background-position: 78vw calc(100% + 130px);
+    background-size: 25%;
+  }
+}
+@media (max-width: 1024px) {
+  .add_account .l_site-main {
+    background: none;
+    height: auto;
+  }
+}
 .l_site-main .sidenav {
   border-width: 1px;
   border-color: #F3EDFB;
