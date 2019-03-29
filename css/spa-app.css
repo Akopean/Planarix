@@ -9932,6 +9932,49 @@ h3 {
   border-color: #686666;
 }
 
+.switch_box {
+  margin-right: 1rem;
+}
+
+/* Switch 1 Specific Styles Start */
+input[type=checkbox].switch {
+  font-size: 24px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 2em;
+  height: 1em;
+  background: #EEEEEE;
+  border-radius: 3em;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type=checkbox].switch:checked {
+  background: #EEEEEE;
+}
+
+input[type=checkbox].switch:after {
+  position: absolute;
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: #FFB0D0;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  left: -6px;
+  top: -6px;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type=checkbox].switch:checked:after {
+  left: calc(100% - 1.2em);
+  background-color: #FF398B;
+}
+
 @media (max-width: 991px) {
   .ch-100 {
     height: unset !important;
@@ -10018,7 +10061,7 @@ h3 {
   box-shadow: none;
 }
 
-.custom-field, .custom-field2 {
+.custom-field, .custom-field3, .custom-field2 {
   border-radius: 10px;
   background-color: #fff;
   border: none;
@@ -10027,7 +10070,7 @@ h3 {
   padding: 2.1875rem 1.5625rem;
 }
 @media (max-width: 1600px) {
-  .custom-field, .custom-field2 {
+  .custom-field, .custom-field3, .custom-field2 {
     padding: 1.8rem 1.5625rem;
   }
 }
@@ -10048,6 +10091,54 @@ h3 {
   color: #777777;
   background-color: #FFFDFD;
   border: 1px solid #F3EDFB;
+  outline: 0;
+  box-shadow: none;
+}
+
+.custom-field3 {
+  background-color: #FFFDFD;
+  border: 1px solid #F3EDFB;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #777777;
+  font-family: Rubik, sans-serif;
+  padding: 1.9rem 1.5625rem;
+}
+.custom-field3:-moz-placeholder {
+  color: #777777;
+}
+.custom-field3::-webkit-input-placeholder {
+  color: #777777;
+}
+@media (max-width: 1600px) {
+  .custom-field3 {
+    padding: 1.8rem 1.5625rem;
+  }
+}
+.custom-field3:focus {
+  color: #777777;
+  background-color: #FFFDFD;
+  border: 1px solid #F3EDFB;
+  outline: 0;
+  box-shadow: none;
+}
+
+.custom-control {
+  border: 1px solid #f3edfb;
+  border-radius: 10px;
+  background-color: #fffdfd;
+  resize: none;
+  padding: 1rem 1.5625rem;
+}
+.custom-control:-moz-placeholder {
+  color: #777777;
+}
+.custom-control::-webkit-input-placeholder {
+  color: #777777;
+}
+.custom-control:focus {
+  border: 1px solid #f3edfb;
+  background-color: #FFFDFD;
   outline: 0;
   box-shadow: none;
 }
@@ -10076,6 +10167,16 @@ h3 {
   width: 45% !important;
 }
 
+.w-60 {
+  width: 60% !important;
+}
+
+@media (min-width: 1200px) {
+  .w-xl-60 {
+    width: 60% !important;
+  }
+}
+
 .perfect-scrollbar2 {
   max-height: 410px;
   min-height: 200px;
@@ -10090,6 +10191,58 @@ h3 {
 label {
   display: block;
   margin-bottom: 0.5rem;
+}
+
+.table-bordered {
+  border: 1px solid #F3EDFB;
+}
+.table-bordered .switch_box {
+  margin: 0;
+}
+
+.table-bordered td {
+  border: 1px solid #F3EDFB;
+  text-align: center;
+  vertical-align: inherit;
+}
+
+.table thead {
+  background-color: #F9F9F9;
+}
+
+.table thead th, .table-bordered th, .table-bordered thead td {
+  border: none;
+  text-align: center;
+  min-width: 150px;
+  vertical-align: inherit;
+}
+
+.table-stripe tbody tr:nth-of-type(even) {
+  background-color: #F9F9F9;
+}
+
+.table-bordered th {
+  color: #2c2d2e;
+  font-weight: 400;
+  font-family: Rubik, sans-serif;
+}
+
+.table .custom-field2 {
+  height: calc(1.5em + 5px);
+  padding: 0 1.5625rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.responsive-table {
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 1199px) {
+  .responsive-table {
+    display: block;
+    width: 95vw;
+    overflow-x: auto;
+  }
 }
 
 .navbar-collapse {
@@ -10113,7 +10266,7 @@ label {
 }
 
 @media (max-width: 991px) {
-  .collapse {
+  .navbar .collapse {
     position: fixed;
     width: 100%;
     z-index: 20;
@@ -10126,7 +10279,7 @@ label {
     opacity: 1;
     visibility: visible;
   }
-  .collapse .l_header--menu {
+  .navbar .collapse .l_header--menu {
     margin: auto;
     align-items: center;
   }
@@ -10139,7 +10292,7 @@ label {
 }
 
 @media (max-width: 991px) {
-  .collapse:not(.show) {
+  .navbar .collapse:not(.show) {
     display: flex;
     visibility: hidden;
     opacity: 0;

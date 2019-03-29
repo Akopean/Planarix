@@ -1,0 +1,99 @@
+@import "../variables";
+
+.l_add-account-container{
+  .accordion{
+    margin-bottom: 2.375rem;
+    .card{
+      border: none;
+      .card-header {
+        padding: .95rem 1.25rem;
+        background-color: #EDEFFF;
+        h2 {
+          font-size: 1.125rem;
+          font-family: Rubik, sans-serif;
+          color: #1F2022;
+          font-weight: 400;
+          .rules_desc {
+            border-bottom: 3px solid #6244c9;
+            float: right;
+            height: 3px;
+            width: 20px;
+            cursor: pointer;
+            margin-top: .55rem;
+            @media (max-width: 576px){
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      .card-body{
+        max-height: 250px;
+        overflow-y: auto;
+        background-color: #F8FBFC;
+        line-height: 1.66;
+      }
+    }
+  }
+}
+
+.l_add-account-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.5625rem;
+  font-family: Rubik, sans-serif;
+  @media (max-width: 1600px){
+    font-size: 2.8rem;
+  }
+  @media (max-width: 800px){
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 568px){
+    font-size: 2.4rem;
+  }
+}
+
+.l_add-account-sub_title{
+  font-size: 1.125rem;
+  font-family: Rubik, sans-serif;
+  color: #c3c1c1;
+  line-height: 1.333;
+  margin-bottom: 1.25rem;
+}
+
+.account_form-container{
+  .account_form-title{
+    margin-bottom: 1.875rem;
+    font-size: 1.5rem;
+    color: #2C2D2E;
+    line-height: 1.5;
+    a{
+      color: #B1BCFF;
+      border-bottom: 2px solid #B1BCFF;
+      &:hover,&:focus {
+        color: #c6ceff;
+        border-bottom: 2px solid #c6ceff;
+      }
+    }
+  }
+  .account_form {
+    max-width: 570px;
+    margin: auto;
+    @media (max-width: 576px){
+      text-align: center;
+    }
+    label{
+      font-weight: 500;
+      font-size: 1.125rem;
+    }
+    input{
+      color: #2c2d2e;
+      font-weight: 500;
+      font-family: Montserrat, sans-serif;
+      @media (max-width: 576px){
+        text-align: center;
+      }
+    }
+  }
+}
+

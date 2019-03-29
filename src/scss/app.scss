@@ -190,13 +190,16 @@ button:focus {
 .l_site-main {
   @import "profile/profile";
   @import "create_publications/create_publications";
+  @import "add_description/add_description";
+  @import "add_account/add_account";
+  @import "description_templates/description_templates";
   @media (max-width: 991px) {
     margin-top: 3.5rem;
   }
   @media (min-width: 1200px) {
     //margin-bottom: 210px;
   }
-  .registration &{
+  .registration & {
     background-image: url(../images/element.png);
     background-repeat: no-repeat;
     background-position: 62vw calc(100% + 115px);
@@ -213,6 +216,24 @@ button:focus {
       padding-top: 20vh;
     }
   }
+  .add_description & {
+    background-image: url(../images/element.png);
+    background-repeat: no-repeat;
+    background-position: 68vw calc(100% + 75px);
+    height: 100%;
+    background-size: contain;
+    @media (max-width: 1300px) {
+      background-position: 70vw calc(100% + 130px);
+    }
+    @media (max-width: 576px) {
+      height: initial;
+      background-position: 45vw calc(100% + 130px);
+    }
+    @media (min-width: 2000px) {
+      padding-top: 15vh;
+    }
+  }
+
   .sidenav {
     border-width: 1px;
     border-color: $aside_bc;
@@ -223,7 +244,7 @@ button:focus {
       transform: none !important;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
       //position: relative;
       aside {
         height: auto;
@@ -507,6 +528,13 @@ button:focus {
     margin-bottom: 1.875rem;
     @media (max-width: 576px) {
       margin-bottom: 0.9375rem;
+    }
+
+    .profile & {
+      @media (max-width: 1199px) {
+      max-width: 500px;
+      margin: 0 auto;
+      }
     }
 
     .l_site-content-title{

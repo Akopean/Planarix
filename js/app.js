@@ -18871,7 +18871,9 @@ module.exports = g;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var perfect_scrollbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! perfect-scrollbar */ "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js");
+/* harmony import */ var _touch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./touch */ "./src/js/touch.js");
+/* harmony import */ var perfect_scrollbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! perfect-scrollbar */ "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js");
+
 window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js").default;
 
@@ -18881,11 +18883,19 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 __webpack_require__(/*! ./touch.js */ "./src/js/touch.js");
 
-__webpack_require__(/*! ./jquery.dd.min.js */ "./src/js/jquery.dd.min.js"); //Init Scrollbar
+__webpack_require__(/*! ./jquery.dd.min.js */ "./src/js/jquery.dd.min.js"); //add Touch sidebar left
 
+
+new _touch__WEBPACK_IMPORTED_MODULE_0__["default"]('#sidenav', function () {
+  $("body").removeClass("r-menu_show");
+}).left(); //add Touch body right
+
+new _touch__WEBPACK_IMPORTED_MODULE_0__["default"]('.wrapper', function () {
+  $("body").addClass("r-menu_show");
+}).right(); //Init Scrollbar
 
 if ($('.perfect-scrollbar').length && window.innerWidth > 768) {
-  var ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"]('.perfect-scrollbar', {
+  var ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_1__["default"]('.perfect-scrollbar', {
     wheelSpeed: 2,
     wheelPropagation: true,
     minScrollbarLength: 20
@@ -18894,7 +18904,7 @@ if ($('.perfect-scrollbar').length && window.innerWidth > 768) {
 
 
 if ($('.perfect-scrollbar2').length && window.innerWidth > 768) {
-  var _ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"]('.perfect-scrollbar2', {
+  var _ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_1__["default"]('.perfect-scrollbar2', {
     wheelSpeed: 2,
     wheelPropagation: true,
     minScrollbarLength: 20
@@ -18980,94 +18990,90 @@ eval(function (p, a, c, k, _e, r) {
 /*!*************************!*\
   !*** ./src/js/touch.js ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-//Touch Right  Menu
-$(function () {
-  var body_touch = {
-    touch_started: false,
-    touch_detecting: false,
-    touch_delta: null,
-    touch_delta_x: 0
-  };
-  var sidenav = {
-    touch_started: false,
-    touch_detecting: false,
-    touch_delta: null,
-    touch_delta_x: 0
-  };
-  /** body Touch  Right */
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Touch; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  document.getElementById('l_site-main').addEventListener('touchstart', function (e) {
-    if (e.touches.length !== 1 || body_touch.touch_started) {
-      return;
-    }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-    body_touch.touch_detecting = true; // Запоминаем текущее касание и его координаты
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-    body_touch.touch_delta_x = e.changedTouches[0].pageX;
-  }, false);
-  document.getElementById('l_site-main').addEventListener('touchmove', function (e) {
-    if (e.touches.length !== 1 && !body_touch.touch_detecting) {
-      return;
-    }
+var Touch =
+/*#__PURE__*/
+function () {
+  function Touch(el, callback) {
+    _classCallCheck(this, Touch);
 
-    if (!body_touch.touch_started) {
-      e.preventDefault();
-      body_touch.touch_started = true;
-      body_touch.touch_delta = body_touch.touch_delta_x - e.changedTouches[0].pageX;
-    }
-  }, false);
-  document.getElementById('l_site-main').addEventListener('touchend', function (e) {
-    if (e.touches.length !== 1 && !body_touch.touch_started) {
-      return;
-    }
-
-    e.preventDefault();
-    body_touch.touch_started = body_touch.touch_detecting = false;
-    body_touch.touch_delta < 0 && swiperightHandler();
-  }, false);
-  /** Sidenav  Touch  Left */
-
-  document.getElementById('sidenav').addEventListener('touchstart', function (e) {
-    if (e.touches.length !== 1 || sidenav.touch_started) {
-      return;
-    }
-
-    sidenav.touch_detecting = true; // Запоминаем текущее касание и его координаты
-
-    sidenav.touch_delta_x = e.changedTouches[0].pageX;
-  }, false);
-  document.getElementById('sidenav').addEventListener('touchmove', function (e) {
-    if (e.touches.length !== 1 && !sidenav.touch_detecting) {
-      return;
-    }
-
-    if (!sidenav.touch_started) {
-      e.preventDefault();
-      sidenav.touch_started = true;
-      sidenav.touch_delta = sidenav.touch_delta_x - e.changedTouches[0].pageX;
-    }
-  }, false);
-  document.getElementById('sidenav').addEventListener('touchend', function (e) {
-    if (e.touches.length !== 1 && !sidenav.touch_started) {
-      return;
-    }
-
-    e.preventDefault();
-    sidenav.touch_started = sidenav.touch_detecting = false;
-    sidenav.touch_delta > 0 && swipeleftHandler();
-  }, false);
-
-  function swiperightHandler() {
-    $("body").addClass("r-menu_show");
+    this.el = el;
+    this.touch_started = false;
+    this.touch_detecting = false;
+    this.touch_delta = null;
+    this.touch_delta_x = 0;
+    this.callback = callback;
   }
 
-  function swipeleftHandler() {
-    $("body").removeClass("r-menu_show");
-  }
-});
+  _createClass(Touch, [{
+    key: "left",
+    value: function left() {
+      this.touch('left');
+    }
+  }, {
+    key: "right",
+    value: function right() {
+      this.touch('right');
+    }
+  }, {
+    key: "touch",
+    value: function touch(direction) {
+      var _this = this;
+
+      $(this.el).bind('touchstart', this.el, function (e) {
+        if (e.touches.length !== 1 || _this.touch_started) {
+          return;
+        }
+
+        _this.touch_detecting = true; // Запоминаем текущее касание и его координаты
+
+        _this.touch_delta_x = e.changedTouches[0].pageX;
+      }, false);
+      $(this.el).bind('touchmove', this.el, function (e) {
+        if (e.touches.length !== 1 && !_this.touch_detecting) {
+          return;
+        }
+
+        if (!_this.touch_started) {
+          e.preventDefault();
+          _this.touch_started = true;
+          _this.touch_delta = _this.touch_delta_x - e.changedTouches[0].pageX;
+        }
+      }, false);
+      $(this.el).bind('touchend', this.el, function (e) {
+        if (e.touches.length !== 1 && !_this.touch_started) {
+          return;
+        }
+
+        e.preventDefault();
+        _this.touch_started = _this.touch_detecting = false;
+
+        if (_this.touch_delta > 0 && direction === 'left') {
+          _this.callback();
+        }
+
+        if (_this.touch_delta < 0 && direction === 'right') {
+          _this.callback();
+        }
+      }, false);
+    }
+  }]);
+
+  return Touch;
+}();
+
+
 
 /***/ }),
 

@@ -1,91 +1,56 @@
-//Touch Right  Menu
-$(function () {
-    const body_touch = {
-        touch_started: false,
-        touch_detecting: false,
-        touch_delta: null,
-        touch_delta_x: 0
+ export default class Touch{
+    constructor(el, callback) {
+        this.el = el;
+        this.touch_started = false;
+        this.touch_detecting = false;
+        this.touch_delta = null;
+        this.touch_delta_x = 0;
+        this.callback = callback;
+    }
+    left(){
+         this.touch('left');
     };
-    const sidenav = {
-        touch_started: false,
-        touch_detecting: false,
-        touch_delta: null,
-        touch_delta_x: 0
+    right() {
+        this.touch('right');
     };
-    /** body Touch  Right */
-     document.getElementById('l_site-main').addEventListener('touchstart', function (e) {
-         if (e.touches.length !== 1 || body_touch.touch_started) {
-             return;
-         }
-         body_touch.touch_detecting = true;
-         // Запоминаем текущее касание и его координаты
-         body_touch.touch_delta_x = e.changedTouches[0].pageX;
-     }, false);
+    touch(direction){
+        $(this.el).bind('touchstart', this.el, (e) =>  {
 
-     document.getElementById('l_site-main').addEventListener('touchmove', function (e) {
-         if (e.touches.length !== 1&& !body_touch.touch_detecting) {
-             return;
-         }
+            if (e.touches.length !== 1 || this.touch_started) {
+                return;
+            }
 
-         if (!body_touch.touch_started) {
-             e.preventDefault();
-             body_touch.touch_started = true;
-             body_touch.touch_delta = body_touch.touch_delta_x - e.changedTouches[0].pageX;
+            this.touch_detecting = true;
+            // Запоминаем текущее касание и его координаты
+            this.touch_delta_x = e.changedTouches[0].pageX;
 
-         }
-     }, false);
+        }, false);
 
-     document.getElementById('l_site-main').addEventListener('touchend', function (e) {
-         if (e.touches.length !== 1 && !body_touch.touch_started) {
-             return;
-         }
-         e.preventDefault();
-         body_touch.touch_started = body_touch.touch_detecting = false;
-         body_touch.touch_delta < 0 && swiperightHandler();
-     }, false);
+        $(this.el).bind('touchmove', this.el,  (e) => {
+            if (e.touches.length !== 1 && !this.touch_detecting) {
+                return;
+            }
 
+            if (!this.touch_started) {
+                e.preventDefault();
+                this.touch_started = true;
+                this.touch_delta = this.touch_delta_x - e.changedTouches[0].pageX;
+            }
+        }, false);
 
-    /** Sidenav  Touch  Left */
-      document.getElementById('sidenav').addEventListener('touchstart', function (e) {
-
-          if (e.touches.length !== 1 || sidenav.touch_started) {
-              return;
-          }
-
-          sidenav.touch_detecting = true;
-          // Запоминаем текущее касание и его координаты
-          sidenav.touch_delta_x = e.changedTouches[0].pageX;
-
-      }, false);
-
-    document.getElementById('sidenav').addEventListener('touchmove', function (e) {
-        if (e.touches.length !== 1 && !sidenav.touch_detecting) {
-            return;
-        }
-
-        if (!sidenav.touch_started) {
+        $(this.el).bind('touchend', this.el, (e) =>  {
+            if (e.touches.length !== 1 && !this.touch_started) {
+                return;
+            }
             e.preventDefault();
-            sidenav.touch_started = true;
-            sidenav.touch_delta = sidenav.touch_delta_x - e.changedTouches[0].pageX;
-        }
-    }, false);
-
-    document.getElementById('sidenav').addEventListener('touchend', function (e) {
-        if (e.touches.length !== 1 && !sidenav.touch_started) {
-            return;
-        }
-
-        e.preventDefault();
-        sidenav.touch_started = sidenav.touch_detecting = false;
-        sidenav.touch_delta > 0 && swipeleftHandler();
-    }, false);
-
-    function swiperightHandler() {
-        $("body").addClass("r-menu_show");
+            this.touch_started = this.touch_detecting = false;
+            if(this.touch_delta > 0 && direction === 'left') {
+                this.callback();
+            }
+            if(this.touch_delta < 0 && direction === 'right') {
+                this.callback();
+            }
+        }, false);
     }
+}
 
-    function swipeleftHandler() {
-        $("body").removeClass("r-menu_show");
-    }
-
-});

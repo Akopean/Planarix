@@ -99,6 +99,7 @@
 }
 
 
+
 .form-control:focus {
   color: #495057;
   background-color: $white;
@@ -139,6 +140,44 @@
   }
 }
 
+.custom-field3{
+  @extend .custom-field;
+  background-color: #FFFDFD;
+  border: 1px solid $field2_brc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: $gray-777;
+  font-family: Rubik, sans-serif;
+  padding: 1.9rem 1.5625rem;
+  &:-moz-placeholder { color: $gray-777; }
+  &::-webkit-input-placeholder { color: $gray-777; }
+  @media (max-width: 1600px) {
+    padding: 1.8rem 1.5625rem;
+  }
+  &:focus {
+    color: $gray-777;
+    background-color: #FFFDFD;
+    border: 1px solid $field2_brc;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.custom-control {
+  border: 1px solid #f3edfb;
+  border-radius: 10px;
+  background-color: #fffdfd;
+  resize: none;
+  padding: 1rem 1.5625rem;
+  &:-moz-placeholder { color: $gray-777; }
+  &::-webkit-input-placeholder { color: $gray-777; }
+  &:focus {
+    border: 1px solid #f3edfb;
+    background-color: #FFFDFD;
+    outline: 0;
+    box-shadow: none;
+  }
+}
 
 .ui-page{
   height: 100%;
@@ -164,6 +203,15 @@
   width: 45% !important;
 }
 
+.w-60 {
+  width: 60% !important;
+}
+
+.w-xl-60 {
+  @media (min-width: 1200px) {
+    width: 60% !important;
+  }
+}
 
 .perfect-scrollbar2 {
   max-height: 410px;
@@ -177,4 +225,54 @@
 label {
   display: block;
   margin-bottom: 0.5rem;
+}
+
+
+.table-bordered {
+  border: 1px solid #F3EDFB;
+  .switch_box{
+    margin: 0;
+  }
+}
+
+.table-bordered td {
+  border: 1px solid #F3EDFB;
+  text-align: center;
+  vertical-align: inherit;
+}
+
+.table thead {
+ background-color: #F9F9F9;
+}
+
+.table thead th,.table-bordered th, .table-bordered thead td {
+  border: none;
+  text-align: center;
+  min-width: 150px;
+  vertical-align: inherit;
+}
+
+.table-stripe tbody tr:nth-of-type(even) {
+  background-color: #F9F9F9;
+}
+
+.table-bordered th{
+  color: $table_c;
+  font-weight: 400;
+  font-family: Rubik, sans-serif;
+}
+.table .custom-field2 {
+  height: calc(1.5em + 5px);
+  padding: 0 1.5625rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.responsive-table{
+  @media (max-width: 1199px) {
+    display: block;
+    width: 95vw;
+    overflow-x: auto;
+  }
+  -webkit-overflow-scrolling: touch;
 }

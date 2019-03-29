@@ -23,7 +23,7 @@
   z-index: 30;
 }
 
-.collapse{
+.navbar .collapse{
   @media (max-width: 991px) {
     position: fixed;
     width: 100%;
@@ -49,7 +49,7 @@
   }
 }
 
-.collapse:not(.show) {
+.navbar .collapse:not(.show) {
   @media (max-width: 991px) {
   display: flex;
   visibility: hidden;

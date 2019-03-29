@@ -1,0 +1,46 @@
+@import "../variables";
+
+
+
+.l_desc-templates-title {
+  margin-bottom: 3.125rem;
+  @media (max-width: 568px) {
+    margin-top: 1rem;
+  }
+}
+
+
+.l_desc-templates-container {
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
+  .add_desc-templates {
+    padding: 0.54rem 5.2rem;
+    margin-bottom: 2.1875rem;
+  }
+
+  .desc_templates-browse {
+    width: 24px;
+    height: 15px;
+    display: inline-block;
+    background: url(../images/sprite_btn.png) no-repeat -52px 0;
+    margin: 0 5px;
+  }
+
+  .desc_templates-edit {
+    width: 16px;
+    height: 15px;
+    display: inline-block;
+    background: url(../images/sprite_btn.png) no-repeat -34px 0;
+    margin: 0 5px;
+  }
+
+  .desc_templates-delete {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url(../images/sprite_btn.png) no-repeat 0 0;
+    margin: 0 6px;
+  }
+}

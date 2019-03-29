@@ -1,3 +1,4 @@
+import Touch from "./touch";
 
 window.$ = window.jQuery = require('jquery');
 
@@ -10,6 +11,17 @@ import PerfectScrollbar from 'perfect-scrollbar';
 
 require('./touch.js');
 require('./jquery.dd.min.js');
+
+
+//add Touch sidebar left
+new Touch('#sidenav', ()=> {
+    $("body").removeClass("r-menu_show");
+}).left();
+
+//add Touch body right
+new Touch('.wrapper', ()=> {
+    $("body").addClass("r-menu_show");
+}).right();
 
 //Init Scrollbar
 if($('.perfect-scrollbar').length && window.innerWidth > 768) {
