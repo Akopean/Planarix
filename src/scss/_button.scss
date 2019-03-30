@@ -22,6 +22,28 @@
 
 }
 
+.btn-inline-default {
+  color: $white;
+  background-color: $col_99;
+  font-size: 1rem;
+  border-radius: 1.25rem;
+  padding: 0.375rem 2.78rem;
+  border: 2px solid $col_99;
+  font-family: Rubik, sans-serif;
+
+  &:hover {
+    color: $white;
+    border-color: $col_68;
+    background-color: $col_68;
+  }
+
+  &:focus {
+    color: $white;
+    border-color: $col_83;
+    background-color: $col_83;
+  }
+}
+
 .btn-inline-custom {
   color: $white;
   background-color: $a_inline;
@@ -29,7 +51,7 @@
   border-radius: 1.25rem;
   padding: 0.375rem 2.78rem;
   border: 2px solid $a_inline;
-  font-family: 'RubikRegular', sans-serif;
+  font-family: Rubik, sans-serif;
 
   &:hover {
     color: $white;
@@ -70,7 +92,7 @@
   padding: 0.55rem 1.45rem;
   font-size: 0.875rem;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 
   &:hover {
     color: $white;
@@ -99,7 +121,7 @@
   padding: 0.63rem 5.7rem;
   font-size: 0.875rem;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 
   &:hover {
     color: $white;
@@ -128,7 +150,7 @@
   padding: 0.63rem 5.7rem;
   font-size: 0.875rem;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 
   &:hover {
     color: $white;
@@ -151,7 +173,7 @@
   border-radius: 1.25rem;
   padding: 0.375rem 2.78rem;
   border: 2px solid $a_inline;
-  font-family: 'RubikRegular', sans-serif;
+  font-family: Rubik, sans-serif;
 
   &:hover {
     color: $white;
@@ -239,7 +261,7 @@
 /* Switch 1 Specific Styles Start */
 
 input[type="checkbox"].switch{
-  font-size: 24px;
+  font-size: 1.5rem !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 2em;

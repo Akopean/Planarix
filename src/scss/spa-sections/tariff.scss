@@ -1,0 +1,240 @@
+@import "../variables";
+
+.l_tariff {
+  background-color: #F8FBFC;
+  padding-top: 3.4375rem;
+  z-index: 20;
+  position: relative;
+
+  .l_tariff--content {
+    background-color: #FFF;
+    margin-top: 1.25rem;
+    @media (max-width: 991px) {
+      background-color: unset;
+    }
+
+    .l_card--free {
+      @media (min-width: 992px) {
+        border-radius: 8px 0 0 8px !important;
+      }
+    }
+
+    .l_card--premium {
+      background: #FFF url(../images/tariff_bg_element.png) no-repeat 100% top;
+      background-size: 43%;
+      background-position: 126% -6%;
+      @media (min-width: 992px) {
+        border-radius: 0 8px 8px 0 !important;
+      }
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 13px 51px 0 rgba(68, 72, 230, 0.06);
+      border-right: 1px solid #F6EDFC;
+      border-radius: unset;
+      @media (max-width: 991px) {
+        margin-top: 0.3125rem;
+      }
+
+      &.current {
+        .card-body {
+          .card-title {
+            padding-bottom: 1rem;
+          }
+        }
+
+        .l_tar-footer {
+          .btn {
+            color: $white;
+            background-color: $a_inline2;
+            border: 2px solid $a_inline2;
+
+            &:hover {
+              color: $white;
+              border-color: $a_hover2;
+              background-color: $a_hover2;
+            }
+
+            &:focus {
+              color: $white;
+              border-color: $a_focus2;
+              background-color: $a_focus2;
+            }
+          }
+        }
+      }
+      &.disabled {
+        .card-body{
+          .l_tar-price{
+            color: $gray-80;
+          }
+        }
+        .l_tar-footer {
+          .btn {
+            color: $gray-80;
+            background-color: $white;
+            border: 2px solid $gray-80;
+            &:hover {
+              color: $gray-80;
+              border-color: $gray-80;
+              background-color: $white;
+            }
+
+            &:focus {
+              color: $gray-80;
+              border-color: $gray-80;
+              background-color: $white;
+            }
+          }
+        }
+      }
+      .card-body {
+        .card-title {
+          color: #BD90E4;
+          margin-top: 1.5625rem;
+          text-align: center;
+          border-bottom: 1px solid #F6EDFC;
+          padding-bottom: 2.0625rem;
+          font-weight: bold;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+
+          span {
+            display: block;
+            font-size: 14px;
+            color: #0e1a3f;
+            font-weight: 300;
+            text-transform: initial;
+          }
+        }
+
+        .l_tar-title--free {
+          color: #7e7e7e;
+        }
+
+        .card-list {
+          list-style: none;
+          padding-left: 0.9375rem;
+          font-size: 0.8125rem;
+          line-height: 1.5rem;
+
+          li {
+            &::before {
+              content: "";
+              border-radius: 50%;
+              background-color: #BD90E4;
+              position: absolute;
+              left: 17px;
+              width: 10px;
+              margin-top: 0.3125rem;
+              height: 11px;
+              z-index: 125;
+            }
+          }
+
+          li.inactive {
+            text-decoration: line-through;
+            color: #7f7f7f;
+          }
+        }
+
+        .l_tar-list--free {
+          li {
+            &::before {
+              background-color: #7e7e7e;
+            }
+          }
+        }
+
+        .l_tar-price {
+          margin-top: 1.875rem;
+          text-align: center;
+          //font-family: MontserratBold, sans-serif;
+          font-family: Montserrat, sans-serif;
+          font-weight: 700;
+          font-size: 2.9rem;
+
+          .l_tar-price--period {
+            font-size: 0.875rem;
+            color: #adadad;
+          }
+        }
+      }
+
+      .l_tar-footer {
+        margin-top: 1.25rem;
+      }
+
+      .l_tar-footer--free {
+        .btn-outline-custom {
+          color: #1a2547;
+          border-color: #1a2547;
+
+          &:hover {
+            color: #FFF;
+            background-color: #1a2547;
+            border-color: #1a2547;
+          }
+          &:focus {
+            color: #FFF;
+            background-color: #1a2547;
+            border-color: #1a2547;
+          }
+        }
+      }
+    }
+  }
+
+  .l_tariff--footer {
+    position: relative;
+    margin-top: 9.0625rem;
+    background-color: #612ADE;
+    color: #FFF;
+    padding-top: 2.5rem;
+    padding-bottom: 2.8125rem;
+    @media (max-width: 576px) {
+      width: calc(100% + 30px);
+      left: -15px;
+    }
+    @media (max-width: 1200px) {
+      margin-top: 3.75rem;
+    }
+
+    .l_tariff-footer--content {
+      position: relative;
+      z-index: 23;
+
+      .l_tariff--msg {
+        font-size: 1.45rem;
+        word-spacing: 6px;
+        margin: 0.25rem 0;
+        //font-family: "MontserratRegular", sans-serif;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+      }
+
+      .l_tariff-callback--msg {
+        font-size: 1.43rem;
+        word-spacing: 6px;
+        //font-family: MontserratBold, sans-serif;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        margin-bottom: 1.875rem;
+      }
+    }
+
+    &::after {
+      content: "";
+      background: url(../images/tariff_illustration.svg) no-repeat 70% bottom;
+      width: 232px;
+      height: 510px;
+      position: absolute;
+      right: 9%;
+      bottom: -100px;
+      @media (max-width: 1200px) {
+        content: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../variables";
+
+.edit_account & {
+  .l_site-content-title {
+    margin-bottom: 2.1875rem;
+    .nav-link {
+      position: relative;
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: #999999;
+      line-height: 2.642;
+      font-weight: 500;
+      @media (max-width: 576px) {
+        line-height: inherit;
+        text-align: center;
+      }
+      &.active {
+        color: #2c2d2e;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 1rem;
+          bottom: 0;
+          height: 6px;
+          width: 75%;
+          border-bottom: 6px solid #FF398B;
+          @media (max-width: 576px) {
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.l_site-edit_account{
+  input, textarea, label {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #2c2d2e;
+  }
+  input, label {
+    @media (max-width: 576px) {
+      text-align: center;
+    }
+  }
+  button[type="submit"] {
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+}
+
