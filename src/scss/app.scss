@@ -6,7 +6,7 @@
 @import "button";
 @import "util";
 @import "nav";
-@import "dd.css";
+@import "dd";
 
 html {
   position: relative;
@@ -196,6 +196,7 @@ button:focus {
   @import "edit_account/edit_account";
   @import "new_tariff/new_tariff";
   @import "spa-sections/tariff";
+  @import "report/report";
   @import "description_templates/description_templates";
   @media (max-width: 991px) {
     margin-top: 3.5rem;
@@ -591,7 +592,7 @@ button:focus {
           }
 
           .l_other_account-login {
-            display: inline-flex;
+            display: block;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
