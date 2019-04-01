@@ -8,10 +8,8 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Rubik:400,500,700" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/fine-uploader@5.16.2/jquery.fine-uploader/fine-uploader-gallery.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/app.css">
     <title>Hello, world!</title>
 </head>
@@ -79,8 +77,6 @@
                                     <li class="author">Адаменко Денис Олегович</li>
                                     <li class="date">12.08.2019 13:05</li>
                                     <li class="date_passed">Больше 3 месяцев назад</li>
-                                    <li class="rate"></li>
-
                                 </ul>
                             </div>
                             <div class="l_treatment-message_body">
@@ -98,6 +94,31 @@
                             <div class="l_treatment-message_info">
                                 <ul class="message_info-list">
                                     <li class="support">Support</li>
+                                    <li class="author">Адаменко Денис Олегович</li>
+                                    <li class="date">12.08.2019 13:05</li>
+                                    <li class="date_passed">Больше 3 месяцев назад</li>
+                                    <li class="rate">
+                                        <div class="rateyo"
+                                             data-rateyo-rating="2"
+                                             data-rateyo-num-stars="5">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="l_treatment-message_body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </div>
+                        </div>
+                        <div class="l_treatment-message_card">
+                            <div class="l_treatment-message_info">
+                                <ul class="message_info-list">
                                     <li class="author">Адаменко Денис Олегович</li>
                                     <li class="date">12.08.2019 13:05</li>
                                     <li class="date_passed">Больше 3 месяцев назад</li>
@@ -121,6 +142,12 @@
                                     <li class="author">Адаменко Денис Олегович</li>
                                     <li class="date">12.08.2019 13:05</li>
                                     <li class="date_passed">Больше 3 месяцев назад</li>
+                                    <li class="rate">
+                                        <div class="rateyo"
+                                             data-rateyo-rating="4"
+                                             data-rateyo-num-stars="5">
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="l_treatment-message_body">
@@ -136,8 +163,9 @@
                         </div>
                         <div class="l_treatment-closed">
                             <p>
-                                Обращение закрыто.<br />
-                                Если Вы желаете задать вопрос в техподдержку, пожалуйста, <a href="#">создайте новое обращение.</a>
+                                Обращение закрыто.<br/>
+                                Если Вы желаете задать вопрос в техподдержку, пожалуйста, <a href="#">создайте новое
+                                обращение.</a>
                             </p>
                         </div>
                         <div class="l_treatment-navigation">
@@ -244,8 +272,21 @@
 <!-- /wrapper -->
 <!-- Main JavaScript -->
 <script src="./js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script>
     $(document).ready(function (e) {
+
+        $(".rateyo").rateYo({
+            rating: 1.5,
+            fullStar: true,
+            multiColor: {
+                "startColor": "#987BDB",
+                "endColor": "#987BDB"
+            },
+            onSet: function (rating) {
+                console.log("Rating is set to: " + rating);
+            }
+        });
     });
 </script>
 </body>
