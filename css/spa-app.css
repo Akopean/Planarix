@@ -10254,17 +10254,6 @@ label {
   text-align: center;
 }
 
-.responsive-table {
-  -webkit-overflow-scrolling: touch;
-}
-@media (max-width: 1199px) {
-  .responsive-table {
-    display: block;
-    width: 95vw;
-    overflow-x: auto;
-  }
-}
-
 .navbar-collapse {
   transition: all 1s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);

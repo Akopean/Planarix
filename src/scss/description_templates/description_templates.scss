@@ -14,7 +14,14 @@
   @media (max-width: 767px) {
     text-align: center;
   }
-
+  .responsive-table{
+    @media (max-width: 1199px) {
+      display: block;
+      width: 95vw;
+      overflow-x: auto;
+    }
+    -webkit-overflow-scrolling: touch;
+  }
   .add_desc-templates {
     padding: 0.54rem 5.2rem;
     margin-bottom: 2.1875rem;

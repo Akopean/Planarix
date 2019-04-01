@@ -268,12 +268,3 @@ label {
   border-radius: 10px;
   text-align: center;
 }
-
-.responsive-table{
-  @media (max-width: 1199px) {
-    display: block;
-    width: 95vw;
-    overflow-x: auto;
-  }
-  -webkit-overflow-scrolling: touch;
-}
