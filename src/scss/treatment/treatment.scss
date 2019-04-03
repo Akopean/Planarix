@@ -180,31 +180,36 @@
       }
     }
   }
-  .table thead th, .table-bordered th, .table-bordered thead td {
-    min-width: 275px;
-  }
-
-  .table thead {
-    background-color: transparent;
-  }
-
-  .table th {
-    color: #1f2022;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-family: Rubik, sans-serif;
-  }
-
-  .table tbody td {
-    color: #1f2022;
-    font-size: 1.125rem;
-    font-family: Rubik, sans-serif;
-    font-weight: 400;
-    padding: 2.0625rem .75rem;
-  }
-
-  .table td .date {
-    display: block;
+  .table{
+    background-color: white;
+    thead {
+      background-color: transparent;
+      th {
+        min-width: 275px;
+        @media (max-width: 1023px) {
+          min-width: 0;
+        }
+        @media (max-width: 576px) {
+          min-width: 230px;
+        }
+      }
+    }
+    th {
+      color: #1f2022;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-family: Rubik, sans-serif;
+    }
+    td .date {
+      display: block;
+    }
+    tbody td {
+      color: #1f2022;
+      font-size: 1.125rem;
+      font-family: Rubik, sans-serif;
+      font-weight: 400;
+      padding: 2.0625rem .75rem;
+    }
   }
 }
 

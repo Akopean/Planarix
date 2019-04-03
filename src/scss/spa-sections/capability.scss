@@ -1,0 +1,75 @@
+@import "../variables";
+
+.l_capability {
+  height: 100%;
+  padding-top: 2.5rem;
+  background-color: #EDEFFF;
+  position: relative;
+  overflow: hidden;
+  .container {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -17%;
+      left: 98%;
+      width: 358px;
+      z-index: 5;
+      height: 770px;
+      background: url(../images/element.png) no-repeat;
+    }
+  }
+
+  .l_cap--card {
+    //font-family: 'MontserratMedium', sans-serif;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    .l_cap--number {
+      font-size: 19rem;
+      color: #BD90E4;
+      line-height: 1;
+      @media (max-height: 1079px) {
+        //font-size: 13rem;
+      }
+      @media (max-height: 900px) {
+        //font-size: 10rem;
+      }
+      @media (max-width: 541px) {
+        font-size: 9.375rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 12.5rem;
+      }
+      @media (max-width: 991px) {
+        font-size: 15.625rem;
+
+      }
+    }
+
+    .l_cap--desc {
+      font-size: 1.13rem;
+      text-align: center;
+    }
+  }
+
+  .l_capability--footer {
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+
+    .l_cap--other {
+      a {
+        position: relative;
+        font-size: 1.5rem;
+        //font-family: RubikRegular, sans-serif;
+        font-family: Rubik, sans-serif;
+        font-weight: 400;
+        color: rgb(14, 26, 63);
+        border-bottom: 2px solid;
+        text-transform: uppercase;
+        line-height: 1.5;
+        text-align: center;
+      }
+    }
+  }
+}
