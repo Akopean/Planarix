@@ -10962,6 +10962,9 @@ button:focus {
   border-color: #808080;
   background-color: #fff;
 }
+.l_tariff .l_tariff--content .card .card-body {
+  padding: 1.375rem 0.6875rem;
+}
 .l_tariff .l_tariff--content .card .card-body .card-title {
   color: #BD90E4;
   margin-top: 1.5625rem;
@@ -10984,8 +10987,8 @@ button:focus {
 }
 .l_tariff .l_tariff--content .card .card-body .card-list {
   list-style: none;
-  padding-left: 0.9375rem;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
+  padding-left: 1.25rem;
   line-height: 1.5rem;
 }
 .l_tariff .l_tariff--content .card .card-body .card-list li::before {
@@ -10993,7 +10996,7 @@ button:focus {
   border-radius: 50%;
   background-color: #BD90E4;
   position: absolute;
-  left: 17px;
+  left: 13px;
   width: 10px;
   margin-top: 0.3125rem;
   height: 11px;

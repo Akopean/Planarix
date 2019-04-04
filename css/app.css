@@ -11264,6 +11264,82 @@ button:focus {
   color: #fff;
 }
 
+.our_tariff .l_site-header {
+  background-color: #F8FBFC;
+}
+.our_tariff .l_site-main .l_our_tariff-masthead {
+  padding-top: 50px;
+  background-color: #F8FBFC;
+}
+.our_tariff .l_site-main .l_our_tariff-masthead .l_our_tariff-masthead_content {
+  font-family: Rubik, sans-serif;
+  background: url(../images/element.png) no-repeat 95% 20%;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+@media (max-width: 991px) {
+  .our_tariff .l_site-main .l_our_tariff-masthead .l_our_tariff-masthead_content {
+    margin: auto;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 0.5rem !important;
+  }
+}
+.our_tariff .l_site-main .l_our_tariff-masthead .l_our_tariff-masthead_content h1 {
+  font-weight: 400;
+  font-size: 3.625rem;
+  line-height: 1.1;
+}
+@media (max-width: 1199px) {
+  .our_tariff .l_site-main .l_our_tariff-masthead .l_our_tariff-masthead_content h1 {
+    font-size: 2.625rem;
+  }
+}
+@media (max-width: 576px) {
+  .our_tariff .l_site-main .l_our_tariff-masthead .l_our_tariff-masthead_content h1 {
+    font-size: 1.8rem;
+  }
+}
+.our_tariff .l_site-main .l_our_tariff-masthead .l_our_tariff-masthead_content .sub_text {
+  line-height: 1.4;
+  font-size: 1.12rem;
+  max-width: 770px;
+  text-align: justify;
+}
+@media (max-width: 576px) {
+  .our_tariff .l_site-main .l_our_tariff-masthead .l_our_tariff-masthead_content .sub_text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+.our_tariff .l_site-main .l_our_tariff-price {
+  margin-top: 2.875rem;
+  margin-bottom: 1.25rem;
+}
+.our_tariff .l_site-main .l_our_tariff-price .l_our_tariff-title {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5625rem;
+  font-family: Montserrat, sans-serif;
+}
+@media (max-width: 576px) {
+  .our_tariff .l_site-main .l_our_tariff-price .l_our_tariff-title {
+    font-size: 2rem;
+  }
+}
+.our_tariff .l_site-main .l_our_tariff-price .l_tariff {
+  background-color: #FFF;
+  padding-top: 0.625rem;
+}
+@media (min-width: 768px) {
+  .our_tariff .footer-container {
+    display: block;
+    z-index: 100;
+    position: relative;
+  }
+}
+
 .l_site-main {
   /* timeline_profile  */
   /* change_email  */
@@ -11841,6 +11917,9 @@ button:focus {
   border-color: #808080;
   background-color: #fff;
 }
+.l_site-main .l_tariff .l_tariff--content .card .card-body {
+  padding: 1.375rem 0.6875rem;
+}
 .l_site-main .l_tariff .l_tariff--content .card .card-body .card-title {
   color: #BD90E4;
   margin-top: 1.5625rem;
@@ -11863,8 +11942,8 @@ button:focus {
 }
 .l_site-main .l_tariff .l_tariff--content .card .card-body .card-list {
   list-style: none;
-  padding-left: 0.9375rem;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
+  padding-left: 1.25rem;
   line-height: 1.5rem;
 }
 .l_site-main .l_tariff .l_tariff--content .card .card-body .card-list li::before {
@@ -11872,7 +11951,7 @@ button:focus {
   border-radius: 50%;
   background-color: #BD90E4;
   position: absolute;
-  left: 17px;
+  left: 13px;
   width: 10px;
   margin-top: 0.3125rem;
   height: 11px;

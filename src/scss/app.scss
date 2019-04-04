@@ -203,6 +203,8 @@ button:focus {
   }
 }
 
+@import "our_tariff/our_tariff";
+
 .l_site-main {
   @import "profile/profile";
   @import "create_publications/create_publications";
