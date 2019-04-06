@@ -119,10 +119,12 @@
   border-radius: 10px;
   background-color: $a_inline3;
   padding: 0.63rem 5.7rem;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  font-family: Montserrat, sans-serif;
-
+  font-family: Rubik, sans-serif;
+  @media (max-width: 576px) {
+    padding: 0.63rem 1rem;
+  }
   &:hover {
     color: $white;
     border-color: $a_hover3;

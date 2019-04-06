@@ -179,10 +179,9 @@ button:focus {
       background-color: white;
       padding: 0.5rem 1rem !important;
     }
-
-    .dashboard & .navbar-brand {
+    .navbar-brand {
       @media (min-width: 1200px) {
-        margin-left: 5rem;
+        margin-left: 4.5rem;
       }
     }
   }
@@ -204,7 +203,8 @@ button:focus {
 }
 
 @import "our_tariff/our_tariff";
-
+@import "about/about";
+@import "features/features";
 .l_site-main {
   @import "profile/profile";
   @import "create_publications/create_publications";
@@ -242,6 +242,7 @@ button:focus {
     @media (min-width: 2200px) {
       margin-top: 13.5rem;
     }
+
     .first_screen-title {
       font-size: 3rem;
       font-family: Rubik, sans-serif;
@@ -303,6 +304,7 @@ button:focus {
     @media (min-width: 2200px) {
       margin-top: 13.5rem;
     }
+
     .subs_end-title {
       font-size: 3rem;
       font-family: Rubik, sans-serif;
@@ -366,6 +368,20 @@ button:focus {
     }
   }
 
+  .l_features & {
+    background-image: url(../images/element.png);
+    background-repeat: no-repeat;
+    background-position: 64vw 100%;
+    height: 100%;
+    @media (max-width: 576px) {
+      height: initial;
+      background: none;
+    }
+    @media (min-width: 2000px) {
+      background-position: 62vw calc(84%);
+    }
+  }
+
   .add_description & {
     background-image: url(../images/element.png);
     background-repeat: no-repeat;
@@ -374,6 +390,7 @@ button:focus {
     background-size: contain;
     @media (max-width: 1300px) {
       background-position: 70vw calc(100% + 130px);
+      height: initial;
     }
     @media (max-width: 576px) {
       height: initial;
@@ -797,7 +814,9 @@ button:focus {
       @media (max-width: 1600px) {
         padding: 1.5625rem 1.5625rem;
       }
-
+      .btn-inline-custom4{
+         font-weight: 400;
+      }
       .l_reg-user-accept {
         color: #777777;
 
@@ -835,6 +854,18 @@ button:focus {
         }
       }
     }
+  }
+  .spintax_label, .default-template_label {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: #2c2d2e;
+    padding-right: 1rem;
+  }
+
+  .spintax_label-help {
+    color: #ff3c88;
+    font-family: Rubik, sans-serif;
+    text-decoration: underline;
   }
 }
 

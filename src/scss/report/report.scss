@@ -1,67 +1,74 @@
 @import "../variables";
 
-
-.l_report-container {
-  width: 50%;
-  @media (max-width: 1199px) {
-    width: 600px;
-    margin: 0 auto;
-  }
-
-  label {
-    font-size: 1.5rem;
-    font-family: Rubik, sans-serif;
-    color: #1F2022;
-    text-align: left;
-  }
-
-  .ddcommon {
-    color: #1f2022;
-    height: 65px;
-    font-weight: 400;
-    padding: 0.55rem 0 0 1.875rem;
-    font-family: Rubik, sans-serif;
-    font-size: 1.5rem;
+.report & {
+  .ddcommon .ddArrow {
     @media (max-width: 576px) {
-      height: auto;
+      right: 22px;
+    }
+  }
+
+  .l_report-container {
+    width: 50%;
+    @media (max-width: 1199px) {
+      width: 600px;
+      margin: 0 auto;
     }
 
-    .ddTitle .ddTitleText .ddlabel, &.dd .ddChild li .ddlabel {
-      font-weight: 400;
+    label {
       font-size: 1.5rem;
+      font-family: Rubik, sans-serif;
+      color: #1F2022;
+      text-align: left;
     }
 
-    .ddChild li {
-      padding: 0.9rem 0 0.9rem 2.1rem;
+    .ddcommon {
+      color: #1f2022;
+      height: 65px;
+      font-weight: 400;
+      padding: 0.55rem 0 0 1.875rem;
+      font-family: Rubik, sans-serif;
+      font-size: 1.5rem;
+      @media (max-width: 576px) {
+        height: auto;
+      }
+
+      .ddTitle .ddTitleText .ddlabel, &.dd .ddChild li .ddlabel {
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+
+      .ddChild li {
+        padding: 0.9rem 0 0.9rem 2.1rem;
+      }
+    }
+
+    .ddcommon .ddTitle .ddlabel {
+      @media (max-width: 576px) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 300px;
+        cursor: pointer;
+        margin-right: 2rem;
+        display: block;
+      }
     }
   }
 
-  .ddcommon .ddTitle .ddlabel {
+  .l_report-title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+    font-family: Rubik, sans-serif;
+    @media (max-width: 1600px) {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 800px) {
+      margin-top: 1rem;
+    }
     @media (max-width: 576px) {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 300px;
-      cursor: pointer;
-      margin-right: 2rem;
-      display: block;
+      font-size: 2.2rem;
     }
-  }
-}
-
-.l_report-title {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
-  font-family: Rubik, sans-serif;
-  @media (max-width: 1600px) {
-    font-size: 2.8rem;
-  }
-  @media (max-width: 800px) {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-  @media (max-width: 576px) {
-    font-size: 2.2rem;
   }
 }

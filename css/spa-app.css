@@ -9834,9 +9834,14 @@ h3 {
   border-radius: 10px;
   background-color: #6244c9;
   padding: 0.63rem 5.7rem;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  font-family: Montserrat, sans-serif;
+  font-family: Rubik, sans-serif;
+}
+@media (max-width: 576px) {
+  .btn-inline-custom4 {
+    padding: 0.63rem 1rem;
+  }
 }
 .btn-inline-custom4:hover {
   color: #fff;
@@ -10027,6 +10032,10 @@ input[type=checkbox].switch:checked:after {
   }
 }
 
+.mb-5_2 {
+  margin-bottom: 2.5rem !important;
+}
+
 .pt-6 {
   padding-top: 4rem !important;
 }
@@ -10038,6 +10047,18 @@ input[type=checkbox].switch:checked:after {
 @media (max-width: 576px) {
   .pr-sm-2 {
     padding-right: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pr-sm-3 {
+    padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .pl-sm-3 {
+    padding-left: 1rem !important;
   }
 }
 
@@ -10317,6 +10338,72 @@ label {
 
 .l_radio input:checked + .l_radio__text:after {
   opacity: 1;
+}
+
+/*
+ Custom CheckBox
+*/
+.custom_check {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+}
+.custom_check .toggle__label {
+  display: inline-flex;
+  cursor: pointer;
+  min-height: 50px;
+  padding-left: calc(50px + .4em);
+}
+.custom_check .toggle__label::before {
+  content: "";
+  box-sizing: border-box;
+  width: 1em;
+  height: 1em;
+  font-size: 2.1875rem;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  border: 2px solid #F6EDFC;
+  z-index: 2;
+}
+.custom_check .toggle__input {
+  position: absolute;
+  left: -99999px;
+}
+.custom_check .toggle__input:disabled ~ .toggle__label:before {
+  border-color: #868e96;
+}
+.custom_check .toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before {
+  width: 0.5em;
+  height: 0.25em;
+  border-left-width: 2px;
+  border-bottom-width: 2px;
+  will-change: width, height;
+  transition: width 0.1s ease-out 0.2s, height 0.2s ease-out;
+}
+.custom_check .toggle__text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.custom_check .toggle__text:before {
+  content: "";
+  box-sizing: border-box;
+  width: 0;
+  height: 0;
+  font-size: 2.1875rem;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-color: #7A15D4;
+  position: absolute;
+  top: 0.75428em;
+  left: 0.2em;
+  z-index: 3;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotate(-40deg) skew(10deg);
+          transform: rotate(-40deg) skew(10deg);
 }
 
 .navbar-collapse {

@@ -1,39 +1,34 @@
 @import "../variables";
 
+.add_description & {
+  .btn-inline-custom4 {
+    font-size: 1rem;
+  }
 
-.l_add-desc-container{
- width: 50%;
-  @media (max-width: 1199px) {
-    width: 600px;
-    margin: 0 auto;
+  .l_add-desc-container {
+    width: 50%;
+    @media (max-width: 1199px) {
+      width: 600px;
+      margin: 0 auto;
+    }
   }
-}
-.l_add-desc-title {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
-  font-family: Rubik, sans-serif;
-  @media (max-width: 1600px){
-    font-size: 2.8rem;
-  }
-  @media (max-width: 800px){
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-  @media (max-width: 576px){
-    font-size: 2.2rem;
+
+  .l_add-desc-title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+    font-family: Rubik, sans-serif;
+    @media (max-width: 1600px) {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 800px) {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 2.2rem;
+    }
   }
 }
 
-.spintax_label, .default-template_label {
-  font-size: 1.0625rem;
-  font-weight: 500;
-  color: #2c2d2e;
-  padding-right: 1rem;
-}
-
-.spintax_label-help{
-  color: #ff3c88;
-  font-family: Rubik, sans-serif;
-  text-decoration: underline;
-}
