@@ -55,3 +55,47 @@ $(".l_other_account-login").tooltip({
 $('.cal_img-thumb').on( "click", function() {
     $(this).css({backgroundImage: 'none', visibility: 'hidden', width: 0, height: 0});
 });
+
+function cc_format(value) {
+    let v = value.replace(/\s+/gu, '').replace(/[^0-9]/giu, '');
+    let matches = v.match(/\d{4,16}/g);
+    let match = matches && matches[0] || '';
+    let parts = [];
+    for (let i=0, len=match.length; i<len; i+=4) {
+        parts.push(match.substring(i, i+4));
+    }
+    if (parts.length) {
+        return parts.join(' ');
+    } else {
+        return v;
+    }
+}
+$('.credit-input').on('input', function() {
+    this.value = cc_format(this.value)
+});
+
+
+function cxp_format(value) {
+
+    let v = value.replace(/\s+/gu, '').replace(/[^0-9]/giu, '');
+    if(v.length > 2) {
+        return  v.substring(0, 2) + '/' + v.substring(2, 4);
+    }
+    return v;
+}
+$('.cxp-input').on('input', function() {
+    this.value = cxp_format(this.value)
+});
+
+
+function cvc_format(value) {
+
+    let v = value.replace(/\s+/gu, '').replace(/[^0-9]/giu, '');
+    if(v.length > 3) {
+        return v.substring(0, 3);
+    }
+    return v;
+}
+$('.cvc-input').on('input', function() {
+    this.value = cvc_format(this.value)
+});

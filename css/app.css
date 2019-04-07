@@ -10161,6 +10161,12 @@ input[type=checkbox].switch:checked:after {
 }
 
 @media (max-width: 576px) {
+  .ml-sm-0 {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
   .pr-sm-2 {
     padding-right: 2rem;
   }
@@ -10419,17 +10425,23 @@ label {
 
 .l_radio__text {
   position: relative;
-  padding-left: 3.5625rem;
+  padding-left: 4rem;
   cursor: pointer;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   color: #1f2022;
   font-weight: 500;
+  font-family: Monserat, sans-serif;
+}
+@media (max-width: 576px) {
+  .l_radio__text {
+    padding-left: 3rem;
+  }
 }
 
 .l_radio__text:before {
   content: "";
   position: absolute;
-  top: -11px;
+  top: -7px;
   left: 0;
   width: 40px;
   height: 40px;
@@ -10441,7 +10453,7 @@ label {
 .l_radio__text:after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 11px;
   width: 18px;
   height: 18px;
@@ -10520,6 +10532,30 @@ label {
           transform-origin: left top;
   -webkit-transform: rotate(-40deg) skew(10deg);
           transform: rotate(-40deg) skew(10deg);
+}
+
+.icon-credit-input {
+  background: url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class=""><path fill="#E6E6E6" d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"></path></svg>') no-repeat scroll 20px 17px;
+  background-size: 28px !important;
+}
+.icon-credit-input:focus {
+  background: url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class=""><path fill="#1f2022" d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"></path></svg>') no-repeat scroll 20px 17px;
+}
+
+.icon-credit-cxp {
+  background: url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class=""><path fill="#E6E6E6" d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"></path></svg>') no-repeat scroll 20px 17px;
+  background-size: 28px !important;
+}
+.icon-credit-cxp:focus {
+  background: url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class=""><path fill="#1f2022" d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"></path></svg>') no-repeat scroll 20px 17px;
+}
+
+.icon-credit-cvc {
+  background: url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class=""><path fill="#E6E6E6" d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"></path></svg>') no-repeat scroll 20px 17px;
+  background-size: 28px !important;
+}
+.icon-credit-cvc:focus {
+  background: url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class=""><path fill="#1f2022" d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"></path></svg>') no-repeat scroll 20px 17px;
 }
 
 .navbar-collapse {
@@ -14000,7 +14036,7 @@ button:focus {
 }
 
 .tariff_popup {
-  margin-top: 35vh;
+  margin-top: -1vh;
 }
 .tariff_popup .modal-dialog {
   max-width: 630px;
@@ -14014,8 +14050,11 @@ button:focus {
   padding: 1rem 1rem 0;
   border: none;
   text-transform: uppercase;
-  background: #FFF url(../images/tariff_bg_element.png) no-repeat 100% top;
-  background-position: 136% 56%;
+  background: #FFF url(../images/tariff_bg_element.png) no-repeat;
+  background-position: 100% 0;
+  min-height: 150px;
+  border-radius: 9px 9px 0 0;
+  background-size: contain;
 }
 @media (max-width: 576px) {
   .tariff_popup .modal-dialog .modal-header {
@@ -14023,15 +14062,17 @@ button:focus {
   }
 }
 .tariff_popup .modal-dialog .modal-header .modal-title {
-  padding-left: 1rem;
+  padding-left: 0.6rem;
   margin-bottom: 0.5rem;
-  font-size: 1.525rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
 }
 .tariff_popup .modal-dialog .modal-header .modal-sub_title {
   display: inline-block;
+  font-family: Rubik, sans-serif;
   padding-left: 1rem;
   max-width: 370px;
-  font-size: 13px;
+  font-size: 1.125rem;
   color: #D0CECE;
   text-transform: initial;
 }
@@ -14041,7 +14082,7 @@ button:focus {
 .tariff_popup .modal-dialog .modal-header button.close {
   position: absolute;
   right: 1.5rem;
-  top: 1rem;
+  top: 0;
   opacity: 1;
   font-size: 2rem;
   color: white;
@@ -14051,8 +14092,13 @@ button:focus {
     color: #777;
   }
 }
+.tariff_popup .modal-dialog .modal-header button.close span {
+  font-size: 68px;
+  font-weight: 300;
+  font-family: serif;
+}
 .tariff_popup .modal-dialog .modal-body {
-  padding: 1rem 2rem;
+  padding: 3rem 1.5rem 1rem;
   color: #C7C3C3;
 }
 @media (max-width: 576px) {
@@ -14061,11 +14107,12 @@ button:focus {
   }
 }
 .tariff_popup .modal-dialog .modal-body .price {
+  letter-spacing: 0.061rem;
   display: inline-block;
   float: right;
   color: #1f2022;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .tariff_popup .modal-dialog .modal-body .price .price-period {
   font-size: 0.875rem;
@@ -14074,6 +14121,62 @@ button:focus {
 .tariff_popup .modal-dialog .modal-body .price .price-sale {
   font-size: 0.875rem;
   color: #00B605;
+}
+@media (max-width: 576px) {
+  .tariff_popup .modal-dialog .modal-body .price .price-sale {
+    display: block;
+  }
+}
+.tariff_popup .modal-dialog .modal-body .price_economy {
+  font-size: 1.6875rem;
+  float: right;
+  color: #1f2022;
+}
+.tariff_popup .modal-dialog .modal-body .price_economy-count {
+  color: #b08fe0;
+  font-size: 1.9375rem;
+  font-weight: 500;
+}
+.tariff_popup .modal-dialog .modal-body .custom-field3 {
+  border: 2px solid #E6E6E6;
+  background-color: #F9FBFC;
+  border-radius: 0;
+  padding-left: 4.6875rem;
+}
+@media (max-width: 576px) {
+  .tariff_popup .modal-dialog .modal-body .custom-field3 {
+    padding-left: 3.5rem;
+    font-size: 1.3rem;
+  }
+}
+.tariff_popup .modal-dialog .modal-body .custom-field3:focus {
+  border-color: #612ADE;
+}
+.tariff_popup .modal-dialog .modal-body .custom-field3::-webkit-input-placeholder {
+  color: #E6E6E6;
+}
+.tariff_popup .modal-dialog .modal-body .custom-field3:-ms-input-placeholder {
+  color: #E6E6E6;
+}
+.tariff_popup .modal-dialog .modal-body .custom-field3::-ms-input-placeholder {
+  color: #E6E6E6;
+}
+.tariff_popup .modal-dialog .modal-body .custom-field3::placeholder {
+  color: #E6E6E6;
+}
+.tariff_popup .modal-dialog .modal-body .btn-inline-custom, .tariff_popup .modal-dialog .modal-body .btn-inline-custom2, .tariff_popup .modal-dialog .modal-body .btn-inline-custom3, .tariff_popup .modal-dialog .modal-body .btn-inline-custom4, .tariff_popup .modal-dialog .modal-body .btn-inline-custom5 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem !important;
+  word-spacing: 0.25rem;
+}
+.tariff_popup .modal-dialog .modal-body .icon-credit-cvc, .tariff_popup .modal-dialog .modal-body .icon-credit-cxp {
+  width: 48%;
+}
+.tariff_popup .modal-dialog .modal-body .coupon_sale {
+  font-size: 1rem;
+  display: block;
+  text-decoration: underline;
 }
 
 #sub_popup.modal {
