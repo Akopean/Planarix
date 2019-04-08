@@ -146,6 +146,7 @@ button:focus {
 .navbar-toggler {
   border: 1px solid #fff;
 }
+
 // SITE HEADER
 @import "spa-sections/header";
 .l_site-header {
@@ -156,13 +157,16 @@ button:focus {
   .l_header--navbar .l_header--menu .nav-item .nav-link {
     color: #1f2022;
   }
+
   .l_header--navbar .l_header--menu .nav-item .l_auth__button {
     color: #fff;
   }
+
   .l_header--navbar .l_header--menu .l_lang .l_current_lang--en {
     background-color: #EBEBEB;
   }
 }
+
 // HEADER
 .l_header {
   position: relative;
@@ -179,6 +183,7 @@ button:focus {
       background-color: white;
       padding: 0.5rem 1rem !important;
     }
+
     .navbar-brand {
       @media (min-width: 1200px) {
         margin-left: 4.5rem;
@@ -795,12 +800,14 @@ button:focus {
       font-size: 2.8rem;
     }
   }
-  .l_login-pass_rec{
+
+  .l_login-pass_rec {
     text-decoration: underline;
     color: $gray-777;
     display: block;
     margin-bottom: 0.5rem;
-    &:hover, &:focus{
+
+    &:hover, &:focus {
       color: $col_83;
     }
   }
@@ -814,9 +821,11 @@ button:focus {
       @media (max-width: 1600px) {
         padding: 1.5625rem 1.5625rem;
       }
-      .btn-inline-custom4{
-         font-weight: 400;
+
+      .btn-inline-custom4 {
+        font-weight: 400;
       }
+
       .l_reg-user-accept {
         color: #777777;
 
@@ -855,6 +864,7 @@ button:focus {
       }
     }
   }
+
   .spintax_label, .default-template_label {
     font-size: 1.0625rem;
     font-weight: 500;
@@ -867,8 +877,129 @@ button:focus {
     font-family: Rubik, sans-serif;
     text-decoration: underline;
   }
+
+  .l_404 & {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 95px);
+    background: url(../images/404_illustration.svg) no-repeat 66% 35px;
+    @media (max-width: 1199px) {
+      background-position: 85% 35px;
+    }
+    @media (max-width: 800px) {
+      background: none;
+    }
+
+    .l_404-container {
+      @media (max-width: 800px) {
+        text-align: center;
+      }
+
+      img {
+        @media (max-width: 768px) {
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      .l_404-title {
+        font-size: 2.25rem;
+        font-family: Rubik, sans-serif;
+        text-transform: uppercase;
+        padding: 1.875rem 0;
+        @media (max-width: 576px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      .btn-custom {
+        padding: 0.625rem 5.625rem;
+        font-family: Rubik, sans-serif;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .l_500 & {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 95px);
+    .l_500-container {
+      @media (max-width: 800px) {
+        max-width: 500px;
+      }
+      @media (max-width: 576px) {
+        text-align: center;
+      }
+      img {
+        @media (max-width: 768px) {
+          height: auto;
+          width: 100%;
+        }
+      }
+      .l_500-sub_title {
+        font-size: 2.25rem;
+        font-family: Rubik, sans-serif;
+        max-width: 520px;
+        @media (max-width: 1024px) {
+          padding-top: 3.75rem;
+        }
+        @media (max-width: 768px) {
+          padding-top: 3.75rem;
+        }
+        @media (max-width: 576px) {
+          padding-top: 0;
+          padding-bottom: 2rem;
+        }
+      }
+
+      .l_500-title {
+        font-size: 2.25rem;
+        font-family: Rubik, sans-serif;
+        text-transform: uppercase;
+        padding: .3rem 0 2rem;
+        font-weight: 700;
+        @media (max-width: 576px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      .btn-custom {
+        padding: 0.625rem 5.625rem;
+        font-family: Rubik, sans-serif;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
+.l_500 .wrapper {
+  overflow: hidden;
+  .l_500-illustration {
+    position: absolute;
+    background: url(../images/500_illustration.svg) no-repeat 0 0;
+    width: 1900px;
+    height: 100%;
+    top: 0;
+    left: 53vw;
+    @media (max-width: 1300px) {
+      left: 51vw;
+    }
+    @media (max-width: 800px) {
+      left: 65vw;
+      background-size: contain;
+    }
+    @media (max-width: 768px) {
+      left: 40vw;
+    }
+    @media (max-width: 576px) {
+      background: none;
+    }
+    @media (min-width: 1930px) {
+      background-size: contain;
+    }
+  }
+}
 .cal_img-thumb {
   width: 115px;
   height: 115px;
@@ -1117,13 +1248,16 @@ button:focus {
   }
 }
 
-.tariff_popup{
+.tariff_popup {
   margin-top: -1vh;
+
   .modal-dialog {
     max-width: 630px;
-    .modal-content{
+
+    .modal-content {
       border-radius: 10px;
     }
+
     .modal-header {
       display: block;
       position: relative;
@@ -1138,13 +1272,15 @@ button:focus {
       @media (max-width: 576px) {
         background: #FFF;
       }
+
       .modal-title {
         padding-left: .6rem;
         margin-bottom: .5rem;
         font-size: 1.8rem;
         letter-spacing: 0.1rem;
       }
-      .modal-sub_title{
+
+      .modal-sub_title {
         display: inline-block;
         font-family: Rubik, sans-serif;
         padding-left: 1rem;
@@ -1153,6 +1289,7 @@ button:focus {
         color: #D0CECE;
         text-transform: initial;
       }
+
       h5 {
         font-weight: 700;
       }
@@ -1167,7 +1304,8 @@ button:focus {
         @media (max-width: 576px) {
           color: #777;
         }
-        span{
+
+        span {
           font-size: 68px;
           font-weight: 300;
           font-family: serif;
@@ -1181,35 +1319,41 @@ button:focus {
       @media (max-width: 576px) {
         padding: 1rem;
       }
-      .price{
+
+      .price {
         letter-spacing: .061rem;
         display: inline-block;
         float: right;
         color: #1f2022;
         font-weight: 700;
         font-size: 1.5rem;
-        .price-period{
+
+        .price-period {
           font-size: 0.875rem;
           color: #adadad;
         }
-        .price-sale{
+
+        .price-sale {
           font-size: 0.875rem;
           color: #00B605;
           @media (max-width: 576px) {
-           display: block;
+            display: block;
           }
         }
       }
-      .price_economy{
+
+      .price_economy {
         font-size: 1.6875rem;
         float: right;
         color: #1f2022;
-        &-count{
+
+        &-count {
           color: #b08fe0;
           font-size: 1.9375rem;
           font-weight: 500;
         }
       }
+
       .custom-field3 {
         border: 2px solid #E6E6E6;
         background-color: #F9FBFC;
@@ -1219,23 +1363,28 @@ button:focus {
           padding-left: 3.5rem;
           font-size: 1.3rem;
         }
-        &:focus{
+
+        &:focus {
           border-color: #612ADE;
         }
-        &::placeholder{
+
+        &::placeholder {
           color: #E6E6E6;
         }
       }
-      .btn-inline-custom{
+
+      .btn-inline-custom {
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         font-size: 1.5rem !important;
         word-spacing: .25rem;
       }
-      .icon-credit-cvc,.icon-credit-cxp{
+
+      .icon-credit-cvc, .icon-credit-cxp {
         width: 48%;
       }
-      .coupon_sale{
+
+      .coupon_sale {
         font-size: 1rem;
         display: block;
         text-decoration: underline;
@@ -1246,7 +1395,8 @@ button:focus {
 
 #sub_popup.modal {
   margin-top: 35vh;
-  .modal-content{
+
+  .modal-content {
     background: #FFF url(../images/tariff_bg_element.png) no-repeat 100% top;
     background-position: 123% 93%;
     @media (max-width: 991px) {
@@ -1256,17 +1406,21 @@ button:focus {
       background: #FFF;
     }
   }
+
   .modal-header {
     padding: 1rem 1rem 0;
     border: none;
     text-transform: uppercase;
-    .modal-title{
+
+    .modal-title {
       padding-left: 1rem;
     }
-    h5{
+
+    h5 {
       font-weight: 700;
     }
-    .close{
+
+    .close {
       opacity: 1;
       font-size: 2rem;
       color: white;
@@ -1275,7 +1429,8 @@ button:focus {
       }
     }
   }
-  .modal-body{
+
+  .modal-body {
     padding: 1rem 6rem 1rem 2rem;
     color: #C7C3C3;
     @media (max-width: 991px) {
