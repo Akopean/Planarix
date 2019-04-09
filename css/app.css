@@ -12943,6 +12943,7 @@ button:focus {
   padding: 0.95rem 1.25rem;
   border-bottom: 2px solid #6913cc;
   background-color: #fff;
+  cursor: pointer;
 }
 .l_site-main .l_faq-container .accordion .card .card-header h2 {
   font-size: 1.125rem;
@@ -12965,7 +12966,7 @@ button:focus {
     right: -30px;
   }
 }
-.l_site-main .l_faq-container .accordion .card .card-header .rules_desc.collapsed::before {
+.l_site-main .l_faq-container .accordion .card .card-header.collapsed .rules_desc::before {
   content: "";
   width: 20px;
   height: 3px;
@@ -13839,6 +13840,7 @@ button:focus {
   align-items: center;
   min-height: calc(100% - 95px);
   background: url(../images/404_illustration.svg) no-repeat 66% 35px;
+  background-size: contain;
 }
 @media (max-width: 1199px) {
   .l_404 .l_site-main {
@@ -13850,15 +13852,13 @@ button:focus {
     background: none;
   }
 }
+.l_404 .l_site-main .l_404-container {
+  max-width: 600px;
+}
 @media (max-width: 800px) {
   .l_404 .l_site-main .l_404-container {
     text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .l_404 .l_site-main .l_404-container img {
-    height: auto;
-    width: 100%;
+    max-width: 100%;
   }
 }
 .l_404 .l_site-main .l_404-container .l_404-title {
@@ -14324,11 +14324,12 @@ button:focus {
 }
 #sub_popup.modal .modal-content {
   background: #FFF url(../images/tariff_bg_element.png) no-repeat 100% top;
-  background-position: 123% 93%;
+  background-position: 123% 0;
+  border: 0;
 }
 @media (max-width: 991px) {
   #sub_popup.modal .modal-content {
-    background-position: 153% 143%;
+    background-position: 160% 0;
   }
 }
 @media (max-width: 576px) {
@@ -14356,6 +14357,11 @@ button:focus {
   #sub_popup.modal .modal-header .close {
     color: #777;
   }
+}
+#sub_popup.modal .modal-header .close span {
+  font-size: 3.1875rem;
+  font-weight: 300;
+  line-height: 0;
 }
 #sub_popup.modal .modal-body {
   padding: 1rem 6rem 1rem 2rem;
