@@ -12951,10 +12951,8 @@ button:focus {
     width: 100%;
   }
 }
-@media (max-width: 1700px) {
-  .faq .l_site-main {
-    overflow-x: hidden;
-  }
+.faq .l_site-main {
+  overflow-x: hidden;
 }
 @media (max-width: 991px) {
   .faq .l_site-main .pt-6 {

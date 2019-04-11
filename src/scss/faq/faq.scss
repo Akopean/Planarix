@@ -1,9 +1,7 @@
 @import "../variables";
 
 .faq & {
-  @media (max-width: 1700px) {
     overflow-x: hidden;
-  }
   .pt-6 {
     @media (max-width: 991px) {
       padding-top: 0 !important;
