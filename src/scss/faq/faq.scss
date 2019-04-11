@@ -85,6 +85,9 @@
     height: calc(100vh - 145px - 3.075rem );
     margin: 1.7rem 0 1.3rem;
   }
+  @media (max-width: 1080px) and (min-height: 1920px) {
+    height: calc(35vh);
+  }
   @media (max-width: 991px) {
     height: 450px;
     margin: 1.37rem 0 1.3rem;
@@ -96,7 +99,7 @@
     bottom: 0;
     right: -205px;
     z-index: -1;
-    width: 1000px;
+    width: 1100px;
     height: inherit;
     position: absolute;
     background: url(../images/faq_illustration.svg) no-repeat center;
@@ -105,6 +108,12 @@
       right: -25vw;
       width: 58vw;
       background-position: right;
+    }
+    @media (max-width: 1080px) and (min-height: 1920px) {
+      background-position: bottom;
+      right: -59px;
+      z-index: -1;
+      width: 832px;
     }
     @media (max-width: 991px) {
       bottom: 0;
@@ -132,6 +141,9 @@
     font-family: Rubik, sans-serif;
     @media (min-width: 2200px) {
       max-width: 790px;
+    }
+    @media (max-width: 1080px) and (min-height: 1920px) {
+      padding-top: calc(7vh);
     }
     @media (max-width: 1199px) {
       max-width: 440px;

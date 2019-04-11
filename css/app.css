@@ -13038,6 +13038,11 @@ button:focus {
     margin: 1.7rem 0 1.3rem;
   }
 }
+@media (max-width: 1080px) and (min-height: 1920px) {
+  .l_site-main .l_faq-masthead {
+    height: calc(35vh);
+  }
+}
 @media (max-width: 991px) {
   .l_site-main .l_faq-masthead {
     height: 450px;
@@ -13053,7 +13058,7 @@ button:focus {
   bottom: 0;
   right: -205px;
   z-index: -1;
-  width: 1000px;
+  width: 1100px;
   height: inherit;
   position: absolute;
   background: url(../images/faq_illustration.svg) no-repeat center;
@@ -13064,6 +13069,14 @@ button:focus {
     right: -25vw;
     width: 58vw;
     background-position: right;
+  }
+}
+@media (max-width: 1080px) and (min-height: 1920px) {
+  .l_site-main .l_faq-masthead .l_faq-masthead-illustration {
+    background-position: bottom;
+    right: -59px;
+    z-index: -1;
+    width: 832px;
   }
 }
 @media (max-width: 991px) {
@@ -13098,6 +13111,11 @@ button:focus {
 @media (min-width: 2200px) {
   .l_site-main .l_faq-masthead .l_faq-masthead_content {
     max-width: 790px;
+  }
+}
+@media (max-width: 1080px) and (min-height: 1920px) {
+  .l_site-main .l_faq-masthead .l_faq-masthead_content {
+    padding-top: calc(7vh);
   }
 }
 @media (max-width: 1199px) {
