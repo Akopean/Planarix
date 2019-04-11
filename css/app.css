@@ -10337,6 +10337,18 @@ input[type=checkbox].switch:checked:after {
   }
 }
 
+@media (min-width: 1600px) {
+  .mb-xxl-4 {
+    margin-top: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mb-xxl-3 {
+    margin-bottom: 1rem !important;
+  }
+}
+
 .w-45 {
   width: 45% !important;
 }
@@ -12639,6 +12651,12 @@ button:focus {
     content: none;
   }
 }
+.report .l_site-main {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 100px);
+  padding: 1rem 0;
+}
 @media (max-width: 576px) {
   .report .l_site-main .ddcommon .ddArrow {
     right: 22px;
@@ -12688,6 +12706,26 @@ button:focus {
     cursor: pointer;
     margin-right: 2rem;
     display: block;
+  }
+}
+.report .l_site-main .l_report-container .btn {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  border-radius: 0.65rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+@media (max-width: 1536px) {
+  .report .l_site-main .l_report-container .btn {
+    padding: 0.71rem 7rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .report .l_site-main .l_report-container .btn {
+    padding: 0.71rem 1rem;
+    margin: 0 auto 1rem !important;
+    width: 70%;
   }
 }
 .report .l_site-main .l_report-title {
@@ -13005,11 +13043,6 @@ button:focus {
   background-color: #fff;
   line-height: 1.66;
 }
-.l_site-main .l_faq-title {
-  font-size: 3rem;
-  font-weight: 500;
-  font-family: Rubik, sans-serif;
-}
 @media (max-width: 991px) {
   .l_site-main .l_faq-title {
     font-size: 2.2rem;
@@ -13286,10 +13319,19 @@ button:focus {
 .l_site-main .l_site-title {
   margin-top: 1.375rem;
   font-size: 3rem;
+  font-family: Rubik, sans-serif;
+  color: #1F2022;
+  text-align: center;
+  margin-bottom: 0.8rem;
 }
 @media (max-width: 1600px) {
   .l_site-main .l_site-title {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .l_site-main .l_site-title {
+    font-size: 2rem;
   }
 }
 .first_screen .l_site-main {
@@ -13297,22 +13339,8 @@ button:focus {
   align-items: center;
   height: calc(100% - 100px);
 }
-.first_screen .l_site-main .first_screen-container .first_screen-title {
-  font-size: 3rem;
-  font-family: Rubik, sans-serif;
-  color: #1F2022;
-  text-align: center;
-  margin-bottom: 0.8rem;
-}
-@media (max-width: 1500px) {
-  .first_screen .l_site-main .first_screen-container .first_screen-title {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 576px) {
-  .first_screen .l_site-main .first_screen-container .first_screen-title {
-    font-size: 2rem;
-  }
+.first_screen .l_site-main .first_screen-container {
+  padding: 4rem 0;
 }
 .first_screen .l_site-main .first_screen-container .first_screen_sub-title {
   font-size: 1.875rem;
@@ -13322,7 +13350,7 @@ button:focus {
   font-weight: 400;
   margin-bottom: 3.125rem;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   .first_screen .l_site-main .first_screen-container .first_screen_sub-title {
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -13335,12 +13363,13 @@ button:focus {
 }
 .first_screen .l_site-main .first_screen-container .btn {
   padding: 1.2rem 5.78rem;
-  font-size: 1.3rem !important;
-  border-radius: 0.65rem !important;
+  font-size: 1.3rem;
+  border-radius: 0.65rem;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   .first_screen .l_site-main .first_screen-container .btn {
-    padding: 1rem 4rem;
+    padding: 0.8rem 4rem !important;
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
@@ -13348,53 +13377,20 @@ button:focus {
     padding: 0.71rem 3rem;
   }
 }
-.l_site-main .subs_end-container {
-  margin-top: 9.375rem;
-  margin-bottom: 3rem;
+.subscription_end .l_site-main {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 100px);
 }
-@media (max-width: 1280px) {
-  .l_site-main .subs_end-container {
-    margin-top: 7.375rem;
-  }
-}
-@media (max-width: 992px) {
-  .l_site-main .subs_end-container {
-    margin-top: 5rem;
-  }
-}
-@media (max-width: 768px) {
-  .l_site-main .subs_end-container {
-    margin-top: 7rem;
-  }
+.subscription_end .l_site-main .subs_end-container {
+  padding: 4rem 0;
 }
 @media (max-width: 576px) {
-  .l_site-main .subs_end-container {
-    margin-top: 1.375rem;
+  .subscription_end .l_site-main .subs_end-container {
+    padding: 0;
   }
 }
-@media (min-width: 2200px) {
-  .l_site-main .subs_end-container {
-    margin-top: 13.5rem;
-  }
-}
-.l_site-main .subs_end-container .subs_end-title {
-  font-size: 3rem;
-  font-family: Rubik, sans-serif;
-  color: #1F2022;
-  text-align: center;
-  margin-bottom: 0.8rem;
-}
-@media (max-width: 1500px) {
-  .l_site-main .subs_end-container .subs_end-title {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 576px) {
-  .l_site-main .subs_end-container .subs_end-title {
-    font-size: 2rem;
-  }
-}
-.l_site-main .subs_end-container .subs_end_sub-title {
+.subscription_end .l_site-main .subs_end-container .subs_end_sub-title {
   font-size: 1.875rem;
   font-family: Rubik, sans-serif;
   color: #1F2022;
@@ -13402,29 +13398,30 @@ button:focus {
   text-align: center;
   margin-bottom: 3.125rem;
 }
-@media (max-width: 1500px) {
-  .l_site-main .subs_end-container .subs_end_sub-title {
-    font-size: 1.5rem;
+@media (max-width: 1536px) {
+  .subscription_end .l_site-main .subs_end-container .subs_end_sub-title {
+    font-size: 1.3rem;
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .l_site-main .subs_end-container .subs_end_sub-title {
+  .subscription_end .l_site-main .subs_end-container .subs_end_sub-title {
     font-size: 1.2rem;
   }
 }
-.l_site-main .subs_end-container .btn {
+.subscription_end .l_site-main .subs_end-container .btn {
   padding: 1.2rem 9rem;
-  font-size: 1.3rem !important;
-  border-radius: 0.65rem !important;
+  font-size: 1.3rem;
+  border-radius: 0.65rem;
 }
-@media (max-width: 1500px) {
-  .l_site-main .subs_end-container .btn {
+@media (max-width: 1536px) {
+  .subscription_end .l_site-main .subs_end-container .btn {
     padding: 0.71rem 7rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
-  .l_site-main .subs_end-container .btn {
+  .subscription_end .l_site-main .subs_end-container .btn {
     padding: 0.71rem 1rem;
     margin: 0 auto 1rem !important;
     width: 70%;
@@ -14277,6 +14274,12 @@ button:focus {
   border-radius: 9px 9px 0 0;
   background-size: contain;
 }
+@media (max-width: 1522px) {
+  .tariff_popup .modal-dialog .modal-header {
+    padding: 0.5rem 0.5rem 0;
+    min-height: 110px;
+  }
+}
 @media (max-width: 576px) {
   .tariff_popup .modal-dialog .modal-header {
     background: #FFF;
@@ -14322,9 +14325,27 @@ button:focus {
   padding: 3rem 1.5rem 1rem;
   color: #C7C3C3;
 }
+@media (max-width: 1600px) {
+  .tariff_popup .modal-dialog .modal-body {
+    padding: 1rem 1.5rem 1rem;
+  }
+}
+@media (max-width: 1522px) {
+  .tariff_popup .modal-dialog .modal-body {
+    padding: 0.5rem 1.5rem;
+  }
+}
 @media (max-width: 576px) {
   .tariff_popup .modal-dialog .modal-body {
-    padding: 1rem;
+    padding: 0.5rem;
+  }
+}
+.tariff_popup .modal-dialog .modal-body .tariff_custom-group {
+  margin: 1.5rem;
+}
+@media (max-width: 1522px) {
+  .tariff_popup .modal-dialog .modal-body .tariff_custom-group {
+    margin: 1rem;
   }
 }
 .tariff_popup .modal-dialog .modal-body .price {
@@ -14390,6 +14411,18 @@ button:focus {
   font-weight: 500;
   font-size: 1.5rem !important;
   word-spacing: 0.25rem;
+  padding: 0.7rem;
+  width: 100%;
+}
+@media (min-width: 1600px) {
+  .tariff_popup .modal-dialog .modal-body .btn-inline-custom, .tariff_popup .modal-dialog .modal-body .btn-inline-custom2, .tariff_popup .modal-dialog .modal-body .btn-inline-custom3, .tariff_popup .modal-dialog .modal-body .btn-inline-custom4, .tariff_popup .modal-dialog .modal-body .btn-inline-custom5 {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .tariff_popup .modal-dialog .modal-body .btn-inline-custom, .tariff_popup .modal-dialog .modal-body .btn-inline-custom2, .tariff_popup .modal-dialog .modal-body .btn-inline-custom3, .tariff_popup .modal-dialog .modal-body .btn-inline-custom4, .tariff_popup .modal-dialog .modal-body .btn-inline-custom5 {
+    margin-bottom: 0.5rem;
+  }
 }
 .tariff_popup .modal-dialog .modal-body .icon-credit-cvc, .tariff_popup .modal-dialog .modal-body .icon-credit-cxp {
   width: 48%;

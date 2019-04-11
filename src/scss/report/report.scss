@@ -1,6 +1,10 @@
 @import "../variables";
 
 .report & {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 100px);
+  padding: 1rem 0;
   .ddcommon .ddArrow {
     @media (max-width: 576px) {
       right: 22px;
@@ -51,6 +55,22 @@
         cursor: pointer;
         margin-right: 2rem;
         display: block;
+      }
+    }
+    .btn {
+      padding: 1rem 0;
+      font-size: 1.3rem;
+      border-radius: 0.65rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      @media (max-width: 1536px) {
+        padding: 0.71rem 7rem;
+        font-size: 1rem;
+      }
+      @media (max-width: 576px) {
+        padding: 0.71rem 1rem;
+        margin: 0 auto 1rem !important;
+        width: 70%;
       }
     }
   }

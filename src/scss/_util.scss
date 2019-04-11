@@ -252,6 +252,20 @@
   }
 }
 
+.mb-xxl-4 {
+  @media (min-width: 1600px) {
+    margin-top: 1.5rem !important;
+  }
+}
+
+.mb-xxl-3 {
+  @media (min-width: 1600px) {
+  margin-bottom: 1rem !important;
+  }
+}
+
+
+
 .w-45 {
   width: 45% !important;
 }
