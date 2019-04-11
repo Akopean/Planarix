@@ -13018,14 +13018,8 @@ button:focus {
   font-weight: 500;
   font-family: Rubik, sans-serif;
 }
-@media (max-width: 1600px) {
-  .l_site-main .l_faq-title {
-    font-size: 2.8rem;
-  }
-}
 @media (max-width: 991px) {
   .l_site-main .l_faq-title {
-    margin: 1rem 0;
     font-size: 2.2rem;
   }
 }
@@ -13036,27 +13030,29 @@ button:focus {
 }
 .l_site-main .l_faq-masthead {
   position: relative;
-  height: calc(100vh - 155px - 87px);
-  margin-bottom: 40px;
+  height: calc(100vh - 212px - 4.075rem);
+  margin: 2.7rem 0 2.5rem;
 }
 @media (max-width: 1680px) {
   .l_site-main .l_faq-masthead {
-    height: calc(100vh - 113px - 87px);
+    height: calc(100vh - 170px - 3.075rem);
   }
 }
 @media (max-width: 1600px) {
   .l_site-main .l_faq-masthead {
-    height: calc(100vh - 97px - 81px);
+    height: calc(100vh - 145px - 3.075rem );
+    margin: 1.7rem 0 1.3rem;
   }
 }
 @media (max-width: 991px) {
   .l_site-main .l_faq-masthead {
-    height: 510px;
+    height: 450px;
+    margin: 1.37rem 0 1.3rem;
   }
 }
 @media (max-width: 576px) {
   .l_site-main .l_faq-masthead {
-    height: 430px;
+    height: 415px;
   }
 }
 .l_site-main .l_faq-masthead .l_faq-masthead-illustration {
@@ -13072,15 +13068,16 @@ button:focus {
 @media (max-width: 991px) {
   .l_site-main .l_faq-masthead .l_faq-masthead-illustration {
     bottom: 0;
-    right: 15%;
-    width: 509px;
+    right: 20%;
+    width: 428px;
     height: 390px;
     background-size: 100%;
+    background-position: bottom;
   }
 }
 @media (max-width: 767px) {
   .l_site-main .l_faq-masthead .l_faq-masthead-illustration {
-    right: 5%;
+    right: 11%;
   }
 }
 @media (max-width: 576px) {
@@ -13089,10 +13086,11 @@ button:focus {
     height: 317px;
     bottom: -5%;
     right: 0;
+    background-position: center;
   }
 }
 .l_site-main .l_faq-masthead .l_faq-masthead_content {
-  padding-top: calc(23vh);
+  padding-top: calc(17vh);
   max-width: 600px;
   font-family: Rubik, sans-serif;
 }
@@ -13113,6 +13111,11 @@ button:focus {
   font-weight: 400;
   font-size: 3.625rem;
   line-height: 1.1;
+}
+@media (max-width: 1600px) {
+  .l_site-main .l_faq-masthead .l_faq-masthead_content h1 {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 1199px) {
   .l_site-main .l_faq-masthead .l_faq-masthead_content h1 {
@@ -13153,6 +13156,11 @@ button:focus {
   font-family: Rubik, sans-serif;
   padding: 65px 0;
 }
+@media (max-width: 1600px) {
+  .l_site-main .l_faq-feedback {
+    padding: 40px 0;
+  }
+}
 .l_site-main .l_faq-feedback .l_faq-feedback_container {
   max-width: 570px;
 }
@@ -13165,7 +13173,7 @@ button:focus {
   color: #fff;
   font-size: 2.25rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
   .l_site-main .l_faq-feedback .l_faq-feedback_container .l_faq-feedback_title h3 {
     font-size: 2rem;
   }
@@ -13177,6 +13185,17 @@ button:focus {
 }
 .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom, .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom2, .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom3, .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom4, .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom5 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border-radius: 0.65rem;
+  width: 100%;
+}
+@media (max-width: 1600px) {
+  .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom, .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom2, .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom3, .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom4, .l_site-main .l_faq-feedback .l_faq-feedback_container .btn-inline-custom5 {
+    width: 75%;
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
+  }
 }
 .l_site-main .l_desc-templates-title {
   margin-bottom: 3.125rem;
@@ -13233,6 +13252,12 @@ button:focus {
 }
 .l_site-main .l_site-title {
   margin-top: 1.375rem;
+  font-size: 3rem;
+}
+@media (max-width: 1600px) {
+  .l_site-main .l_site-title {
+    font-size: 2.5rem;
+  }
 }
 .first_screen .l_site-main {
   display: flex;
