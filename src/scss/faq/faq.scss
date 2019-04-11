@@ -85,7 +85,7 @@
     height: calc(100vh - 145px - 3.075rem );
     margin: 1.7rem 0 1.3rem;
   }
-  @media (max-width: 1024px) and (min-height: 1366px) {
+  @media (max-width: 1024px) and (min-height: 1300px) {
     height: calc(40vh);
   }
   @media (max-width: 991px) {
@@ -109,7 +109,7 @@
       width: 58vw;
       background-position: right;
     }
-    @media (max-width: 1024px) and (min-height: 1366px) {
+    @media (max-width: 1024px) and (min-height: 1300px) {
       background-position: bottom;
       right: -59px;
       z-index: -1;
@@ -145,7 +145,7 @@
     @media (max-width: 1199px) {
       max-width: 440px;
     }
-    @media (max-width: 1024px) and (min-height: 1366px) {
+    @media (max-width: 1024px) and (min-height: 1300px) {
       padding-top: calc(9vh);
     }
     @media (max-width: 991px) {

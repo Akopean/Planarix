@@ -13038,7 +13038,7 @@ button:focus {
     margin: 1.7rem 0 1.3rem;
   }
 }
-@media (max-width: 1024px) and (min-height: 1366px) {
+@media (max-width: 1024px) and (min-height: 1300px) {
   .l_site-main .l_faq-masthead {
     height: calc(40vh);
   }
@@ -13071,7 +13071,7 @@ button:focus {
     background-position: right;
   }
 }
-@media (max-width: 1024px) and (min-height: 1366px) {
+@media (max-width: 1024px) and (min-height: 1300px) {
   .l_site-main .l_faq-masthead .l_faq-masthead-illustration {
     background-position: bottom;
     right: -59px;
@@ -13118,7 +13118,7 @@ button:focus {
     max-width: 440px;
   }
 }
-@media (max-width: 1024px) and (min-height: 1366px) {
+@media (max-width: 1024px) and (min-height: 1300px) {
   .l_site-main .l_faq-masthead .l_faq-masthead_content {
     padding-top: calc(9vh);
   }
