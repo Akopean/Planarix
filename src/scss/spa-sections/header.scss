@@ -7,6 +7,13 @@
   position: relative;
   height: 100vh;
   .l_header--navbar {
+    padding: 3.3rem 0;
+    @media (max-width: 1680px) {
+      padding: 2rem 0;
+    }
+    @media (max-width: 1600px) {
+      padding: 1.5rem 0;
+    }
     @media (max-width: 991px) {
       border-bottom: 1px solid #E5E9EF;
       width: 100vw;
@@ -18,20 +25,30 @@
       position: fixed;
     }
     .navbar-brand{
+      margin: 0 6.66rem 0 0;
       z-index: 100;
+      @media (max-width: 576px) {
+        margin: 0;
+      }
     }
     .l_header--menu {
-      //font-family: 'MontserratMedium', sans-serif;
       font-family: Montserrat, sans-serif;
       font-weight: 500;
 
-      .l_lang {
+      .nav-item.l_lang {
+        padding-top: 5px;
+        @media (max-width: 1400px) {
+          padding-top: 0;
+        }
         .nav-link {
           display: inline-flex;
           background-color: #FFF;
-          padding-right: 0.9375rem !important;
-          padding-left: 0.9375rem !important;
-
+          font-size: 1rem;
+          padding: 10px 25px;
+          letter-spacing: normal;
+          @media (max-width: 1400px) {
+            padding: 8px 20px;
+          }
         }
 
         .l_current_lang {
@@ -52,8 +69,7 @@
 
           &--en {
             color: #E475AC !important;
-            background-color: #FFF;
-
+            background-color: #EBEBEB;
             &:hover {
               color: darken(#E475AC, 20%) !important;
             }
@@ -63,46 +79,43 @@
 
       .nav-item {
         .nav-link {
-          padding-right: 2.0625rem;
-          padding-left: 2.0625rem;
-          letter-spacing: 3px;
+          padding: 0.5rem 33px 0 36px;
           color: #FFF;
-          font-size: 1.32rem;
+          font-size: 1.5rem;
 
           text-transform: uppercase;
           @media (max-width: 1400px) {
             font-size: 1rem;
+            padding: 8px 33px 0 36px;
           }
           @media (max-width: 991px) {
-            padding: 1rem 1rem;
+            padding: .51rem 0;
           }
-          &:hover {
-            color: darken(#FFF, 20%);
-          }
-
           @media (min-width: 992px) and (max-width: 1200px) {
             padding-right: 1.25rem;
             padding-left: 1.25rem;
+          }
+          &:hover {
+            color: darken(#FFF, 20%);
           }
         }
 
         .l_auth__button {
           background-color: #ff3c88;
-          width: 165px;
-          height: 47px;
+          width: 168px;
+          height: 49px;
           text-transform: none;
           border-radius: 10px;
+          font-family: Rubik, sans-serif;
+          font-size: 1.125rem;
+          font-weight: 300;
+          margin-left: 10px;
+          padding: 11px 0;
           @media (max-width: 1400px) {
-            width: 165px;
-            height: 44px;
-          }
-          @media (max-width: 1199px) {
-            width: 135px;
-            height: 41px;
-          }
-          @media (max-width: 991px) {
-            width: 165px;
-            height: 63px;
+            font-size: 1rem;
+            width: 145px;
+            height: 40px;
+            padding: 8px 0;
           }
 
           &:hover {

@@ -21,9 +21,8 @@
     }
 
     .l_card--premium {
-      background: #FFF url(../images/tariff_bg_element.png) no-repeat 100% top;
+      background: #FFF url(../images/tariff_bg_element.png) no-repeat 120% 0;
       background-size: 43%;
-      background-position: 126% -6%;
       @media (min-width: 992px) {
         border-radius: 0 8px 8px 0 !important;
       }

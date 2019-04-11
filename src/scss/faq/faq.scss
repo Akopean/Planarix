@@ -14,7 +14,6 @@
 .l_faq-container {
   .accordion {
     margin-bottom: 2.375rem;
-
     .card {
       border: none;
 
@@ -81,7 +80,7 @@
 
 .l_faq-masthead {
   position: relative;
-  height: 840px;
+  height: calc(100vh - 155px - 87px);
   margin-bottom: 40px;
   @media (max-width: 991px) {
     height: 510px;
@@ -93,10 +92,10 @@
     bottom: 0;
     right: -205px;
     z-index: -1;
-    width: 1060px;
-    height: 800px;
+    width: 1000px;
+    height: inherit;
     position: absolute;
-    background: url(../images/faq_illustration.svg) no-repeat;
+    background: url(../images/faq_illustration.svg) no-repeat center;
     background-size: contain;
     @media (max-width: 991px) {
       bottom: 0;
@@ -117,7 +116,7 @@
   }
 
   .l_faq-masthead_content {
-    padding-top: 200px;
+    padding-top: calc(23vh);
     max-width: 600px;
     font-family: Rubik, sans-serif;
     @media (max-width: 1199px) {

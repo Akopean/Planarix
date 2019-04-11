@@ -228,6 +228,10 @@ button:focus {
   @media (min-width: 1200px) {
     //margin-bottom: 210px;
   }
+  .l_site-title{
+    margin-top: 1.375rem;
+  }
+
   .first_screen & {
     display: flex;
     align-items: center;
@@ -728,7 +732,7 @@ button:focus {
     .profile & {
       @media (max-width: 1199px) {
         max-width: 500px;
-        margin: 0 auto;
+        margin: 0 auto 1.875rem;
       }
     }
 
