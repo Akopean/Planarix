@@ -12712,27 +12712,16 @@ button:focus {
     font-size: 2.2rem;
   }
 }
-.l_site-main .l_treatment-title {
+.l_site-main .l_site-title {
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 3rem;
   font-family: Rubik, sans-serif;
 }
 @media (max-width: 1600px) {
-  .l_site-main .l_treatment-title {
+  .l_site-main .l_site-title {
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
-  }
-}
-@media (max-width: 800px) {
-  .l_site-main .l_treatment-title {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
-}
-@media (max-width: 576px) {
-  .l_site-main .l_treatment-title {
-    font-size: 2.2rem;
   }
 }
 .treatment .l_site-main .l_treatment-container .responsive-table {
@@ -12771,6 +12760,11 @@ button:focus {
   height: 6px;
   width: 100%;
   border-bottom: 6px solid #FF398B;
+}
+@media (max-width: 1024px) {
+  .treatment .l_site-main .l_treatment-container .l_treatment-nav .nav-link.active::after {
+    bottom: 0;
+  }
 }
 @media (max-width: 576px) {
   .treatment .l_site-main .l_treatment-container .l_treatment-nav .nav-link.active::after {
@@ -13065,6 +13059,13 @@ button:focus {
   background: url(../images/faq_illustration.svg) no-repeat center;
   background-size: contain;
 }
+@media (min-width: 2200px) {
+  .l_site-main .l_faq-masthead .l_faq-masthead-illustration {
+    right: -25vw;
+    width: 58vw;
+    background-position: right;
+  }
+}
 @media (max-width: 991px) {
   .l_site-main .l_faq-masthead .l_faq-masthead-illustration {
     bottom: 0;
@@ -13094,6 +13095,11 @@ button:focus {
   max-width: 600px;
   font-family: Rubik, sans-serif;
 }
+@media (min-width: 2200px) {
+  .l_site-main .l_faq-masthead .l_faq-masthead_content {
+    max-width: 790px;
+  }
+}
 @media (max-width: 1199px) {
   .l_site-main .l_faq-masthead .l_faq-masthead_content {
     max-width: 440px;
@@ -13111,6 +13117,11 @@ button:focus {
   font-weight: 400;
   font-size: 3.625rem;
   line-height: 1.1;
+}
+@media (min-width: 2200px) {
+  .l_site-main .l_faq-masthead .l_faq-masthead_content h1 {
+    font-size: 4.625rem;
+  }
 }
 @media (max-width: 1600px) {
   .l_site-main .l_faq-masthead .l_faq-masthead_content h1 {
@@ -13137,6 +13148,12 @@ button:focus {
   color: #c3c1c1;
   font-size: 1.12rem;
   max-width: 400px;
+}
+@media (min-width: 2200px) {
+  .l_site-main .l_faq-masthead .l_faq-masthead_content .sub_text {
+    max-width: 790px;
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 991px) {
   .l_site-main .l_faq-masthead .l_faq-masthead_content .sub_text {
