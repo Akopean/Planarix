@@ -82,6 +82,12 @@
   position: relative;
   height: calc(100vh - 155px - 87px);
   margin-bottom: 40px;
+  @media (max-width: 1680px) {
+    height: calc(100vh - 113px - 87px);
+  }
+  @media (max-width: 1600px){
+    height: calc(100vh - 97px - 81px);
+  }
   @media (max-width: 991px) {
     height: 510px;
   }

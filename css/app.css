@@ -13039,6 +13039,16 @@ button:focus {
   height: calc(100vh - 155px - 87px);
   margin-bottom: 40px;
 }
+@media (max-width: 1680px) {
+  .l_site-main .l_faq-masthead {
+    height: calc(100vh - 113px - 87px);
+  }
+}
+@media (max-width: 1600px) {
+  .l_site-main .l_faq-masthead {
+    height: calc(100vh - 97px - 81px);
+  }
+}
 @media (max-width: 991px) {
   .l_site-main .l_faq-masthead {
     height: 510px;
