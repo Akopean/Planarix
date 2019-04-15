@@ -7,7 +7,7 @@
         this.touch_delta_x = 0;
         this.callback = callback;
     }
-    left(){
+    left(){ 
          this.touch('left');
     };
     right() {

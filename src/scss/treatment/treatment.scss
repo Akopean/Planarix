@@ -1,18 +1,24 @@
 @import "../variables";
 
 
-.l_site-title {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
-  font-family: Rubik, sans-serif;
-  @media (max-width: 1600px) {
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
 .treatment & {
+  .l_site-title{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: Rubik, sans-serif;
+    margin: 3rem 0;
+    @media (max-width: 1600px), (max-height: 700px){
+      font-size: 2.5rem;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 1024px) {
+      font-size: 2.2rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
+  }
+
   .l_treatment-container {
     .responsive-table {
       @media (max-width: 1199px) {
@@ -111,7 +117,11 @@
           color: $col_99;
         }
         .rate{
-
+            .rateyo {
+              @media (max-width: 576px) {
+              margin: auto;
+            }
+          }
         }
         li {
           padding: .1rem 0;

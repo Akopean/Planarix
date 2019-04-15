@@ -9841,6 +9841,7 @@ h3 {
 @media (max-width: 576px) {
   .btn-inline-custom4 {
     padding: 0.63rem 1rem;
+    font-size: 1.2rem;
   }
 }
 .btn-inline-custom4:hover {
@@ -10168,6 +10169,11 @@ input[type=checkbox].switch:checked:after {
     padding: 1.8rem 1.5625rem;
   }
 }
+@media (max-width: 576px) {
+  .custom-field3 {
+    font-size: 1.2rem;
+  }
+}
 .custom-field3:focus {
   color: #777777;
   background-color: #FFFDFD;
@@ -10324,9 +10330,16 @@ label {
   font-weight: 500;
   font-family: Monserat, sans-serif;
 }
-@media (max-width: 576px) {
+@media (max-height: 700px) {
   .l_radio__text {
     padding-left: 3rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .l_radio__text {
+    padding-left: 2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -10341,6 +10354,20 @@ label {
   border-radius: 50%;
   background: #FFF;
 }
+@media (max-height: 700px) {
+  .l_radio__text:before {
+    top: 0;
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .l_radio__text:before {
+    top: 0;
+    width: 25px;
+    height: 25px;
+  }
+}
 
 .l_radio__text:after {
   content: "";
@@ -10354,6 +10381,22 @@ label {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: 0.2s;
+}
+@media (max-height: 700px) {
+  .l_radio__text:after {
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .l_radio__text:after {
+    top: 7px;
+    left: 7px;
+    width: 11px;
+    height: 11px;
+  }
 }
 
 .l_radio input:checked + .l_radio__text:after {
@@ -11084,7 +11127,12 @@ button:focus {
   }
 }
 .l_tariff .l_tariff--content .card.current .card-body .card-title {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 1561px) {
+  .l_tariff .l_tariff--content .card.current .card-body .card-title {
+    padding-bottom: 1rem;
+  }
 }
 .l_tariff .l_tariff--content .card.current .l_tar-footer .btn {
   color: #fff;
@@ -11132,6 +11180,18 @@ button:focus {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+@media (max-width: 1560px) {
+  .l_tariff .l_tariff--content .card .card-body .card-title {
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .l_tariff .l_tariff--content .card .card-body .card-title {
+    margin-top: 0;
+  }
+}
 .l_tariff .l_tariff--content .card .card-body .card-title span {
   display: block;
   font-size: 14px;
@@ -11173,9 +11233,20 @@ button:focus {
   font-weight: 700;
   font-size: 2.9rem;
 }
+@media (max-width: 1560px) {
+  .l_tariff .l_tariff--content .card .card-body .l_tar-price {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}
 .l_tariff .l_tariff--content .card .card-body .l_tar-price .l_tar-price--period {
   font-size: 0.875rem;
   color: #adadad;
+}
+@media (max-width: 1560px) {
+  .l_tariff .l_tariff--content .card .card-body .l_tar-price .l_tar-price--period {
+    font-size: 0.75rem;
+  }
 }
 .l_tariff .l_tariff--content .card .l_tar-footer {
   margin-top: 1.25rem;
@@ -11202,15 +11273,21 @@ button:focus {
   padding-top: 2.5rem;
   padding-bottom: 2.8125rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 1600px) {
   .l_tariff .l_tariff--footer {
-    width: calc(100% + 30px);
-    left: -15px;
+    margin-top: 6.0625rem;
   }
 }
 @media (max-width: 1200px) {
   .l_tariff .l_tariff--footer {
     margin-top: 3.75rem;
+  }
+}
+@media (max-width: 576px) {
+  .l_tariff .l_tariff--footer {
+    width: calc(100% + 30px);
+    left: -15px;
+    margin-top: 1.75rem;
   }
 }
 .l_tariff .l_tariff--footer .l_tariff-footer--content {
@@ -11231,6 +11308,11 @@ button:focus {
   font-weight: 700;
   margin-bottom: 1.875rem;
 }
+@media (max-width: 1600px) {
+  .l_tariff .l_tariff--footer .l_tariff-footer--content .l_tariff-callback--msg {
+    margin-bottom: 1.2rem;
+  }
+}
 .l_tariff .l_tariff--footer::after {
   content: "";
   background: url(../images/tariff_illustration.svg) no-repeat 70% bottom;
@@ -11239,6 +11321,12 @@ button:focus {
   position: absolute;
   right: 9%;
   bottom: -100px;
+}
+@media (max-width: 1600px) {
+  .l_tariff .l_tariff--footer::after {
+    height: 475px;
+    bottom: -150px;
+  }
 }
 @media (max-width: 1200px) {
   .l_tariff .l_tariff--footer::after {

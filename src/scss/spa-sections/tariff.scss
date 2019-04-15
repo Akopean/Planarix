@@ -40,7 +40,10 @@
       &.current {
         .card-body {
           .card-title {
-            padding-bottom: 1rem;
+            padding-bottom: .5rem;
+            @media (min-width: 1561px) {
+              padding-bottom: 1rem;
+            }
           }
         }
 
@@ -100,7 +103,14 @@
           font-weight: bold;
           font-size: 1.5rem;
           text-transform: uppercase;
-
+          @media (max-width: 1560px) {
+            margin-top: 1rem;
+            padding-bottom: 1.5rem;
+            font-size: 1.3rem;
+          }
+          @media (max-width: 576px) {
+            margin-top: 0;
+          }
           span {
             display: block;
             font-size: 14px;
@@ -151,14 +161,19 @@
         .l_tar-price {
           margin-top: 1.875rem;
           text-align: center;
-          //font-family: MontserratBold, sans-serif;
           font-family: Montserrat, sans-serif;
           font-weight: 700;
           font-size: 2.9rem;
-
+          @media (max-width: 1560px) {
+            margin-top: 1rem;
+            font-size: 2rem;
+          }
           .l_tar-price--period {
             font-size: 0.875rem;
             color: #adadad;
+            @media (max-width: 1560px) {
+              font-size: 0.75rem;
+            }
           }
         }
       }
@@ -194,14 +209,17 @@
     color: #FFF;
     padding-top: 2.5rem;
     padding-bottom: 2.8125rem;
-    @media (max-width: 576px) {
-      width: calc(100% + 30px);
-      left: -15px;
+    @media (max-width: 1600px) {
+      margin-top: 6.0625rem;
     }
     @media (max-width: 1200px) {
       margin-top: 3.75rem;
     }
-
+    @media (max-width: 576px) {
+      width: calc(100% + 30px);
+      left: -15px;
+      margin-top: 1.75rem;
+    }
     .l_tariff-footer--content {
       position: relative;
       z-index: 23;
@@ -210,7 +228,6 @@
         font-size: 1.45rem;
         word-spacing: 6px;
         margin: 0.25rem 0;
-        //font-family: "MontserratRegular", sans-serif;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
       }
@@ -218,10 +235,12 @@
       .l_tariff-callback--msg {
         font-size: 1.43rem;
         word-spacing: 6px;
-        //font-family: MontserratBold, sans-serif;
         font-family: Montserrat, sans-serif;
         font-weight: 700;
         margin-bottom: 1.875rem;
+        @media (max-width: 1600px) {
+          margin-bottom: 1.2rem;
+        }
       }
     }
 
@@ -233,6 +252,10 @@
       position: absolute;
       right: 9%;
       bottom: -100px;
+      @media (max-width: 1600px) {
+        height: 475px;
+        bottom: -150px;
+      }
       @media (max-width: 1200px) {
         content: none;
       }

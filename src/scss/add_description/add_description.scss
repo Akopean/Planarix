@@ -14,21 +14,16 @@
       }
     }
   }
-  .l_add-desc-title {
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 3.5rem;
-    font-family: Rubik, sans-serif;
+  .l_site-title {
+    margin: 3rem 0;
     @media (max-width: 1600px) {
-      font-size: 2.8rem;
-      margin-bottom: 1.5rem;
+      margin: 1.5rem 0;
     }
     @media (max-width: 800px) {
-      margin-top: 1rem;
-      margin-bottom: 2rem;
+      margin: 1rem;
     }
     @media (max-width: 576px) {
-      font-size: 2.2rem;
+      //font-size: 2.2rem;
     }
   }
 }

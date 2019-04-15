@@ -124,6 +124,7 @@
   font-family: Rubik, sans-serif;
   @media (max-width: 576px) {
     padding: 0.63rem 1rem;
+    font-size: 1.2rem;
   }
   &:hover {
     color: $white;
@@ -137,7 +138,6 @@
     background-color: $a_focus3;
     //border-radius: 34px;
   }
-
   & svg {
     width: 11px;
     margin-right: 3px;

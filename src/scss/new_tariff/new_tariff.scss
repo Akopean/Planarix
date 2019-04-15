@@ -1,30 +1,70 @@
 @import "../variables";
 
-.new_tariff & {
-  .btn-custom-lg{
-    padding: 1rem 9rem;
-  }
-  .l_tariff {
-    padding-top: 1rem;
-    background-color: #fff;
-    margin-bottom: 9.375rem;
+.new_tariff {
+  .l_site-main {
+    .btn-custom-lg {
+      padding: 1rem 9rem;
+      @media (max-width: 1600px) {
+        padding: .5rem 8rem;
+      }
+    }
+
+    .l_tariff {
+      padding-top: 1rem;
+      background-color: #fff;
+      margin-bottom: 9.375rem;
+      @media (max-width: 1600px) {
+        margin-bottom: 7.375rem;
+      }
+      @media (max-width: 1200px) {
+        margin-bottom: 3.375rem;
+      }
+
+      .l_tariff--footer {
+        &::after {
+          content: "";
+          background-position: 70% top;
+          height: 430px;
+          bottom: -100px;
+          @media (max-width: 1600px) {
+            height: 410px;
+            bottom: -117px;
+          }
+          @media (max-width: 1200px) {
+            content: none;
+          }
+        }
+      }
+    }
+
+    .l_new_tariff-title {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      font-family: Rubik, sans-serif;
+      @media (max-width: 1600px) {
+        font-size: 2.8rem;
+        margin-bottom: 0;
+      }
+      @media (max-width: 1533px) {
+        font-size: 2.3rem;
+        margin-bottom: 0;
+      }
+      @media (max-width: 800px) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 576px) {
+        font-size: 2.2rem;
+      }
+    }
   }
 
-  .l_new_tariff-title {
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    font-family: Rubik, sans-serif;
-    @media (max-width: 1600px) {
-      font-size: 2.8rem;
-      margin-bottom: 0;
-    }
-    @media (max-width: 800px) {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    @media (max-width: 576px) {
-      font-size: 2.2rem;
+  .footer-container {
+    @media (min-width: 768px) {
+      display: block;
+      z-index: 100;
+      position: relative;
     }
   }
 }

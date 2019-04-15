@@ -4,6 +4,9 @@
 .profile & {
   .btn-inline-custom4 {
     font-size: 1rem;
+    @media (max-width: 576px) {
+      padding: .63rem 5.7rem;;
+    }
   }
 
 
