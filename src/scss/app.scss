@@ -943,19 +943,23 @@ button:focus {
     @media (max-width: 1199px) {
       background-position: 90% 35px;
     }
-    @media (max-width: 991px) {
-      min-height: calc(100% - 57px);
-    }
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
       background: none;
     }
-
     .l_404-container {
       max-width: 600px;
-      @media (max-width: 991px) {
-        max-width: 450px;
+      @media (max-width: 1600px) {
+        max-width: 520px;
       }
-      @media (max-width: 800px) {
+      /* Landscape */
+      @media only screen
+      and (min-width: 1024px)
+      and (max-height: 1366px)
+      and (orientation: portrait)
+      and (-webkit-min-device-pixel-ratio: 1.5) {
+        padding-bottom: 200px;
+      }
+      @media (max-width: 1024px) {
         text-align: center;
         max-width: 100%;
       }
@@ -965,8 +969,8 @@ button:focus {
         font-family: Rubik, sans-serif;
         text-transform: uppercase;
         padding: 1.875rem 0;
-        @media (max-width: 991px) {
-          font-size: 1.85rem;
+        @media (max-width: 1600px) {
+          font-size: 1.82rem;
         }
         @media (max-width: 576px) {
           font-size: 1.5rem;
@@ -977,6 +981,10 @@ button:focus {
         padding: 0.625rem 5.625rem;
         font-family: Rubik, sans-serif;
         font-size: 1.5rem;
+        @media (max-width: 1600px) {
+          font-size: 1.2rem;
+          padding: 0.425rem 4.25rem;
+        }
       }
     }
   }
@@ -986,11 +994,10 @@ button:focus {
     align-items: center;
     min-height: calc(100% - 95px);
     .l_500-container {
-      @media (max-width: 800px) {
-        max-width: 500px;
-      }
+      max-width: 55vw;
       @media (max-width: 576px) {
         text-align: center;
+        max-width: 100%;
       }
       img {
         @media (max-width: 768px) {
@@ -1039,42 +1046,91 @@ button:focus {
         padding: 0.625rem 5.625rem;
         font-family: Rubik, sans-serif;
         font-size: 1.5rem;
+        @media (max-width: 1600px) {
+          font-size: 1.2rem;
+          padding: 0.425rem 4.25rem;
+        }
       }
     }
   }
 }
 
-.l_500 .wrapper {
+/*
+.l_404 .wrapper {
   overflow: hidden;
-  .l_500-illustration {
+  .l_404-illustration {
     position: absolute;
-    background: url(../images/500_illustration.svg) no-repeat 0 0;
-    width: 1900px;
+    background: url(../images/404_illustration.svg) no-repeat 0 0;
+    width: 1044px;
     height: 100%;
-    top: 0;
-    left: 53vw;
-    background-size: cover;
+    top: 140px;
+    left: 42%;
+    background-size: contain;
     @media (max-width: 1600px) {
-      left: 60vw;
-      background-size: contain;
+      left: 55vw;
     }
     @media (max-width: 1024px) {
-      background-size: contain;
-      left: 57vw;
+      left: 54vw;
     }
     @media only screen
     and (min-width: 991px)
     and (max-height: 1366px)
     and (-webkit-min-device-pixel-ratio: 1.5) {
-      left: 38vw;
-      background-size: cover;
+      left: 42vw;
+    }
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+      left: 54vw;
     }
     @media (max-width: 800px) {
       left: 58vw;
-      background-size: contain;
     }
     @media (max-width: 768px) {
-      left: 40vw;
+      left: 53vw;
+    }
+    @media (max-width: 576px) {
+      background: none;
+    }
+    @media (min-width: 1930px) {
+    }
+  }
+}
+*/
+.l_500 .wrapper {
+  overflow: hidden;
+  .l_500-illustration {
+    position: absolute;
+    background: url(../images/500_illustration.svg) no-repeat 0 0;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 53vw;
+    background-size: cover;
+    @media (max-width: 1600px) {
+      left: 55vw;
+    }
+    @media (max-width: 1024px) {
+      left: 54vw;
+    }
+    @media only screen
+    and (min-width: 991px)
+    and (max-height: 1366px)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+      left: 42vw;
+    }
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+      left: 54vw;
+    }
+    @media (max-width: 800px) {
+      left: 58vw;
+    }
+    @media (max-width: 768px) {
+      left: 53vw;
     }
     @media (max-width: 576px) {
       background: none;

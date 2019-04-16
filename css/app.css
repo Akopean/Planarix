@@ -11777,7 +11777,7 @@ button:focus {
 }
 @media (max-width: 767px) {
   .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_illustration {
-    right: 11%;
+    right: -33%;
   }
 }
 @media (max-width: 576px) {
@@ -11850,6 +11850,11 @@ button:focus {
 .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_title.community {
   margin-top: 2.5rem;
 }
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_title.community {
+    margin-top: 1.5rem;
+  }
+}
 @media (max-height: 750px), (max-width: 768px) {
   .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_title.community {
     margin-top: 1.5rem;
@@ -11866,6 +11871,11 @@ button:focus {
 @media (min-width: 2200px) {
   .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_place, .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_email, .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_icon {
     font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_place, .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_email, .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_icon {
+    margin: 1.2rem 0 1.2rem;
   }
 }
 @media (max-height: 750px), (max-width: 768px) {
@@ -11940,6 +11950,11 @@ button:focus {
   padding: 0;
   margin: 2rem 1.25rem 1.85rem 0;
   display: inline-block;
+}
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_icon {
+    margin: 1rem 1rem 1rem 0;
+  }
 }
 @media (max-height: 750px) {
   .l_about .l_site-main .l_about-masthead .l_about-masthead_container .l_about-masthead_content .l_about-list .list_icon {
@@ -12028,11 +12043,22 @@ button:focus {
   background-size: contain;
   padding: 2.8125rem 0 2.5rem;
 }
+@media (max-width: 1600px) {
+  .l_about .l_site-main .l_about-questions {
+    padding: 1.8rem 0 1.8rem;
+  }
+}
 .l_about .l_site-main .l_about-questions .l_about-questions_title {
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 3.125rem;
   font-family: Rubik, sans-serif;
+}
+@media (max-width: 1600px) {
+  .l_about .l_site-main .l_about-questions .l_about-questions_title {
+    font-size: 2.5rem;
+    margin-bottom: 1.525rem;
+  }
 }
 @media (max-width: 991px) {
   .l_about .l_site-main .l_about-questions .l_about-questions_title {
@@ -12067,6 +12093,23 @@ button:focus {
   .l_about .l_site-main .l_about-questions .l_about-questions_container {
     width: 600px;
     margin: 0 auto;
+  }
+}
+.l_about .l_site-main .l_about-questions .l_about-questions_container .form-group {
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 1600px) {
+  .l_about .l_site-main .l_about-questions .l_about-questions_container .form-group {
+    margin-bottom: 1.5rem;
+  }
+}
+.l_about .l_site-main .l_about-questions .l_about-questions_container .btn-inline-custom4 {
+  padding: 1rem 5.7rem;
+}
+@media (max-width: 1600px) {
+  .l_about .l_site-main .l_about-questions .l_about-questions_container .btn-inline-custom4 {
+    font-size: 1.25rem;
+    padding: 0.61rem 5.7rem;
   }
 }
 
@@ -14387,25 +14430,26 @@ button:focus {
     background-position: 90% 35px;
   }
 }
-@media (max-width: 991px) {
-  .l_404 .l_site-main {
-    min-height: calc(100% - 57px);
-  }
-}
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .l_404 .l_site-main {
     background: none;
   }
 }
 .l_404 .l_site-main .l_404-container {
   max-width: 600px;
+  /* Landscape */
 }
-@media (max-width: 991px) {
+@media (max-width: 1600px) {
   .l_404 .l_site-main .l_404-container {
-    max-width: 450px;
+    max-width: 520px;
   }
 }
-@media (max-width: 800px) {
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .l_404 .l_site-main .l_404-container {
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 1024px) {
   .l_404 .l_site-main .l_404-container {
     text-align: center;
     max-width: 100%;
@@ -14417,9 +14461,9 @@ button:focus {
   text-transform: uppercase;
   padding: 1.875rem 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 1600px) {
   .l_404 .l_site-main .l_404-container .l_404-title {
-    font-size: 1.85rem;
+    font-size: 1.82rem;
   }
 }
 @media (max-width: 576px) {
@@ -14432,19 +14476,24 @@ button:focus {
   font-family: Rubik, sans-serif;
   font-size: 1.5rem;
 }
+@media (max-width: 1600px) {
+  .l_404 .l_site-main .l_404-container .btn-custom {
+    font-size: 1.2rem;
+    padding: 0.425rem 4.25rem;
+  }
+}
 .l_500 .l_site-main {
   display: flex;
   align-items: center;
   min-height: calc(100% - 95px);
 }
-@media (max-width: 800px) {
-  .l_500 .l_site-main .l_500-container {
-    max-width: 500px;
-  }
+.l_500 .l_site-main .l_500-container {
+  max-width: 55vw;
 }
 @media (max-width: 576px) {
   .l_500 .l_site-main .l_500-container {
     text-align: center;
+    max-width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -14507,14 +14556,63 @@ button:focus {
   font-family: Rubik, sans-serif;
   font-size: 1.5rem;
 }
+@media (max-width: 1600px) {
+  .l_500 .l_site-main .l_500-container .btn-custom {
+    font-size: 1.2rem;
+    padding: 0.425rem 4.25rem;
+  }
+}
 
+/*
+.l_404 .wrapper {
+  overflow: hidden;
+  .l_404-illustration {
+    position: absolute;
+    background: url(../images/404_illustration.svg) no-repeat 0 0;
+    width: 1044px;
+    height: 100%;
+    top: 140px;
+    left: 42%;
+    background-size: contain;
+    @media (max-width: 1600px) {
+      left: 55vw;
+    }
+    @media (max-width: 1024px) {
+      left: 54vw;
+    }
+    @media only screen
+    and (min-width: 991px)
+    and (max-height: 1366px)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+      left: 42vw;
+    }
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+      left: 54vw;
+    }
+    @media (max-width: 800px) {
+      left: 58vw;
+    }
+    @media (max-width: 768px) {
+      left: 53vw;
+    }
+    @media (max-width: 576px) {
+      background: none;
+    }
+    @media (min-width: 1930px) {
+    }
+  }
+}
+*/
 .l_500 .wrapper {
   overflow: hidden;
 }
 .l_500 .wrapper .l_500-illustration {
   position: absolute;
   background: url(../images/500_illustration.svg) no-repeat 0 0;
-  width: 1900px;
+  width: 100vw;
   height: 100%;
   top: 0;
   left: 53vw;
@@ -14522,31 +14620,32 @@ button:focus {
 }
 @media (max-width: 1600px) {
   .l_500 .wrapper .l_500-illustration {
-    left: 60vw;
-    background-size: contain;
+    left: 55vw;
   }
 }
 @media (max-width: 1024px) {
   .l_500 .wrapper .l_500-illustration {
-    background-size: contain;
-    left: 57vw;
+    left: 54vw;
   }
 }
 @media only screen and (min-width: 991px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .l_500 .wrapper .l_500-illustration {
-    left: 38vw;
-    background-size: cover;
+    left: 42vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .l_500 .wrapper .l_500-illustration {
+    left: 54vw;
   }
 }
 @media (max-width: 800px) {
   .l_500 .wrapper .l_500-illustration {
     left: 58vw;
-    background-size: contain;
   }
 }
 @media (max-width: 768px) {
   .l_500 .wrapper .l_500-illustration {
-    left: 40vw;
+    left: 53vw;
   }
 }
 @media (max-width: 576px) {
