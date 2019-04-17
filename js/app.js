@@ -19106,14 +19106,15 @@ function () {
         }
 
         e.preventDefault();
-        console.log(_this.touch_delta);
+        var delta_x = _this.touch_delta_x - e.changedTouches[0].pageX;
         _this.touch_started = _this.touch_detecting = false;
+        console.log(delta_x, _this.touch_delta_x, e.changedTouches[0].pageX);
 
-        if (_this.touch_delta > 0 && _this.touch_delta > 30 && direction === 'left') {
+        if (_this.touch_delta > 0 && delta_x > 150 && direction === 'left') {
           _this.callback();
         }
 
-        if (_this.touch_delta < 0 && _this.touch_delta < -30 && direction === 'right') {
+        if (_this.touch_delta < 0 && -delta_x > 150 && direction === 'right') {
           _this.callback();
         }
       }, false);

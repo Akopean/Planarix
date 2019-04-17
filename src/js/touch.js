@@ -34,6 +34,7 @@
             if (!this.touch_started) {
                 e.preventDefault();
                 this.touch_started = true;
+
                 this.touch_delta = this.touch_delta_x - e.changedTouches[0].pageX;
             }
         }, false);
@@ -43,12 +44,17 @@
                 return;
             }
             e.preventDefault();
-            console.log(this.touch_delta);
+            let delta_x = this.touch_delta_x - e.changedTouches[0].pageX;
             this.touch_started = this.touch_detecting = false;
-            if(this.touch_delta > 0 && this.touch_delta > 30 && direction === 'left') {
+            console.log(delta_x, this.touch_delta_x, e.changedTouches[0].pageX);
+            if(this.touch_delta > 0 &&
+                delta_x > 150 &&
+                direction === 'left') {
                 this.callback();
             }
-            if(this.touch_delta < 0 && this.touch_delta < -30 && direction === 'right') {
+            if(this.touch_delta < 0 &&
+                -delta_x > 150 &&
+                direction === 'right') {
                 this.callback();
             }
         }, false);
