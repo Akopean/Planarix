@@ -7,7 +7,7 @@
   padding: 1rem 0;
   .ddcommon .ddArrow {
     @media (max-width: 576px) {
-      right: 22px;
+      right: 15px;
     }
   }
 
@@ -35,10 +35,17 @@
       @media (max-width: 576px) {
         height: auto;
       }
-
+      .divider {
+        @media (max-width: 576px) {
+          right: 47px;
+        }
+      }
       .ddTitle .ddTitleText .ddlabel, &.dd .ddChild li .ddlabel {
         font-weight: 400;
         font-size: 1.5rem;
+        @media (max-width: 576px) {
+          font-size: 1.2rem;
+        }
       }
 
       .ddChild li {

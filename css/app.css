@@ -13013,7 +13013,7 @@ button:focus {
 }
 @media (max-width: 576px) {
   .report .l_site-main .ddcommon .ddArrow {
-    right: 22px;
+    right: 15px;
   }
 }
 .report .l_site-main .l_report-container {
@@ -13044,9 +13044,19 @@ button:focus {
     height: auto;
   }
 }
+@media (max-width: 576px) {
+  .report .l_site-main .l_report-container .ddcommon .divider {
+    right: 47px;
+  }
+}
 .report .l_site-main .l_report-container .ddcommon .ddTitle .ddTitleText .ddlabel, .report .l_site-main .l_report-container .ddcommon.dd .ddChild li .ddlabel {
   font-weight: 400;
   font-size: 1.5rem;
+}
+@media (max-width: 576px) {
+  .report .l_site-main .l_report-container .ddcommon .ddTitle .ddTitleText .ddlabel, .report .l_site-main .l_report-container .ddcommon.dd .ddChild li .ddlabel {
+    font-size: 1.2rem;
+  }
 }
 .report .l_site-main .l_report-container .ddcommon .ddChild li {
   padding: 0.9rem 0 0.9rem 2.1rem;
