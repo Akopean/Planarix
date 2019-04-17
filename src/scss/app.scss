@@ -498,14 +498,14 @@ button:focus {
     @media (max-width: 576px) {
       position: fixed;
     }
-    @media (max-width: 390px) {
+    @media (max-width: 576px) {
       width: 100vw;
       left: -100vw;
     }
 
     .r-menu_show & {
       transform: translateX(390px);
-      @media (max-width: 390px) {
+      @media (max-width: 576px) {
         transform: translateX(100vw);
       }
       @media (max-width: 576px) {
@@ -819,8 +819,14 @@ button:focus {
     display: block;
     margin-bottom: 0.5rem;
 
-    &:hover, &:focus {
-      color: $col_83;
+    &:hover {
+      color: $a_hover;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: $a_focus;
+      text-decoration: none;
     }
   }
 

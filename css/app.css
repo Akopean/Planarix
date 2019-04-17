@@ -12717,11 +12717,19 @@ button:focus {
   color: #999999;
   line-height: 2.642;
   font-weight: 500;
+  padding-left: 0;
+  padding-right: 2rem;
+}
+@media (max-width: 768px) {
+  .edit_account .l_site-main .l_site-content-title .nav-link {
+    margin: auto;
+  }
 }
 @media (max-width: 576px) {
   .edit_account .l_site-main .l_site-content-title .nav-link {
     line-height: inherit;
     text-align: center;
+    font-size: 1.3rem;
   }
 }
 .edit_account .l_site-main .l_site-content-title .nav-link.active {
@@ -12730,7 +12738,7 @@ button:focus {
 .edit_account .l_site-main .l_site-content-title .nav-link.active::after {
   content: "";
   position: absolute;
-  left: 1rem;
+  left: 0;
   bottom: 0;
   height: 6px;
   width: 75%;
@@ -14032,7 +14040,7 @@ button:focus {
     position: fixed;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 576px) {
   .l_site-main .sidenav {
     width: 100vw;
     left: -100vw;
@@ -14042,7 +14050,7 @@ button:focus {
   -webkit-transform: translateX(390px);
           transform: translateX(390px);
 }
-@media (max-width: 390px) {
+@media (max-width: 576px) {
   .r-menu_show .l_site-main .sidenav {
     -webkit-transform: translateX(100vw);
             transform: translateX(100vw);
@@ -14308,8 +14316,13 @@ button:focus {
   display: block;
   margin-bottom: 0.5rem;
 }
-.l_site-main .l_login-pass_rec:hover, .l_site-main .l_login-pass_rec:focus {
-  color: #686666;
+.l_site-main .l_login-pass_rec:hover {
+  color: #cd2868;
+  text-decoration: none;
+}
+.l_site-main .l_login-pass_rec:focus {
+  color: #b01e56;
+  text-decoration: none;
 }
 .l_site-main .l_registration .l_reg-container {
   width: 630px;
