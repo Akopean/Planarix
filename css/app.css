@@ -9938,7 +9938,6 @@ h3 {
   color: #fff;
   border-color: #3b287e;
   background-color: #3b287e;
-  border-radius: 34px;
 }
 .btn-inline-custom3 svg {
   width: 11px;
@@ -13080,7 +13079,6 @@ button:focus {
   .report .l_site-main .l_report-container .btn {
     padding: 0.71rem 1rem;
     margin: 0 auto 1rem !important;
-    width: 70%;
   }
 }
 .report .l_site-main .l_report-title {
@@ -14861,6 +14859,11 @@ button:focus {
 .tariff_popup .modal-dialog {
   max-width: 630px;
 }
+@media (max-height: 750px) {
+  .tariff_popup .modal-dialog {
+    max-width: 550px;
+  }
+}
 .tariff_popup .modal-dialog .modal-content {
   border-radius: 10px;
 }
@@ -14938,7 +14941,7 @@ button:focus {
     font-size: 3.5rem;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .tariff_popup .modal-dialog .modal-header button.close span {
     font-size: 3rem;
   }
@@ -14980,7 +14983,7 @@ button:focus {
     margin: 0.7rem;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .tariff_popup .modal-dialog .modal-body .tariff_custom-group {
     margin: 0.5rem;
   }
@@ -14993,7 +14996,7 @@ button:focus {
   font-weight: 700;
   font-size: 1.5rem;
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .tariff_popup .modal-dialog .modal-body .price {
     font-size: 1.3rem;
   }
@@ -15007,7 +15010,7 @@ button:focus {
     font-size: 0.63rem;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .tariff_popup .modal-dialog .modal-body .price .price-period {
     font-size: 0.5rem;
   }
@@ -15032,7 +15035,7 @@ button:focus {
     font-size: 1.5rem;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .tariff_popup .modal-dialog .modal-body .price_economy {
     font-size: 1.3rem;
   }
@@ -15047,7 +15050,7 @@ button:focus {
     font-size: 1.7rem;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .tariff_popup .modal-dialog .modal-body .price_economy-count {
     font-size: 1.5rem;
   }
@@ -15065,7 +15068,7 @@ button:focus {
     background-position: 18px 11px;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .tariff_popup .modal-dialog .modal-body .custom-field3 {
     padding: 0 1.5625rem 0 3.5rem;
     background-position: 15px 9px;
@@ -15110,7 +15113,7 @@ button:focus {
     padding: 0.6rem;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .tariff_popup .modal-dialog .modal-body .btn-inline-custom, .tariff_popup .modal-dialog .modal-body .btn-inline-custom2, .tariff_popup .modal-dialog .modal-body .btn-inline-custom3, .tariff_popup .modal-dialog .modal-body .btn-inline-custom4, .tariff_popup .modal-dialog .modal-body .btn-inline-custom5 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;

@@ -1386,7 +1386,9 @@ button:focus {
 
   .modal-dialog {
     max-width: 630px;
-
+    @media (max-height: 750px) {
+      max-width: 550px;
+    }
     .modal-content {
       border-radius: 10px;
     }
@@ -1455,7 +1457,7 @@ button:focus {
           @media (max-height: 800px) {
             font-size: 3.5rem;
           }
-          @media (max-height: 700px) {
+          @media (max-height: 750px) {
             font-size: 3rem;
           }
           @media (max-width: 576px) {
@@ -1486,7 +1488,7 @@ button:focus {
         @media (max-height: 800px) {
           margin: .7rem;
         }
-        @media (max-height: 700px) {
+        @media (max-height: 750px) {
           margin: .5rem;
         }
       }
@@ -1497,7 +1499,7 @@ button:focus {
         color: #1f2022;
         font-weight: 700;
         font-size: 1.5rem;
-        @media  (max-height: 700px) {
+        @media  (max-height: 750px) {
           font-size: 1.3rem;
         }
 
@@ -1507,7 +1509,7 @@ button:focus {
           @media (max-height: 800px) {
             font-size: 0.63rem;
           }
-          @media (max-height: 700px) {
+          @media (max-height: 750px) {
             font-size: 0.5rem;
           }
         }
@@ -1529,7 +1531,7 @@ button:focus {
         @media (max-height: 800px) {
           font-size: 1.5rem;
         }
-        @media (max-height: 700px) {
+        @media (max-height: 750px) {
           font-size: 1.3rem;
         }
         &-count {
@@ -1539,7 +1541,7 @@ button:focus {
           @media (max-height: 800px) {
             font-size: 1.7rem;
           }
-          @media (max-height: 700px) {
+          @media (max-height: 750px) {
             font-size: 1.5rem;
           }
         }
@@ -1555,7 +1557,7 @@ button:focus {
           padding: 1.5rem 1.5625rem 1.5rem 4rem;
           background-position: 18px 11px;
         }
-        @media (max-height: 700px) {
+        @media (max-height: 750px) {
           padding: 0 1.5625rem 0 3.5rem;
           background-position: 15px 9px;
         }
@@ -1586,7 +1588,7 @@ button:focus {
           margin-bottom: 0.5rem;
           padding: 0.6rem;
         }
-        @media (max-height: 700px) {
+        @media (max-height: 750px) {
           font-size: 1.3rem;
           margin-bottom: 0.5rem;
           padding: 0.35rem;
