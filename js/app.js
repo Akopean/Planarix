@@ -18883,16 +18883,20 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 __webpack_require__(/*! ./touch.js */ "./src/js/touch.js");
 
-__webpack_require__(/*! ./jquery.dd.min.js */ "./src/js/jquery.dd.min.js"); //add Touch sidebar left
+__webpack_require__(/*! ./jquery.dd.min.js */ "./src/js/jquery.dd.min.js");
+/*
+//add Touch sidebar left
+new Touch('#sidenav', ()=> {
+    $("body").removeClass("r-menu_show");
+}).left();
 
+//add Touch body right
+new Touch('.wrapper', ()=> {
+    $("body").addClass("r-menu_show");
+}).right();
+*/
+//Init Scrollbar
 
-new _touch__WEBPACK_IMPORTED_MODULE_0__["default"]('#sidenav', function () {
-  $("body").removeClass("r-menu_show");
-}).left(); //add Touch body right
-
-new _touch__WEBPACK_IMPORTED_MODULE_0__["default"]('.wrapper', function () {
-  $("body").addClass("r-menu_show");
-}).right(); //Init Scrollbar
 
 if ($('.perfect-scrollbar').length && window.innerWidth > 768) {
   var ps = new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_1__["default"]('.perfect-scrollbar', {
@@ -19108,7 +19112,6 @@ function () {
         e.preventDefault();
         var delta_x = _this.touch_delta_x - e.changedTouches[0].pageX;
         _this.touch_started = _this.touch_detecting = false;
-        console.log(delta_x, _this.touch_delta_x, e.changedTouches[0].pageX);
 
         if (_this.touch_delta > 0 && delta_x > 150 && direction === 'left') {
           _this.callback();

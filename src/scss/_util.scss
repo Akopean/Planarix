@@ -205,6 +205,16 @@
   }
 }
 
+.invalid-feedback{
+  font-size: 100%;
+  @media (max-width: 1600px) {
+    font-size: 86%;
+  }
+  @media (max-width: 1300px) {
+    font-size: 80%;
+  }
+}
+
 .custom-control {
   border: 1px solid #f3edfb;
   border-radius: 10px;

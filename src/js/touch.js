@@ -46,7 +46,6 @@
             e.preventDefault();
             let delta_x = this.touch_delta_x - e.changedTouches[0].pageX;
             this.touch_started = this.touch_detecting = false;
-            console.log(delta_x, this.touch_delta_x, e.changedTouches[0].pageX);
             if(this.touch_delta > 0 &&
                 delta_x > 150 &&
                 direction === 'left') {

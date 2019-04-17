@@ -10181,6 +10181,20 @@ input[type=checkbox].switch:checked:after {
   box-shadow: none;
 }
 
+.invalid-feedback {
+  font-size: 100%;
+}
+@media (max-width: 1600px) {
+  .invalid-feedback {
+    font-size: 86%;
+  }
+}
+@media (max-width: 1300px) {
+  .invalid-feedback {
+    font-size: 80%;
+  }
+}
+
 .custom-control {
   border: 1px solid #f3edfb;
   border-radius: 10px;
@@ -10507,6 +10521,11 @@ label {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
+@media (max-width: 991px) {
+  .l-navbar--toggler {
+    padding: 0.25rem 0.35rem;
+  }
+}
 
 .navbar-toggler {
   z-index: 30;
@@ -10754,6 +10773,11 @@ button:focus {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+}
+@media (max-width: 991px) {
+  .l-navbar--toggler {
+    padding: 0.25rem 0.35rem;
+  }
 }
 
 .navbar-toggler {
@@ -11363,7 +11387,7 @@ button:focus {
   position: absolute;
   min-height: 100vh;
   min-width: 100vw;
-  background: url(../images/feedback_Illustration.svg);
+  background: url(../images/feedback_illustration.svg);
   background-position: 59% 122%;
   background-repeat: no-repeat;
   background-size: calc(83vh);
