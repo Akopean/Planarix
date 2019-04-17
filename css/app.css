@@ -14033,11 +14033,13 @@ button:focus {
 @media (max-width: 576px) {
   .r-menu_show .l_site-main .sidenav {
     overflow: auto;
+    pointer-events: all;
   }
 }
 @media (max-width: 576px) {
   .l_site-main .sidenav {
     position: fixed;
+    pointer-events: none;
   }
 }
 @media (max-width: 576px) {

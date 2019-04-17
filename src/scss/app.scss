@@ -492,11 +492,13 @@ button:focus {
     .r-menu_show & {
       @media (max-width: 576px) {
         overflow: auto;
+        pointer-events: all;
       }
     }
 
     @media (max-width: 576px) {
       position: fixed;
+      pointer-events: none;
     }
     @media (max-width: 576px) {
       width: 100vw;

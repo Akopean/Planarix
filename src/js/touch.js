@@ -43,11 +43,12 @@
                 return;
             }
             e.preventDefault();
+            console.log(this.touch_delta);
             this.touch_started = this.touch_detecting = false;
-            if(this.touch_delta > 0 && direction === 'left') {
+            if(this.touch_delta > 0 && this.touch_delta > 50 && direction === 'left') {
                 this.callback();
             }
-            if(this.touch_delta < 0 && direction === 'right') {
+            if(this.touch_delta < 0 && this.touch_delta < -50 && direction === 'right') {
                 this.callback();
             }
         }, false);
