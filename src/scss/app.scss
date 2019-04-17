@@ -539,6 +539,7 @@ button:focus {
         background-image: url(../images/sidebar.png);
         box-shadow: 2px 0 4px 0 #dadada8a;
         background-position: 0 0;
+        pointer-events: all;
         @media (min-width: 1201px) {
           visibility: hidden;
         }

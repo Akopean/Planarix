@@ -19109,11 +19109,11 @@ function () {
         console.log(_this.touch_delta);
         _this.touch_started = _this.touch_detecting = false;
 
-        if (_this.touch_delta > 0 && _this.touch_delta > 50 && direction === 'left') {
+        if (_this.touch_delta > 0 && _this.touch_delta > 30 && direction === 'left') {
           _this.callback();
         }
 
-        if (_this.touch_delta < 0 && _this.touch_delta < -50 && direction === 'right') {
+        if (_this.touch_delta < 0 && _this.touch_delta < -30 && direction === 'right') {
           _this.callback();
         }
       }, false);
