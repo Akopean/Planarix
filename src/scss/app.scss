@@ -46,6 +46,11 @@ body {
   }
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .l_header--menu {
   & > .nav-item > .nav-link {
     text-transform: uppercase;
@@ -252,6 +257,9 @@ button:focus {
 
     .first_screen-container {
       padding: 3rem 0;
+      @media (max-width: 576px) {
+        padding: 3.5rem 0;
+      }
       .first_screen_sub-title {
         font-size: 1.875rem;
         font-family: Rubik, sans-serif;
@@ -336,9 +344,19 @@ button:focus {
     background: url(../images/element.png) no-repeat 62vw calc(100% + 200px);
     height: 100%;
     background-size: contain;
-    @media (max-width: 1600px) {
-      background-position: 62vw calc(100% + 70px);
-      background-size: 17%;
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+      background-size: 28%;
+    }
+    /* Portrait */
+    @media only screen
+    and (min-width: 1024px)
+    and (max-height: 1366px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+      background-size: 33%;
     }
     @media (max-width: 576px) {
       height: initial;
@@ -362,12 +380,23 @@ button:focus {
   .l_login & {
     display: flex;
     align-items: center;
+    padding: 1rem 0;
     background: url(../images/element.png) no-repeat 62vw calc(100% + 200px);
     height: 100%;
     background-size: contain;
-    @media (max-width: 1600px) {
-      background-position: 62vw calc(100% + 70px);
-      background-size: 17%;
+    /* Portrait */
+    @media only screen
+    and (min-width: 1024px)
+    and (max-height: 1366px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+      background-size: 33%;
+    }
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+      background-size: 28%;
     }
     @media (max-width: 576px) {
       height: initial;
@@ -378,7 +407,6 @@ button:focus {
     }
     .l_site-title{
       margin-bottom: 1.5rem;
-      margin-top: 0;
       @media (max-width: 1600px) {
         font-size: 2.3rem;
         margin-bottom: 1rem;
@@ -388,23 +416,69 @@ button:focus {
       }
     }
   }
-  .first_screen & {
+  .first_screen &{
+     display: flex;
+     align-items: center;
+     background: url(../images/element.png) no-repeat 62vw calc(100% + 200px);
+     height: calc(100% - 100px);
+     background-size: contain;
+     @media (max-width: 1600px) {
+       background-size: 16%;
+     }
+     @media (max-width: 1300px) {
+       background-size: 19%;
+     }
+     @media (max-width: 1199px) {
+       height: calc(100% - 56px);
+     }
+     @media (max-width: 991px) {
+       margin-top: 0;
+       height: 100%;
+     }
+     /* Portrait */
+     @media only screen
+     and (min-width: 1024px)
+     and (max-height: 1366px)
+     and (orientation: portrait)
+     and (-webkit-min-device-pixel-ratio: 1.5) {
+       background-size: 33%;
+     }
+     @media only screen
+     and (min-device-width : 768px)
+     and (max-device-width : 1024px)
+     and (orientation : portrait) {
+       background-size: 28%;
+     }
+     @media (max-width: 576px) {
+       height: initial;
+       background-position: 45vw calc(100% + 200px);
+     }
+     .l_site-title{
+       margin-bottom: 1.5rem;
+       @media (max-width: 1600px) {
+         font-size: 2.3rem;
+         margin-bottom: 1rem;
+       }
+       @media (max-width: 1024px) {
+         font-size: 2rem;
+       }
+     }
+   }
+  .report &{
     display: flex;
     align-items: center;
-    background: url(../images/element.png) no-repeat 62vw calc(100% + 200px);
+    background: url(../images/element.png) no-repeat 69vw calc(100% + 200px);
     height: calc(100% - 100px);
     background-size: contain;
-    @media (max-width: 1600px) {
-      background-size: 16%;
-    }
-    @media (max-width: 1300px) {
-      background-size: 19%;
-    }
     @media (max-width: 1199px) {
       height: calc(100% - 56px);
     }
     @media (max-width: 991px) {
       margin-top: 0;
+      height: 100%;
+    }
+    @media (max-width: 991px) {
+      margin-top: 3.5rem;
       height: 100%;
     }
     /* Portrait */

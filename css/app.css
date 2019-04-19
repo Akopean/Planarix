@@ -11047,6 +11047,11 @@ body {
   }
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .l_header--menu > .nav-item > .nav-link {
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
@@ -12224,6 +12229,7 @@ button:focus {
 }
 @media (max-width: 576px) {
   .l_features .l_site-main .l_features-title {
+    margin: 1.5rem 0 0;
     font-size: 1.5rem;
   }
 }
@@ -13706,7 +13712,7 @@ button:focus {
 }
 @media (max-width: 576px) {
   .description_templates .l_site-main .l_desc-container .l_site-title {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 @media (max-width: 767px) {
@@ -13784,6 +13790,11 @@ button:focus {
 }
 .first_screen .l_site-main .first_screen-container {
   padding: 3rem 0;
+}
+@media (max-width: 576px) {
+  .first_screen .l_site-main .first_screen-container {
+    padding: 3.5rem 0;
+  }
 }
 .first_screen .l_site-main .first_screen-container .first_screen_sub-title {
   font-size: 1.875rem;
@@ -13877,11 +13888,16 @@ button:focus {
   background: url(../images/element.png) no-repeat 62vw calc(100% + 200px);
   height: 100%;
   background-size: contain;
+  /* Portrait */
 }
-@media (max-width: 1600px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .registration .l_site-main {
-    background-position: 62vw calc(100% + 70px);
-    background-size: 17%;
+    background-size: 28%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .registration .l_site-main {
+    background-size: 33%;
   }
 }
 @media (max-width: 576px) {
@@ -13909,14 +13925,20 @@ button:focus {
 .l_login .l_site-main {
   display: flex;
   align-items: center;
+  padding: 1rem 0;
   background: url(../images/element.png) no-repeat 62vw calc(100% + 200px);
   height: 100%;
   background-size: contain;
+  /* Portrait */
 }
-@media (max-width: 1600px) {
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   .l_login .l_site-main {
-    background-position: 62vw calc(100% + 70px);
-    background-size: 17%;
+    background-size: 33%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .l_login .l_site-main {
+    background-size: 28%;
   }
 }
 @media (max-width: 576px) {
@@ -13932,7 +13954,6 @@ button:focus {
 }
 .l_login .l_site-main .l_site-title {
   margin-bottom: 1.5rem;
-  margin-top: 0;
 }
 @media (max-width: 1600px) {
   .l_login .l_site-main .l_site-title {
@@ -14001,6 +14022,61 @@ button:focus {
 }
 @media (max-width: 1024px) {
   .first_screen .l_site-main .l_site-title {
+    font-size: 2rem;
+  }
+}
+.report .l_site-main {
+  display: flex;
+  align-items: center;
+  background: url(../images/element.png) no-repeat 69vw calc(100% + 200px);
+  height: calc(100% - 100px);
+  background-size: contain;
+  /* Portrait */
+}
+@media (max-width: 1199px) {
+  .report .l_site-main {
+    height: calc(100% - 56px);
+  }
+}
+@media (max-width: 991px) {
+  .report .l_site-main {
+    margin-top: 0;
+    height: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .report .l_site-main {
+    margin-top: 3.5rem;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .report .l_site-main {
+    background-size: 33%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .report .l_site-main {
+    background-size: 28%;
+  }
+}
+@media (max-width: 576px) {
+  .report .l_site-main {
+    height: initial;
+    background-position: 45vw calc(100% + 200px);
+  }
+}
+.report .l_site-main .l_site-title {
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 1600px) {
+  .report .l_site-main .l_site-title {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .report .l_site-main .l_site-title {
     font-size: 2rem;
   }
 }
