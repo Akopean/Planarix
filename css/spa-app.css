@@ -9979,26 +9979,29 @@ input[type=checkbox].switch:checked {
   background: #EEEEEE;
 }
 
-input[type=checkbox].switch:after {
+/* 
+input[type="checkbox"].switch:after{
   position: absolute;
   content: "";
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
   background: #FFB0D0;
-  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
-  -webkit-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+  box-shadow: 0 0 .25em rgba(0,0,0,.3);
+  -webkit-transform: scale(.7);
+  transform: scale(.7);
   left: -6px;
   top: -6px;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-input[type=checkbox].switch:checked:after {
+input[type="checkbox"].switch:checked:after{
   left: calc(100% - 1.2em);
   background-color: #FF398B;
 }
-
+*/
 @media (max-width: 991px) {
   .ch-100 {
     height: unset !important;
