@@ -9961,7 +9961,8 @@ h3 {
 input[type=checkbox].switch {
   font-size: 1.5rem !important;
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 2em;
   height: 1em;
   background: #EEEEEE;
@@ -9970,6 +9971,8 @@ input[type=checkbox].switch {
   cursor: pointer;
   outline: none;
   transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: none;
+  outline: -webkit-focus-ring-color auto 0;
 }
 
 input[type=checkbox].switch:checked {

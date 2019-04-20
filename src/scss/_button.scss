@@ -264,8 +264,7 @@
 
 input[type="checkbox"].switch{
   font-size: 1.5rem !important;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
   width: 2em;
   height: 1em;
   background: #EEEEEE;
@@ -273,8 +272,9 @@ input[type="checkbox"].switch{
   position: relative;
   cursor: pointer;
   outline: none;
-  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  -webkit-box-shadow: none;
+  outline: -webkit-focus-ring-color auto 0;
 }
 
 input[type="checkbox"].switch:checked{

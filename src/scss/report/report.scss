@@ -1,100 +1,154 @@
 @import "../variables";
 
-.report & {
-  display: flex;
-  align-items: center;
-  height: calc(100% - 100px);
-  padding: 1rem 0;
-  .ddcommon .ddArrow {
-    @media (max-width: 576px) {
-      right: 15px;
+.report {
+  .l_header{
+    @media (max-width: 991px) {
+      min-height: 56px;
     }
   }
 
-  .l_report-container {
-    width: 50%;
+  .l_site-main {
+    display: flex;
+    align-items: center;
+    height: calc(100% - 100px);
+    padding: 1rem 0;
+    background: url(../images/element.png) no-repeat 69vw calc(100% + 200px);
+    background-size: contain;
     @media (max-width: 1199px) {
-      width: 600px;
-      margin: 0 auto;
+      height: calc(100% - 56px);
+    }
+    @media (max-width: 991px) {
+      margin-top: 0;
+      height: 100%;
+    }
+    /* Portrait */
+    @media only screen
+    and (min-width: 1024px)
+    and (max-height: 1366px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+      background-size: 33%;
+    }
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+      background-size: 28%;
+    }
+    @media (max-width: 576px) {
+      height: initial;
+      background-position: 45vw calc(100% + 200px);
     }
 
-    label {
-      font-size: 1.5rem;
-      font-family: Rubik, sans-serif;
-      color: #1F2022;
-      text-align: left;
+    @media (max-width: 991px) {
+      height: calc(100vh - 56px);
+      margin-top: 0;
+    }
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+      height: calc(100% - 56px);
     }
 
-    .ddcommon {
-      color: #1f2022;
-      height: 65px;
-      font-weight: 400;
-      padding: 0.55rem 0 0 1.875rem;
-      font-family: Rubik, sans-serif;
-      font-size: 1.5rem;
+    .ddcommon .ddArrow {
       @media (max-width: 576px) {
-        height: auto;
+        right: 15px;
       }
-      .divider {
-        @media (max-width: 576px) {
-          right: 47px;
-        }
+    }
+
+    .l_report-container {
+      width: 50%;
+      @media (max-width: 1199px) {
+        width: 600px;
+        margin: 0 auto;
       }
-      .ddTitle .ddTitleText .ddlabel, &.dd .ddChild li .ddlabel {
+
+      label {
+        font-size: 1.5rem;
+        font-family: Rubik, sans-serif;
+        color: #1F2022;
+        text-align: left;
+      }
+
+      .ddcommon {
+        color: #1f2022;
+        height: 65px;
         font-weight: 400;
+        padding: 0.55rem 0 0 1.875rem;
+        font-family: Rubik, sans-serif;
         font-size: 1.5rem;
         @media (max-width: 576px) {
-          font-size: 1.2rem;
+          height: auto;
+        }
+
+        .divider {
+          @media (max-width: 576px) {
+            right: 47px;
+          }
+        }
+
+        .ddTitle .ddTitleText .ddlabel, &.dd .ddChild li .ddlabel {
+          font-weight: 400;
+          font-size: 1.5rem;
+          @media (max-width: 576px) {
+            font-size: 1.2rem;
+          }
+        }
+
+        .ddChild li {
+          padding: 0.9rem 0 0.9rem 2.1rem;
         }
       }
 
-      .ddChild li {
-        padding: 0.9rem 0 0.9rem 2.1rem;
+      .ddcommon .ddTitle .ddlabel {
+        @media (max-width: 576px) {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 300px;
+          cursor: pointer;
+          margin-right: 2rem;
+          display: block;
+        }
       }
-    }
 
-    .ddcommon .ddTitle .ddlabel {
-      @media (max-width: 576px) {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 300px;
-        cursor: pointer;
-        margin-right: 2rem;
-        display: block;
+      .btn {
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        border-radius: 0.65rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        @media (max-width: 1536px) {
+          padding: 0.71rem 7rem;
+          font-size: 1rem;
+        }
+        @media (max-width: 576px) {
+          padding: 0.71rem 1rem;
+          margin: 0 auto 1rem !important;
+        }
       }
     }
-    .btn {
-      padding: 1rem 0;
-      font-size: 1.3rem;
-      border-radius: 0.65rem;
-      width: 100%;
-      margin-bottom: 1rem;
-      @media (max-width: 1536px) {
-        padding: 0.71rem 7rem;
-        font-size: 1rem;
+    .l_site-title{
+      margin-bottom: 1.5rem;
+      @media (max-width: 1600px) {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
       }
-      @media (max-width: 576px) {
-        padding: 0.71rem 1rem;
-        margin: 0 auto 1rem !important;
+      @media (max-width: 1024px) {
+        font-size: 2rem;
       }
     }
   }
-
-  .l_report-title {
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: .7rem;
-    font-family: Rubik, sans-serif;
-    @media (max-width: 1600px) {
-      font-size: 2.8rem;
-      margin-bottom: 1.5rem;
+  .l_footer{
+    @media (max-width: 991px) {
+      display: block;
     }
-    @media (max-width: 800px) {
-      margin-top: 1rem;
-    }
-    @media (max-width: 576px) {
-      font-size: 2.2rem;
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+      display: table-footer-group;
     }
   }
 }
