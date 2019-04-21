@@ -258,13 +258,16 @@
 
 .switch_box{
   margin-right: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /* Switch 1 Specific Styles Start */
 
 input[type="checkbox"].switch{
   font-size: 1.5rem !important;
-  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   width: 2em;
   height: 1em;
   background: #EEEEEE;
@@ -273,15 +276,14 @@ input[type="checkbox"].switch{
   cursor: pointer;
   outline: none;
   transition: all .2s ease-in-out;
-  -webkit-box-shadow: none;
-  outline: -webkit-focus-ring-color auto 0;
+  border-color: transparent;
 }
 
 input[type="checkbox"].switch:checked{
   background: #EEEEEE;
 }
 
-/* 
+
 input[type="checkbox"].switch:after{
   position: absolute;
   content: "";
@@ -303,4 +305,3 @@ input[type="checkbox"].switch:checked:after{
   left: calc(100% - 1.2em);
   background-color: #FF398B;
 }
-*/
